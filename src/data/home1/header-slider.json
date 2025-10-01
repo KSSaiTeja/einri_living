@@ -1,0 +1,20 @@
+[
+  {
+    "title": "Einri Living",
+    "subTitle": "Where Art Resides in Every Room",
+    "desc": "Founded on a vision that art is everywhere and art makes life better. We transform spaces into living, breathing masterpieces with our signature fusion of modern contemporary design and subtle classic undertones.",
+    "img": "/home1/assets/img/head_slide1.jpg"
+  },
+  {
+    "title": "Timeless",
+    "subTitle": "Elegant & Ever-evolving Design",
+    "desc": "Our design philosophy centers on timeless elegance through clean lines, curated textures, and biophilic design principles. Every space is conceived as a canvas where art becomes integral to the environment.",
+    "img": "/home1/assets/img/head_slide2.png"
+  },
+  {
+    "title": "Art",
+    "subTitle": "In the Heart of Your Abode",
+    "desc": "We partner with discerning individuals who view their environments as extensions of their identity. Based in Hyderabad, serving Telangana, Andhra Pradesh, Goa & Bangalore with a vision to reshape interior design across India.",
+    "img": "/home1/assets/img/head_slide3.png"
+  }
+]
