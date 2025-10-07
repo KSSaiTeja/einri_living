@@ -1,5 +1,5 @@
-import React from 'react';
-import data from '../../data/home1/header-slider';
+import React from "react";
+import data from "../../data/home1/header-slider";
 function Header() {
   return (
     <header className="tc-header-style1">
