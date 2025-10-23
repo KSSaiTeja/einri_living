@@ -10,13 +10,18 @@ function Loader() {
 
       <div className="loader-wrap-heading">
         <div className="load-text">
+          <span>E</span>
+          <span>I</span>
+          <span>N</span>
+          <span>R</span>
+          <span>I</span>
+          <span> </span>
           <span>L</span>
-          <span>o</span>
-          <span>a</span>
-          <span>d</span>
-          <span>i</span>
-          <span>n</span>
-          <span>g</span>
+          <span>I</span>
+          <span>V</span>
+          <span>I</span>
+          <span>N</span>
+          <span>G</span>
         </div>
       </div>
     </div>
