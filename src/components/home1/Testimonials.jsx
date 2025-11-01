@@ -103,13 +103,13 @@ function Testimonials() {
       <div className="marq-slider">
         <div className="swiper-wrapper">
           <div className="swiper-slide">
-            <a href="#"> Timeless </a>
+            <span> Timeless </span>
           </div>
           <div className="swiper-slide">
-            <a href="#"> Elegant </a>
+            <span> Elegant </span>
           </div>
           <div className="swiper-slide">
-            <a href="#"> Ever-evolving </a>
+            <span> Ever-evolving </span>
           </div>
         </div>
       </div>

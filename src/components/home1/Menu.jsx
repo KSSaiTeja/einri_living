@@ -24,32 +24,32 @@ function Menu() {
           <nav className="main_navigation">
             <ul>
               <li>
-                <a href="#" className="nav_link">
+                <a href="/" className="nav_link">
                   Home
                 </a>
               </li>
               <li>
-                <a href="#" className="nav_link">
+                <a href="/studio" className="nav_link">
                   Studio
                 </a>
               </li>
               <li>
-                <a href="#" className="nav_link">
+                <a href="/services" className="nav_link">
                   Services
                 </a>
               </li>
               <li>
-                <a href="#" className="nav_link">
+                <a href="#testimonials" className="nav_link">
                   Testimonials
                 </a>
               </li>
               <li>
-                <a href="#" className="nav_link">
+                <a href="/blog" className="nav_link">
                   Blog
                 </a>
               </li>
               <li>
-                <a href="#" className="nav_link">
+                <a href="/contact" className="nav_link">
                   Contact
                 </a>
               </li>
@@ -58,13 +58,13 @@ function Menu() {
 
           {/* Social Links */}
           <div className="social_links">
-            <a href="#" className="social_link">
+            <a href="https://instagram.com/einriliving" className="social_link" target="_blank" rel="noopener noreferrer">
               Instagram
             </a>
-            <a href="#" className="social_link">
+            <a href="https://behance.net/einriliving" className="social_link" target="_blank" rel="noopener noreferrer">
               Behance
             </a>
-            <a href="#" className="social_link">
+            <a href="https://twitter.com/einriliving" className="social_link" target="_blank" rel="noopener noreferrer">
               Twitter
             </a>
           </div>

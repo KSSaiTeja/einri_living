@@ -29,7 +29,7 @@ function Experience() {
               Einri Living studio is where art meets function to create timeless elegant interiors. Founded by people passionate about the transformative power of design, we bring your space to life through modern biophilic and class inspired spaces.Based in Hyderabad with Projects in Goa and Bangalore, we're growing day by day,Redefining the face of interiors with every move that we make.
               </div>
               <a
-                href="#"
+                href="/studio"
                 className="butn rounded-pill mt-50 hover-bg-black bg-white"
               >
                 <span>
@@ -42,10 +42,10 @@ function Experience() {
             <div className="rotate-txt justify-content-lg-end">
               <ul>
                 <li>
-                  <a href="#"> hello@einriliving.com </a>
+                  <a href="mailto:hello@einriliving.com"> hello@einriliving.com </a>
                 </li>
                 <li>
-                  <a href="#"> +91 98765 43210 </a>
+                  <a href="tel:+919876543210"> +91 98765 43210 </a>
                 </li>
               </ul>
             </div>

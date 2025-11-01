@@ -7,7 +7,7 @@ import Header from '../../components/innerpage/blog/Header';
 import Slider from '../../components/innerpage/blog/Slider';
 import LatestPosts from '../../components/innerpage/blog/LatestPosts';
 import FilterPosts from '../../components/innerpage/blog/FilterPosts';
-import StartButton from '../../components/home5_residence/StartButton';
+import StartButton from '../../components/home1/StartButton';
 import { Helmet } from 'react-helmet';
 
 function BlogPage() {

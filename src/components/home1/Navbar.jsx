@@ -18,9 +18,9 @@ function Navbar() {
         <div className="container-fluid content">
           <a
             className={`navbar-brand ${isMenuOpen ? "logo-expanded" : ""}`}
-            href="#"
+            href="/"
           >
-            <img src="/home1/assets/img/logo.png" alt="" className="logo" />
+            <img src="/home1/assets/img/logo.png" alt="Einri Living" className="logo" />
           </a>
           <button
             className="navbar-toggler"
@@ -34,14 +34,14 @@ function Navbar() {
             <span className="navbar-toggler-icon"></span>
           </button>
           <div className="nav-side">
-              <a
-                href="#"
+              <button
                 className={`icon side_menu_btn ${isMenuOpen ? "active" : ""}`}
                 onClick={toggleMenu}
+                aria-label="Toggle menu"
               >
                 <div className="hamburger-line top-line"></div>
                 <div className="hamburger-line bottom-line"></div>
-              </a>
+              </button>
             </div>
         </div>
 
@@ -58,32 +58,32 @@ function Navbar() {
             <nav className="premium_main_navigation">
               <ul>
                 <li>
-                  <a href="#" className="premium_nav_link">
+                  <a href="/" className="premium_nav_link">
                     Home
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="premium_nav_link">
+                  <a href="/about" className="premium_nav_link">
                     Studio
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="premium_nav_link">
+                  <a href="/services" className="premium_nav_link">
                     Services
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="premium_nav_link">
+                  <a href="#testimonials" className="premium_nav_link">
                     Testimonials
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="premium_nav_link">
+                  <a href="/blog" className="premium_nav_link">
                     Blog
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="premium_nav_link">
+                  <a href="/contact" className="premium_nav_link">
                     Contact
                   </a>
                 </li>
@@ -92,13 +92,13 @@ function Navbar() {
 
             {/* Social Links */}
             <div className="premium_social_links">
-              <a href="#" className="premium_social_link">
+              <a href="https://instagram.com/einriliving" className="premium_social_link" target="_blank" rel="noopener noreferrer">
                 Instagram
               </a>
-              <a href="#" className="premium_social_link">
+              <a href="https://behance.net/einriliving" className="premium_social_link" target="_blank" rel="noopener noreferrer">
                 Behance
               </a>
-              <a href="#" className="premium_social_link">
+              <a href="https://twitter.com/einriliving" className="premium_social_link" target="_blank" rel="noopener noreferrer">
                 Twitter
               </a>
             </div>
@@ -204,32 +204,32 @@ function Navbar() {
               <nav className="premium_main_navigation">
                 <ul>
                   <li>
-                    <a href="#" className="premium_nav_link">
+                    <a href="/" className="premium_nav_link">
                       Home
                     </a>
                   </li>
                   <li>
-                    <a href="#" className="premium_nav_link">
+                    <a href="/about" className="premium_nav_link">
                       Studio
                     </a>
                   </li>
                   <li>
-                    <a href="#" className="premium_nav_link">
+                    <a href="/services" className="premium_nav_link">
                       Services
                     </a>
                   </li>
                   <li>
-                    <a href="#" className="premium_nav_link">
+                    <a href="#testimonials" className="premium_nav_link">
                       Testimonials
                     </a>
                   </li>
                   <li>
-                    <a href="#" className="premium_nav_link">
+                    <a href="/blog" className="premium_nav_link">
                       Blog
                     </a>
                   </li>
                   <li>
-                    <a href="#" className="premium_nav_link">
+                    <a href="/contact" className="premium_nav_link">
                       Contact
                     </a>
                   </li>
@@ -238,13 +238,13 @@ function Navbar() {
 
               {/* Social Links */}
               <div className="premium_social_links">
-                <a href="#" className="premium_social_link">
+                <a href="https://instagram.com/einriliving" className="premium_social_link" target="_blank" rel="noopener noreferrer">
                   Instagram
                 </a>
-                <a href="#" className="premium_social_link">
+                <a href="https://behance.net/einriliving" className="premium_social_link" target="_blank" rel="noopener noreferrer">
                   Behance
                 </a>
-                <a href="#" className="premium_social_link">
+                <a href="https://twitter.com/einriliving" className="premium_social_link" target="_blank" rel="noopener noreferrer">
                   Twitter
                 </a>
               </div>

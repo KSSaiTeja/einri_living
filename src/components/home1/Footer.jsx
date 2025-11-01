@@ -15,19 +15,19 @@ function Footer() {
                   <span className="fsz-16 fw-400 color-666">- Charlotte Moss</span>
                 </div>
                 <div className="foot-social mt-50">
-                  <a href="#">
+                  <a href="https://twitter.com/einriliving" target="_blank" rel="noopener noreferrer">
                     <i className="fab fa-x-twitter"></i>
                   </a>
-                  <a href="#">
+                  <a href="https://facebook.com/einriliving" target="_blank" rel="noopener noreferrer">
                     <i className="fab fa-facebook-f"></i>
                   </a>
-                  <a href="#">
+                  <a href="https://instagram.com/einriliving" target="_blank" rel="noopener noreferrer">
                     <i className="fab fa-instagram"></i>
                   </a>
-                  <a href="#">
+                  <a href="https://linkedin.com/company/einriliving" target="_blank" rel="noopener noreferrer">
                     <i className="fab fa-linkedin-in"></i>
                   </a>
-                  <a href="#">
+                  <a href="https://youtube.com/@einriliving" target="_blank" rel="noopener noreferrer">
                     <i className="fab fa-youtube"></i>
                   </a>
                 </div>
@@ -38,13 +38,13 @@ function Footer() {
                 <h5 className="mb-20 mt-5 mt-lg-0 fw-600"> Hyderabad, India </h5>
                 <ul className="footer-links">
                   <li>
-                    <a href="#">Plot No. 12, Road No. 1, Banjara Hills, <br /> Hyderabad - 500034</a>
+                    <span>Plot No. 12, Road No. 1, Banjara Hills, <br /> Hyderabad - 500034</span>
                   </li>
                   <li>
-                    <a href="#"> hello@einriliving.com </a>
+                    <a href="mailto:hello@einriliving.com"> hello@einriliving.com </a>
                   </li>
                   <li>
-                    <a href="#"> +91 40 1234 5678 </a>
+                    <a href="tel:+914012345678"> +91 40 1234 5678 </a>
                   </li>
                 </ul>
               </div>
@@ -52,13 +52,13 @@ function Footer() {
                 <h5 className="mb-20 mt-5 fw-600"> Our Services </h5>
                 <ul className="footer-links">
                   <li>
-                    <a href="#"> 3D Visualizations </a>
+                    <a href="/services"> 3D Visualizations </a>
                   </li>
                   <li>
-                    <a href="#"> Residential Design </a>
+                    <a href="/services"> Residential Design </a>
                   </li>
                   <li>
-                    <a href="#"> Commercial Spaces </a>
+                    <a href="/services"> Commercial Spaces </a>
                   </li>
                 </ul>
               </div>
@@ -68,13 +68,13 @@ function Footer() {
                 <h5 className="mb-20 mt-5 mt-lg-0 fw-600"> Studio Hours </h5>
                 <ul className="footer-links">
                   <li>
-                    <a href="#">Monday - Friday: 9:00 AM - 6:00 PM</a>
+                    <span>Monday - Friday: 9:00 AM - 6:00 PM</span>
                   </li>
                   <li>
-                    <a href="#"> Saturday: 10:00 AM - 4:00 PM </a>
+                    <span> Saturday: 10:00 AM - 4:00 PM </span>
                   </li>
                   <li>
-                    <a href="#"> Sunday: By Appointment </a>
+                    <span> Sunday: By Appointment </span>
                   </li>
                 </ul>
               </div>
@@ -82,10 +82,10 @@ function Footer() {
                 <h5 className="mb-20 mt-5 fw-600"> Helps </h5>
                 <ul className="footer-links">
                   <li>
-                    <a href="#"> Term & Conditions </a>
+                    <a href="/terms"> Term & Conditions </a>
                   </li>
                   <li>
-                    <a href="#"> Partner Policy </a>
+                    <a href="/privacy"> Partner Policy </a>
                   </li>
                 </ul>
               </div>
@@ -99,11 +99,11 @@ function Footer() {
             </div>
             <div className="col-lg-6">
               <div className="foot-links mt-4 mt-lg-0">
-                <a href="#"> Home </a>
-                <a href="#"> Studio </a>
-                <a href="#"> Cases </a>
-                <a href="#"> News </a>
-                <a href="#"> Contact </a>
+                <a href="/"> Home </a>
+                <a href="/studio"> Studio </a>
+                <a href="/portfolio"> Cases </a>
+                <a href="/blog"> News </a>
+                <a href="/contact"> Contact </a>
               </div>
             </div>
           </div>

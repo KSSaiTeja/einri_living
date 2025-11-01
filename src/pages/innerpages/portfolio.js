@@ -3,7 +3,7 @@ import Loader from '../../components/common/Loader';
 import Footer from '../../components/innerpage/Footer';
 import Menu from '../../components/innerpage/Menu';
 import Navbar2 from '../../components/innerpage/Navbar2';
-import StartButton from '../../components/home5_residence/StartButton';
+import StartButton from '../../components/home1/StartButton';
 import Header from '../../components/innerpage/portfolio/Header';
 import Cases from '../../components/innerpage/portfolio/Cases';
 import LatestCases from '../../components/innerpage/portfolio/LatestCases';

@@ -72,7 +72,7 @@ function Projects() {
             </div>
             <div className="col-lg-3 mt-4 mt-lg-0 text-lg-end">
               <a
-                href="#"
+                href="/portfolio"
                 className="butn border rounded-pill color-orange1 border-orange1 hover-bg-orange1"
               >
                 <span>
@@ -106,11 +106,11 @@ function Projects() {
                           </a>
                           <div className="info">
                             <div className="tags">
-                              <a href="#"> {item.sub1} </a>
-                              <a href="#"> {item.sub2} </a>
+                              <span> {item.sub1} </span>
+                              <span> {item.sub2} </span>
                             </div>
                             <h3 className="title">
-                              <a href="#"> {item.title} </a>
+                              <a href={`/project/${i + 1}`}> {item.title} </a>
                             </h3>
                             <div className="text">{item.desc}</div>
                           </div>
@@ -145,11 +145,11 @@ function Projects() {
                           </a>
                           <div className="info">
                             <div className="tags">
-                              <a href="#"> {item.sub1} </a>
-                              <a href="#"> {item.sub2} </a>
+                              <span> {item.sub1} </span>
+                              <span> {item.sub2} </span>
                             </div>
                             <h3 className="title">
-                              <a href="#"> {item.title} </a>
+                              <a href={`/project/${i + 1}`}> {item.title} </a>
                             </h3>
                             <div className="text">{item.desc}</div>
                           </div>
@@ -184,11 +184,11 @@ function Projects() {
                           </a>
                           <div className="info">
                             <div className="tags">
-                              <a href="#"> {item.sub1} </a>
-                              <a href="#"> {item.sub2} </a>
+                              <span> {item.sub1} </span>
+                              <span> {item.sub2} </span>
                             </div>
                             <h3 className="title">
-                              <a href="#"> {item.title} </a>
+                              <a href={`/project/${i + 1}`}> {item.title} </a>
                             </h3>
                             <div className="text">{item.desc}</div>
                           </div>

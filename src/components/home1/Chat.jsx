@@ -5,7 +5,7 @@ function Chat() {
     <section className="tc-chat-style1">
       <div className="container">
         <div className="content">
-          <a href="#" className="xl-text">
+          <a href="mailto:hello@einriliving.com" className="xl-text">
             hello@einriliving.com
           </a>
           <h5 className="mb-50 lh-5">

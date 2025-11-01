@@ -11,7 +11,7 @@ function Team() {
           <div className="row">
             <div className="col-lg-2">
               <div className="member-colmn">
-                <a href="#" className="team-card wow zoomIn">
+                <a href="/studio" className="team-card wow zoomIn">
                   <div className="img">
                     <img
                       src="/home1/assets/img/team/team1.jpg"
@@ -25,7 +25,7 @@ function Team() {
                   </h5>
                 </a>
                 <a
-                  href="#"
+                  href="/studio"
                   className="team-card wow zoomIn"
                   data-wow-delay="0.1s"
                 >
@@ -46,7 +46,7 @@ function Team() {
             <div className="col-lg-4">
               <div className="member-colmn">
                 <a
-                  href="#"
+                  href="/studio"
                   className="team-card wow zoomIn"
                   data-wow-delay="0.2s"
                 >
@@ -67,7 +67,7 @@ function Team() {
             <div className="col-lg-2">
               <div className="member-colmn">
                 <a
-                  href="#"
+                  href="/studio"
                   className="team-card wow zoomIn"
                   data-wow-delay="0.3s"
                 >
@@ -84,7 +84,7 @@ function Team() {
                   </h5>
                 </a>
                 <a
-                  href="#"
+                  href="/studio"
                   className="team-card wow zoomIn"
                   data-wow-delay="0.4s"
                 >
@@ -105,7 +105,7 @@ function Team() {
             <div className="col-lg-2 order-last order-lg-0">
               <div className="member-colmn">
                 <a
-                  href="#"
+                  href="/studio"
                   className="team-card wow zoomIn"
                   data-wow-delay="0.5s"
                 >
@@ -122,7 +122,7 @@ function Team() {
                   </h5>
                 </a>
                 <a
-                  href="#"
+                  href="/studio"
                   className="team-card team-text wow zoomIn"
                   data-wow-delay="0.6s"
                 >
@@ -148,7 +148,7 @@ function Team() {
             <div className="col-lg-2">
               <div className="member-colmn">
                 <a
-                  href="#"
+                  href="/studio"
                   className="team-card wow zoomIn"
                   data-wow-delay="0.7s"
                 >
