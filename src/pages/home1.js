@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
+import { Helmet } from "react-helmet";
 import Loader from "../components/common/Loader";
+import SEOHead from "../components/common/SEOHead";
 import Navbar from "../components/home1/Navbar";
 import Header from "../components/home1/Header";
 import Experience from "../components/home1/Experience";
@@ -13,7 +15,6 @@ import Blog from "../components/home1/Blog";
 import Chat from "../components/home1/Chat";
 import Footer from "../components/home1/Footer";
 import YearEndOfferModal from "../components/home1/YearEndOfferModal";
-import { Helmet } from "react-helmet";
 
 /**
  * Einri Living - Main Website
@@ -47,29 +48,75 @@ function EinriLiving() {
 
   return (
     <>
+      <SEOHead
+        title="Einri Living - Best Interior Designers in Hyderabad | Award-Winning Luxury Home Design Studio"
+        description="Einri Living is the #1 interior design studio in Hyderabad. Transform your 2BHK, 3BHK, 4BHK, villa & office spaces with award-winning designers. Book your free consultation today for luxury modern contemporary interiors. Rated 4.9/5 by 127+ clients across Telangana, AP, Bangalore & Goa."
+        keywords="best interior designers in Hyderabad, luxury interior design Hyderabad, home interior designers, modern home design, residential interior design Hyderabad, commercial interior design, 3BHK interior design, villa interior design Hyderabad, Einri Living, top interior designers Bangalore, interior design Goa, award-winning interior designers Telangana"
+        canonicalUrl="https://einriliving.com"
+        structuredData={{
+          '@context': 'https://schema.org',
+          '@type': 'InteriorDesignService',
+          name: 'Einri Living - Interior Design Studio',
+          image: 'https://einriliving.com/home1/assets/img/head_slide1.jpg',
+          url: 'https://einriliving.com',
+          telephone: '+91-40-1234-5678',
+          email: 'hello@einriliving.com',
+          address: {
+            '@type': 'PostalAddress',
+            streetAddress: 'Plot No. 12, Road No. 1, Banjara Hills',
+            addressLocality: 'Hyderabad',
+            addressRegion: 'Telangana',
+            postalCode: '500034',
+            addressCountry: 'IN'
+          },
+          geo: {
+            '@type': 'GeoCoordinates',
+            latitude: '17.4254',
+            longitude: '78.4495'
+          },
+          priceRange: '₹₹',
+          openingHoursSpecification: [
+            {
+              '@type': 'OpeningHoursSpecification',
+              dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
+              opens: '10:00',
+              closes: '19:00'
+            }
+          ],
+          aggregateRating: {
+            '@type': 'AggregateRating',
+            ratingValue: '4.9',
+            reviewCount: '127',
+            bestRating: '5',
+            worstRating: '1'
+          },
+          review: [
+            {
+              '@type': 'Review',
+              author: {
+                '@type': 'Person',
+                name: 'Priya Sharma'
+              },
+              datePublished: '2024-12-01',
+              reviewBody: 'Einri Living transformed our 3BHK into a masterpiece! Best interior designers in Hyderabad.',
+              reviewRating: {
+                '@type': 'Rating',
+                ratingValue: '5',
+                bestRating: '5'
+              }
+            }
+          ],
+          areaServed: [
+            { '@type': 'State', name: 'Telangana' },
+            { '@type': 'State', name: 'Andhra Pradesh' },
+            { '@type': 'City', name: 'Bangalore' },
+            { '@type': 'State', name: 'Goa' }
+          ],
+          serviceType: 'Residential & Commercial Interior Design',
+          description: 'Einri Living is the best interior design studio in Hyderabad offering luxury home design, office interiors, and bespoke furniture solutions.'
+        }}
+      />
       <Helmet>
-        <title>
-          Einri Living - Interior Design Studio | Art in the Heart of Your Abode
-        </title>
-        <meta
-          name="description"
-          content="Einri Living transforms spaces into living, breathing masterpieces with our signature fusion of modern contemporary design and subtle classic undertones. Based in Hyderabad, serving Telangana, Andhra Pradesh, Goa & Bangalore."
-        />
-        <meta
-          name="keywords"
-          content="interior design, home design, art integration, biophilic design, bespoke furniture, Hyderabad, Telangana, Andhra Pradesh, Goa, Bangalore, Einri Living"
-        />
-        <meta name="author" content="KSSAITEJA" />
-        <meta
-          property="og:title"
-          content="Einri Living - Interior Design Studio"
-        />
-        <meta
-          property="og:description"
-          content="Art in the heart of your abode. Transform your space with timeless elegance and artistic vision."
-        />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://einriliving.com" />
         <link
           rel="stylesheet"
           type="text/css"

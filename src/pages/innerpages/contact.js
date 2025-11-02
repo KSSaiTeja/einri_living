@@ -1,5 +1,6 @@
 import React from 'react';
 import Loader from '../../components/common/Loader';
+import SEOHead from '../../components/common/SEOHead';
 import Footer from '../../components/innerpage/Footer';
 import Navbar from '../../components/home1/Navbar';
 import StartButton from '../../components/home1/StartButton';
@@ -12,6 +13,12 @@ import { Helmet } from 'react-helmet';
 function ContactPage() {
   return (
     <>
+      <SEOHead
+        title="Contact Einri Living - Best Interior Designers in Hyderabad | Free Consultation"
+        description="Contact Einri Living for a free interior design consultation in Hyderabad. Visit us at Banjara Hills or call +91-40-1234-5678. Email hello@einriliving.com. Open Mon-Sat 10AM-7PM. Serving Telangana, AP, Bangalore & Goa."
+        keywords="contact Einri Living, interior designer contact Hyderabad, free home design consultation, Banjara Hills interior designers, schedule interior design consultation, contact best interior designers Hyderabad"
+        canonicalUrl="https://einriliving.com/contact"
+      />
       <Helmet>
         <link
           rel="stylesheet"

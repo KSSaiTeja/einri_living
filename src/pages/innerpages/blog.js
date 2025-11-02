@@ -1,5 +1,6 @@
 import React from 'react';
 import Loader from '../../components/common/Loader';
+import SEOHead from '../../components/common/SEOHead';
 import Footer from '../../components/innerpage/Footer';
 import Navbar from '../../components/home1/Navbar';
 import Header from '../../components/innerpage/blog/Header';
@@ -12,6 +13,12 @@ import { Helmet } from 'react-helmet';
 function BlogPage() {
   return (
     <>
+      <SEOHead
+        title="Interior Design Blog - Tips, Trends & Inspiration | Einri Living"
+        description="Explore the best interior design blog in Hyderabad. Get expert tips, latest trends, home makeover ideas, color schemes, furniture buying guides, and design inspiration for your dream home. Published by Einri Living's award-winning designers."
+        keywords="interior design blog Hyderabad, home design tips, interior design trends 2024, home makeover ideas, interior design inspiration, color scheme ideas, furniture buying guide, home decoration tips, design trends Bangalore, lifestyle blog"
+        canonicalUrl="https://einriliving.com/blog"
+      />
       <Helmet>
         <link
           rel="stylesheet"

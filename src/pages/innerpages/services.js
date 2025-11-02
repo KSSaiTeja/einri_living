@@ -1,5 +1,6 @@
 import React from 'react';
 import Loader from '../../components/common/Loader';
+import SEOHead from '../../components/common/SEOHead';
 import Footer from '../../components/innerpage/Footer';
 import Navbar from '../../components/home1/Navbar';
 import StartButton from '../../components/home1/StartButton';
@@ -12,6 +13,12 @@ import { Helmet } from 'react-helmet';
 function ServicesPage() {
   return (
     <>
+      <SEOHead
+        title="Interior Design Services in Hyderabad | Residential & Commercial Design by Einri Living"
+        description="Comprehensive interior design services in Hyderabad: Residential (2BHK, 3BHK, 4BHK, Villa), Commercial (Office, Retail, Hospitality), Complete Turnkey Solutions, 3D Design Visualization, Bespoke Furniture, Space Planning. Get free consultation from Einri Living."
+        keywords="interior design services Hyderabad, residential interior design, commercial interior design, office interior design, home design services, turnkey interior solutions, 3D design visualization, bespoke furniture Hyderabad, space planning, interior renovation, home makeover Hyderabad"
+        canonicalUrl="https://einriliving.com/services"
+      />
       <Helmet>
         <link
           rel="stylesheet"

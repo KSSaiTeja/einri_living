@@ -1,5 +1,6 @@
 import React from 'react';
 import Loader from '../../components/common/Loader';
+import SEOHead from '../../components/common/SEOHead';
 import Footer from '../../components/innerpage/Footer';
 import Navbar from '../../components/home1/Navbar';
 import StartButton from '../../components/home1/StartButton';
@@ -11,6 +12,12 @@ import { Helmet } from 'react-helmet';
 function PortfolioPage() {
   return (
     <>
+      <SEOHead
+        title="Interior Design Portfolio - Our Best Projects in Hyderabad | Einri Living"
+        description="View Einri Living's award-winning interior design portfolio. Explore luxury residential projects, commercial spaces, and stunning home transformations in Hyderabad. 2BHK, 3BHK, 4BHK, villas & office interiors designed by top designers."
+        keywords="interior design portfolio Hyderabad, home design examples, residential interior projects, commercial interior design portfolio, luxury home designs, before after home makeover, Einri Living projects, interior design case studies Hyderabad, best interior design photos"
+        canonicalUrl="https://einriliving.com/portfolio"
+      />
       <Helmet>
         <link
           rel="stylesheet"
