@@ -1,33 +1,34 @@
 import React from 'react';
 import data from '../../data/home1/blogs';
+import { Link } from 'react-router-dom';
+
 function Blog() {
+  // Show only first 6 articles on homepage
+  const displayData = data.slice(0, 6);
+  
   return (
     <section className="tc-blog-style1">
       <div className="container">
-        <div className="mb-80 js-splittext-lines">
-          <div className="row">
-            <div className="col-lg-9">
-              <h2 className="fsz-45"> Latest Posts </h2>
-            </div>
-            <div className="col-lg-3 text-lg-end mt-4 mt-lg-0">
-              <a
-                href="#"
-                className="butn border rounded-pill color-orange1 border-orange1 hover-bg-orange1"
-              >
-                <span>
-                  All Articles <i className="small ms-1 ti-arrow-top-right"></i>
-                </span>
-              </a>
-            </div>
+        <div className="title mb-80 text-center">
+          <h3 className="fsz-45 fw-600 mb-30 wow">Stay Updated with Trending Home Interior Designs!</h3>
+          <div className="text-center">
+            <Link
+              to="/blog"
+              className="butn border rounded-pill color-orange1 border-orange1 hover-bg-orange1"
+            >
+              <span>
+                View All Articles <i className="small ms-1 ti-arrow-top-right"></i>
+              </span>
+            </Link>
           </div>
         </div>
         <div className="blog-slider position-relative overflow-hidden">
           <div className="swiper-wrapper">
-            {data.map((item, i) => (
+            {displayData.map((item, i) => (
               <div key={i} className="swiper-slide">
                 <div className="blog-card">
                   <div className="img">
-                    <img src={item.img} alt="" className="img-cover" />
+                    <img src={item.img} alt={item.title} className="img-cover" />
                   </div>
                   <div className="info">
                     <div className="date">
@@ -38,12 +39,12 @@ function Blog() {
                       </small>
                     </div>
                     <div className="cont">
-                      <a
-                        href="#"
+                      <Link
+                        to={`/blog/single-post/${item.id}`}
                         className="title d-block fsz-24 hover-orange1 mb-15 fw-600"
                       >
                         {item.title}
-                      </a>
+                      </Link>
                       <small className="fsz-12 color-orange1">
                         {item.subTitle}
                       </small>

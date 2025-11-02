@@ -1,5 +1,36 @@
 @charset "UTF-8";
 /* ========= [ * page-home_3 ]  =========*/
+
+/* ================ GLOBAL DESCRIPTION TEXT OVERRIDES ================ */
+/* Increase font size and darken color for all description text */
+.text,
+.fsz-17,
+.about-content .text,
+.project-details .text,
+.blog-content .text,
+.service-details .text {
+  font-size: 18px !important; /* Increased from 17px */
+  color: #444 !important; /* Darkened from #666 */
+  line-height: 1.6 !important;
+}
+
+@media screen and (max-width: 991px) {
+  .text,
+  .fsz-17 {
+    font-size: 16px !important;
+    color: #444 !important;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .text,
+  .fsz-17 {
+    font-size: 15px !important;
+    color: #444 !important;
+  }
+}
+/* ================ END GLOBAL DESCRIPTION TEXT OVERRIDES ================ */
+
 /* --------------- side_menu_style4 --------------- */
 .side_menu_style4 {
   position: fixed;

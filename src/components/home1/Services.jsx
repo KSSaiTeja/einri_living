@@ -5,14 +5,13 @@ function Services() {
     <section className="tc-services-style1">
       <div className="content section-padding section-padding-x">
         <div className="container">
-          <div className="title mb-80 text-center">
-            <p className="color-666 text-uppercase wow"> our services </p>
+          <div className="title mb-40 text-center">
+            <h3 className="fsz-45 fw-600 mb-30 wow">Our Services</h3>
           </div>
           <div className="services">
             <div className="row">
               <div className="col-lg-3">
-                <a
-                  href="/services"
+                <div
                   className="service-card wow fadeInUp"
                   data-wow-delay="0.2s"
                 >
@@ -30,14 +29,10 @@ function Services() {
                   <div className="text color-666 mt-50">
                     Experience your space before it's built with detailed 3D renders that capture light, texture, and emotion perfectly.
                   </div>
-                  <span className="arrow">
-                    <i className="ti-arrow-top-right"></i>
-                  </span>
-                </a>
+                </div>
               </div>
               <div className="col-lg-3">
-                <a
-                  href="/services"
+                <div
                   className="service-card mt-150 wow fadeInUp"
                   data-wow-delay="0.4s"
                 >
@@ -55,14 +50,10 @@ function Services() {
                   <div className="text color-666 mt-50">
                     From concept to completion, we design and deliver homes that reflect your story effortlessly managed, beautifully finished.
                   </div>
-                  <span className="arrow">
-                    <i className="ti-arrow-top-right"></i>
-                  </span>
-                </a>
+                </div>
               </div>
               <div className="col-lg-3">
-                <a
-                  href="/services"
+                <div
                   className="service-card wow fadeInUp"
                   data-wow-delay="0.6s"
                 >
@@ -80,14 +71,10 @@ function Services() {
                   <div className="text color-666 mt-50">
                     Beyond design, we curate and customize furniture, décor, and styling to complete your space with harmony and detail.
                   </div>
-                  <span className="arrow">
-                    <i className="ti-arrow-top-right"></i>
-                  </span>
-                </a>
+                </div>
               </div>
               <div className="col-lg-3">
-                <a
-                  href="/services"
+                <div
                   className="service-card mt-150 wow fadeInUp"
                   data-wow-delay="0.8s"
                 >
@@ -107,17 +94,14 @@ function Services() {
                   <div className="text color-666 mt-50">
                     We craft functional yet inspiring commercial environments — from offices to studios blending aesthetics with purpose.
                   </div>
-                  <span className="arrow">
-                    <i className="ti-arrow-top-right"></i>
-                  </span>
-                </a>
+                </div>
               </div>
             </div>
           </div>
           <div className="text-center">
             <a
               href="/contact"
-              className="butn rounded-pill mt-80 hover-bg-black bg-orange1 text-white"
+              className="butn rounded-pill mt-50 hover-bg-black bg-orange1 text-white"
             >
               <span>
                 Start Your Art Journey

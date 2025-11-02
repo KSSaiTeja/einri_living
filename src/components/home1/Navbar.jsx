@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-function Navbar() {
+function Navbar({ useLogoDark = false }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -20,7 +20,13 @@ function Navbar() {
             className={`navbar-brand ${isMenuOpen ? "logo-expanded" : ""}`}
             href="/"
           >
-            <img src="/home1/assets/img/logo.png" alt="Einri Living" className="logo" />
+            {useLogoDark ? (
+              <img src="/home1/assets/img/logo-dark.png" alt="Einri Living" className="logo" />
+            ) : isMenuOpen ? (
+              <img src="/home1/assets/img/logo-dark.png" alt="Einri Living" className="logo" />
+            ) : (
+              <img src="/home1/assets/img/logo.png" alt="Einri Living" className="logo" />
+            )}
           </a>
           <button
             className="navbar-toggler"
@@ -34,6 +40,9 @@ function Navbar() {
             <span className="navbar-toggler-icon"></span>
           </button>
           <div className="nav-side">
+              <a href="/contact" className="navbar-cta-btn">
+                Book Consultation Now
+              </a>
               <button
                 className={`icon side_menu_btn ${isMenuOpen ? "active" : ""}`}
                 onClick={toggleMenu}
@@ -51,9 +60,6 @@ function Navbar() {
           <div className="navbar_menu_overlay" onClick={toggleMenu}></div>
           {/* Mobile Layout */}
           <div className="premium_mobile_layout">
-            {/* Header */}
-            <div className="premium_menu_header"></div>
-
             {/* Navigation Links */}
             <nav className="premium_main_navigation">
               <ul>
@@ -92,35 +98,29 @@ function Navbar() {
 
             {/* Social Links */}
             <div className="premium_social_links">
-              <a href="https://instagram.com/einriliving" className="premium_social_link" target="_blank" rel="noopener noreferrer">
+              <a href="http://www.youtube.com/@EinriLiving-Interiors" className="premium_social_link" target="_blank" rel="noopener noreferrer">
+                YouTube
+              </a>
+              <a href="https://www.instagram.com/einri_living?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" className="premium_social_link" target="_blank" rel="noopener noreferrer">
                 Instagram
               </a>
-              <a href="https://behance.net/einriliving" className="premium_social_link" target="_blank" rel="noopener noreferrer">
-                Behance
+              <a href="https://www.facebook.com/einriliving" className="premium_social_link" target="_blank" rel="noopener noreferrer">
+                Facebook
               </a>
-              <a href="https://twitter.com/einriliving" className="premium_social_link" target="_blank" rel="noopener noreferrer">
-                Twitter
+              <a href="https://www.linkedin.com/company/einri-living/" className="premium_social_link" target="_blank" rel="noopener noreferrer">
+                LinkedIn
               </a>
-            </div>
-
-            {/* Featured Image */}
-            <div className="premium_featured_image">
-              <img
-                src="/home1/assets/img/head_slide1.jpg"
-                alt="Modern interior design"
-              />
             </div>
 
             {/* Contact Information */}
             <div className="premium_contact_info">
               <div className="premium_address">
-                <p>Address Line One</p>
-                <p>Some additional Address</p>
-                <p>App 000</p>
+                <p>Plot No. 12, Road No. 1</p>
+                <p>Banjara Hills, Hyderabad - 500034</p>
               </div>
               <div className="premium_contact_details">
                 <p>hello@einriliving.com</p>
-                <p>+1 (555) 123-4567</p>
+                <p>+91 40 1234 5678</p>
               </div>
             </div>
           </div>
@@ -141,13 +141,12 @@ function Navbar() {
                 {/* Contact Information */}
                 <div className="premium_contact_info">
                   <div className="premium_address">
-                    <p>Address Line One</p>
-                    <p>Some additional Address</p>
-                    <p>App 000</p>
+                    <p>Plot No. 12, Road No. 1</p>
+                    <p>Banjara Hills, Hyderabad - 500034</p>
                   </div>
                   <div className="premium_contact_details">
                     <p>hello@einriliving.com</p>
-                    <p>+1 (555) 123-4567</p>
+                    <p>+91 40 1234 5678</p>
                   </div>
                 </div>
               </div>
@@ -155,51 +154,6 @@ function Navbar() {
 
             {/* Right Side */}
             <div className="premium_menu_right_side">
-              {/* Our Team Heading */}
-              <div className="premium_team_heading">
-                <h3>Our Team</h3>
-              </div>
-
-              {/* Team Members Grid */}
-              <div className="premium_team_members_grid">
-                <div className="premium_team_member">
-                  <img
-                    src="/home1/assets/img/head_slide2.png"
-                    alt="Team member 1"
-                  />
-                </div>
-                <div className="premium_team_member">
-                  <img
-                    src="/home1/assets/img/head_slide1.jpg"
-                    alt="Team member 2"
-                  />
-                </div>
-                <div className="premium_team_member">
-                  <img
-                    src="/home1/assets/img/head_slide2.png"
-                    alt="Team member 3"
-                  />
-                </div>
-                <div className="premium_team_member">
-                  <img
-                    src="/home1/assets/img/head_slide1.jpg"
-                    alt="Team member 4"
-                  />
-                </div>
-                <div className="premium_team_member">
-                  <img
-                    src="/home1/assets/img/head_slide2.png"
-                    alt="Team member 5"
-                  />
-                </div>
-                <div className="premium_team_member">
-                  <img
-                    src="/home1/assets/img/head_slide1.jpg"
-                    alt="Team member 6"
-                  />
-                </div>
-              </div>
-
               {/* Navigation Links */}
               <nav className="premium_main_navigation">
                 <ul>
@@ -238,14 +192,17 @@ function Navbar() {
 
               {/* Social Links */}
               <div className="premium_social_links">
-                <a href="https://instagram.com/einriliving" className="premium_social_link" target="_blank" rel="noopener noreferrer">
+                <a href="http://www.youtube.com/@EinriLiving-Interiors" className="premium_social_link" target="_blank" rel="noopener noreferrer">
+                  YouTube
+                </a>
+                <a href="https://www.instagram.com/einri_living?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" className="premium_social_link" target="_blank" rel="noopener noreferrer">
                   Instagram
                 </a>
-                <a href="https://behance.net/einriliving" className="premium_social_link" target="_blank" rel="noopener noreferrer">
-                  Behance
+                <a href="https://www.facebook.com/einriliving" className="premium_social_link" target="_blank" rel="noopener noreferrer">
+                  Facebook
                 </a>
-                <a href="https://twitter.com/einriliving" className="premium_social_link" target="_blank" rel="noopener noreferrer">
-                  Twitter
+                <a href="https://www.linkedin.com/company/einri-living/" className="premium_social_link" target="_blank" rel="noopener noreferrer">
+                  LinkedIn
                 </a>
               </div>
             </div>

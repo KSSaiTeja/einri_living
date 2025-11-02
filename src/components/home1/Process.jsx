@@ -4,8 +4,8 @@ function Process() {
   return (
     <section className="tc-process-style1">
       <div className="container">
-        <div className="title mb-100 text-center">
-          <h2 className="fsz-45"> Our Design Process </h2>
+        <div className="title mb-80 text-center">
+          <h3 className="fsz-45 fw-600 mb-30 wow">Our Design Process</h3>
         </div>
         <div className="content">
           <div className="row">
@@ -23,8 +23,7 @@ function Process() {
                         data-bs-toggle="collapse"
                         data-bs-target="#collapseOne"
                       >
-                        <span className="num"> 1 / </span>
-                        <h3> Space Assessment & Lifestyle Discovery </h3>
+                        <h3>Space Assessment & Lifestyle Discovery</h3>
                       </button>
                     </div>
                     <div
@@ -47,8 +46,7 @@ function Process() {
                         data-bs-toggle="collapse"
                         data-bs-target="#collapseTwo"
                       >
-                        <span className="num"> 2 / </span>
-                        <h3> Conceptual Design & Material Curation </h3>
+                        <h3>Conceptual Design & Material Curation</h3>
                       </button>
                     </div>
                     <div
@@ -71,7 +69,7 @@ function Process() {
                         data-bs-toggle="collapse"
                         data-bs-target="#collapseThree"
                       >
-                        <span className="num"> 3 / </span> <h3> Project Execution & Art Installation </h3>
+                        <h3>Project Execution & Art Installation</h3>
                       </button>
                     </div>
                     <div
@@ -88,8 +86,8 @@ function Process() {
                   </div>
                 </div>
                 <a
-                  href="/services"
-                  className="butn border rounded-pill mt-80 color-orange1 border-orange1 hover-bg-orange1"
+                  href="/portfolio"
+                  className="butn rounded-pill mt-50 hover-bg-black bg-orange1 text-white"
                 >
                   <span>
                     View Our Portfolio

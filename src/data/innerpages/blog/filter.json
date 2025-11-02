@@ -1,56 +1,82 @@
 [
   {
-    "img": "/innerpages/assets/img/blog/b5.jpg",
-    "subTitle": "inspiration Architecture",
-    "history": "march 22, 2024",
-    "title": "Daily Inspiration #18: Coffee Bar Restaurant in Spain"
+    "id": 1,
+    "img": "/home1/assets/img/blog/blog1.jpg",
+    "subTitle": "Interior Design Living Room",
+    "history": "january 15, 2024",
+    "title": "The Living Room – The Art of First Impressions",
+    "category": "Living Room"
   },
   {
-    "img": "/innerpages/assets/img/blog/b6.jpg",
-    "subTitle": "guide",
-    "history": "march 7, 2024",
-    "title": "Think to keep in mind when reading technical draws"
-  },
-  {
-    "img": "/innerpages/assets/img/blog/b7.jpg",
-    "subTitle": "news",
+    "id": 2,
+    "img": "/home1/assets/img/blog/blog2.jpg",
+    "subTitle": "Interior Design Bedroom",
     "history": "february 12, 2024",
-    "title": "Roxtaw builing completed rough construction"
+    "title": "The Bedroom – Designing for Rest and Reconnection",
+    "category": "Bedroom"
   },
   {
-    "img": "/innerpages/assets/img/blog/b8.jpg",
-    "subTitle": "guide, Interior ",
-    "history": "February 5, 2024",
-    "title": "How to choose furniture match with your personality?"
+    "id": 3,
+    "img": "/home1/assets/img/blog/blog1.jpg",
+    "subTitle": "Interior Design Kitchen",
+    "history": "march 20, 2024",
+    "title": "The Kitchen – The Functional Heart of Your Home",
+    "category": "Kitchen"
   },
   {
-    "img": "/innerpages/assets/img/blog/b9.jpg",
-    "subTitle": "Architecture",
-    "history": "January 7, 2024",
-    "title": "Construction Law 2024"
+    "id": 4,
+    "img": "/home1/assets/img/blog/blog2.jpg",
+    "subTitle": "Interior Design Balcony",
+    "history": "april 8, 2024",
+    "title": "The Balcony – Turning Small Corners into Soulful Retreats",
+    "category": "Balcony"
   },
   {
-    "img": "/innerpages/assets/img/blog/b10.jpg",
-    "subTitle": "inspiration landscape",
-    "history": "December 30, 2023",
-    "title": "Minimalist landscape in frontyard for young couple"
+    "id": 5,
+    "img": "/home1/assets/img/blog/blog1.jpg",
+    "subTitle": "Interior Design Dining",
+    "history": "may 3, 2024",
+    "title": "The Dining Area – Where Design Meets Connection",
+    "category": "Dining"
   },
   {
-    "img": "/innerpages/assets/img/blog/b11.jpg",
-    "subTitle": "inspiration",
-    "history": "november 7, 2023",
-    "title": " Interior  Design trend for Coffee Bar with Industrial style"
+    "id": 6,
+    "img": "/home1/assets/img/blog/blog2.jpg",
+    "subTitle": "Interior Design Bathroom",
+    "history": "june 18, 2024",
+    "title": "The Bathroom – Everyday Luxury in the Smallest Space",
+    "category": "Bathroom"
   },
   {
-    "img": "/innerpages/assets/img/blog/b12.jpg",
-    "subTitle": "inspiration",
-    "history": "november 5, 2023",
-    "title": "Bathroom Classic"
+    "id": 7,
+    "img": "/home1/assets/img/blog/blog1.jpg",
+    "subTitle": "Interior Design Entryway",
+    "history": "july 11, 2024",
+    "title": "The Entryway – The Energy Portal of Your Home",
+    "category": "Entryway"
   },
   {
-    "img": "/innerpages/assets/img/blog/b13.jpg",
-    "subTitle": "news  Architecture",
-    "history": "march 22, 2024",
-    "title": "Latest design trends for modern living spaces"
+    "id": 8,
+    "img": "/home1/assets/img/blog/blog2.jpg",
+    "subTitle": "Interior Design Study",
+    "history": "august 25, 2024",
+    "title": "The Study or Work Nook – Designing for Focus & Flow",
+    "category": "Study"
+  },
+  {
+    "id": 9,
+    "img": "/home1/assets/img/blog/blog1.jpg",
+    "subTitle": "Interior Design Kids Room",
+    "history": "september 9, 2024",
+    "title": "The Kids' Room – Whimsy Meets Functionality",
+    "category": "Kids Room"
+  },
+  {
+    "id": 10,
+    "img": "/home1/assets/img/blog/blog2.jpg",
+    "subTitle": "Interior Design Outdoor",
+    "history": "october 22, 2024",
+    "title": "The Master Balcony or Outdoor Lounge – Breathing Art into the Outdoors",
+    "category": "Outdoor"
   }
 ]

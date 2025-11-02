@@ -2,14 +2,38 @@ $( function() {
 
     var wind = $(window);
 
+    // Initialize WOW with mobile support
+    var isMobile = window.innerWidth <= 991;
     wow = new WOW({
         boxClass: 'wow',
         animateClass: 'animated',
-        offset: 200,
-        mobile: false,
+        offset: isMobile ? 100 : 200, // Smaller offset for mobile for smoother animations
+        mobile: true,
         live: false
     });
     wow.init();
+    
+    // Re-initialize WOW after page load and on resize for better mobile support
+    setTimeout(function() {
+        wow.init();
+    }, 500);
+    
+    // Re-initialize WOW on window resize to handle orientation changes
+    var resizeTimer;
+    wind.on('resize', function() {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(function() {
+            var newIsMobile = window.innerWidth <= 991;
+            wow = new WOW({
+                boxClass: 'wow',
+                animateClass: 'animated',
+                offset: newIsMobile ? 100 : 200,
+                mobile: true,
+                live: false
+            });
+            wow.init();
+        }, 250);
+    });
 
     // ---------- background change -----------
     var pageSection = $(".bg-img");

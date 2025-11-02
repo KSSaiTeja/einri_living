@@ -6,12 +6,12 @@ function Projects() {
   return (
     <section className="tc-projects-style1">
       <div className="container">
-        <div className="title mb-70">
-          <h2 className="fsz-45"> Featured Transformations </h2>
+        <div className="title mb-30 text-center">
+          <h3 className="fsz-45 fw-600 mb-20 wow">Get a glimpse of <span className="block-mobile">Einri Living Homes</span></h3>
         </div>
-        <div className="tabs-links mb-50">
+        <div className="tabs-links mb-30">
           <div className="row align-items-center">
-            <div className="col-lg-9">
+            <div className="col-lg-9" id="categories-tabs">
               <ul className="nav nav-pills mb-3" id="pills-tab" role="tablist">
                 <li className="nav-item" role="presentation">
                   <button
@@ -70,10 +70,10 @@ function Projects() {
                 </li>
               </ul>
             </div>
-            <div className="col-lg-3 mt-4 mt-lg-0 text-lg-end">
+            <div className="col-lg-3 mt-4 mt-lg-0 text-lg-end" id="cta-button">
               <a
                 href="/portfolio"
-                className="butn border rounded-pill color-orange1 border-orange1 hover-bg-orange1"
+                className="butn rounded-pill hover-bg-black bg-orange1 text-white"
               >
                 <span>
                   View All Transformations
@@ -83,7 +83,7 @@ function Projects() {
             </div>
           </div>
         </div>
-        <div className="projects">
+        <div className="projects" id="projects-images">
           <div className="tab-content" id="pills-tabContent">
             <div
               className="tab-pane fade show active"
@@ -203,6 +203,17 @@ function Projects() {
               </div>
             </div>
           </div>
+        </div>
+        <div className="mobile-cta-wrapper d-lg-none text-center mt-40">
+          <a
+            href="/portfolio"
+            className="butn rounded-pill hover-bg-black bg-orange1 text-white"
+          >
+            <span>
+              View All Transformations
+              <i className="small ms-1 ti-arrow-top-right"></i>
+            </span>
+          </a>
         </div>
       </div>
     </section>

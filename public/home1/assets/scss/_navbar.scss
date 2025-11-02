@@ -16,10 +16,18 @@
         justify-content: space-between;
 
         .navbar-brand {
-            max-width: 115px;
+            max-width: 140px;
+            min-width: 140px;
             margin-inline-end: 100px;
             display: flex;
             align-items: center;
+            position: relative;
+            
+            img {
+                max-height: 60px;
+                width: auto;
+                display: block;
+            }
         }
 
         .navbar-nav {
@@ -76,6 +84,7 @@
             
             .navbar-brand {
                 max-width: 100px !important;
+                min-width: 100px !important;
                 margin-inline-end: 0 !important;
                 display: flex !important;
                 align-items: center !important;
@@ -116,6 +125,7 @@
             
             .navbar-brand {
                 max-width: 80px !important;
+                min-width: 80px !important;
                 
                 img {
                     max-height: 35px !important;

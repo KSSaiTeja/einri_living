@@ -74,8 +74,8 @@ $(document).ready(function () {
 
     // ------------ tc-projects-slider1 -----------
     var swiper = new Swiper(".tc-projects-style1 .projects-slider", {
-        slidesPerView: 1,
-        spaceBetween: 30,
+        slidesPerView: 1.1,
+        spaceBetween: 20,
         // centeredSlides: true,
         speed: 1000,
         pagination: false,
@@ -86,13 +86,13 @@ $(document).ready(function () {
         autoplay: false,
         breakpoints: {
             0: {
-                slidesPerView: 1,
+                slidesPerView: 1.1,
             },
             480: {
-                slidesPerView: 1,
+                slidesPerView: 1.1,
             },
             787: {
-                slidesPerView: 1.5,
+                slidesPerView: 1.3,
             },
             991: {
                 slidesPerView: 2,
@@ -150,6 +150,43 @@ $(document).ready(function () {
             },
             1200: {
                 slidesPerView: 2,
+            },
+        },
+    });
+
+    // ------------ tc-team-slider -----------
+    var swiper = new Swiper(".tc-team-style1 .team-swiper", {
+        slidesPerView: 5,
+        centeredSlides: true,
+        spaceBetween: 20,
+        speed: 600,
+        pagination: false,
+        navigation: false,
+        mousewheel: false,
+        keyboard: true,
+        loop: true,
+        autoplay: false,
+        grabCursor: true,
+        breakpoints: {
+            0: {
+                slidesPerView: 5,
+                spaceBetween: 10,
+            },
+            480: {
+                slidesPerView: 5,
+                spaceBetween: 12,
+            },
+            768: {
+                slidesPerView: 5,
+                spaceBetween: 15,
+            },
+            991: {
+                slidesPerView: 5,
+                spaceBetween: 18,
+            },
+            1200: {
+                slidesPerView: 5,
+                spaceBetween: 20,
             },
         },
     });

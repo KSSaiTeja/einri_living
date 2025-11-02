@@ -1,199 +1,74 @@
 import React from 'react';
 
+const teamData = [
+  {
+    name: "Priya Sharma",
+    role: "Senior Interior Designer",
+    image: "/home1/assets/img/team/team1.jpg"
+  },
+  {
+    name: "Arjun Reddy",
+    role: "3D Visualization Specialist",
+    image: "/home1/assets/img/team/team2.jpg"
+  },
+  {
+    name: "Sneha Menon",
+    role: "Furniture & Material Curator",
+    image: "/home1/assets/img/team/team3.jpg"
+  },
+  {
+    name: "Rahul Joshi",
+    role: "Project Manager",
+    image: "/home1/assets/img/team/team4.jpg"
+  }
+];
+
 function Team() {
   return (
     <section className="tc-team-style1">
       <div className="container">
-        <div className="mb-80 js-splittext-lines">
-          <h2 className="fsz-45"> Meet our top-notch experts </h2>
+        <div className="title mb-80 text-center">
+          <h3 className="fsz-45 fw-600 mb-30 wow">Meet Our Team</h3>
         </div>
         <div className="members">
-          <div className="row">
-            <div className="col-lg-2">
-              <div className="member-colmn">
-                <a href="/studio" className="team-card wow zoomIn">
-                  <div className="img">
-                    <img
-                      src="/home1/assets/img/team/team1.jpg"
-                      alt=""
-                      className="img-cover"
-                    />
-                  </div>
-                  <h5 className="title">
-                    {' '}
-                    jhon <br /> handerson{' '}
-                  </h5>
-                </a>
-                <a
-                  href="/studio"
-                  className="team-card wow zoomIn"
-                  data-wow-delay="0.1s"
-                >
-                  <div className="img">
-                    <img
-                      src="/home1/assets/img/team/team2.jpg"
-                      alt=""
-                      className="img-cover"
-                    />
-                  </div>
-                  <h5 className="title">
-                    {' '}
-                    jhon <br /> handerson{' '}
-                  </h5>
-                </a>
+          <div className="team-grid">
+            {teamData.map((member, i) => (
+              <div key={i} className="team-member-card wow fadeInUp" data-wow-delay={`${i * 0.1}s`}>
+                <div className="member-img">
+                  <img src={member.image} alt={member.name} className="img-cover" />
+                </div>
+                <div className="member-info">
+                  <h5 className="member-name">{member.name}</h5>
+                  <p className="member-role">{member.role}</p>
+                </div>
               </div>
-            </div>
-            <div className="col-lg-4">
-              <div className="member-colmn">
-                <a
-                  href="/studio"
-                  className="team-card wow zoomIn"
-                  data-wow-delay="0.2s"
-                >
-                  <div className="img">
-                    <img
-                      src="/home1/assets/img/team/team3.jpg"
-                      alt=""
-                      className="img-cover"
-                    />
-                  </div>
-                  <h5 className="title">
-                    {' '}
-                    jhon <br /> handerson{' '}
-                  </h5>
-                </a>
-              </div>
-            </div>
-            <div className="col-lg-2">
-              <div className="member-colmn">
-                <a
-                  href="/studio"
-                  className="team-card wow zoomIn"
-                  data-wow-delay="0.3s"
-                >
-                  <div className="img">
-                    <img
-                      src="/home1/assets/img/team/team4.jpg"
-                      alt=""
-                      className="img-cover"
-                    />
-                  </div>
-                  <h5 className="title">
-                    {' '}
-                    jhon <br /> handerson{' '}
-                  </h5>
-                </a>
-                <a
-                  href="/studio"
-                  className="team-card wow zoomIn"
-                  data-wow-delay="0.4s"
-                >
-                  <div className="img">
-                    <img
-                      src="/home1/assets/img/team/team5.jpg"
-                      alt=""
-                      className="img-cover"
-                    />
-                  </div>
-                  <h5 className="title">
-                    {' '}
-                    jhon <br /> handerson{' '}
-                  </h5>
-                </a>
-              </div>
-            </div>
-            <div className="col-lg-2 order-last order-lg-0">
-              <div className="member-colmn">
-                <a
-                  href="/studio"
-                  className="team-card wow zoomIn"
-                  data-wow-delay="0.5s"
-                >
-                  <div className="img">
-                    <img
-                      src="/home1/assets/img/team/team6.jpg"
-                      alt=""
-                      className="img-cover"
-                    />
-                  </div>
-                  <h5 className="title">
-                    {' '}
-                    jhon <br /> handerson{' '}
-                  </h5>
-                </a>
-                <a
-                  href="/studio"
-                  className="team-card team-text wow zoomIn"
-                  data-wow-delay="0.6s"
-                >
-                  <div className="img">
-                    <h5 className="title">
-                      {' '}
-                      <div className="con">
-                        {' '}
-                        <span>
-                          {' '}
-                          See All Our <br /> Member{' '}
-                        </span>{' '}
-                        <span className="arrow">
-                          {' '}
-                          <i className="ti-arrow-top-right"></i>{' '}
-                        </span>{' '}
-                      </div>{' '}
-                    </h5>
-                  </div>
-                </a>
-              </div>
-            </div>
-            <div className="col-lg-2">
-              <div className="member-colmn">
-                <a
-                  href="/studio"
-                  className="team-card wow zoomIn"
-                  data-wow-delay="0.7s"
-                >
-                  <div className="img">
-                    <img
-                      src="/home1/assets/img/team/team7.jpg"
-                      alt=""
-                      className="img-cover"
-                    />
-                  </div>
-                  <h5 className="title">
-                    {' '}
-                    jhon <br /> handerson{' '}
-                  </h5>
-                </a>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
+        
         <div className="numbers">
           <div className="row gx-5">
             <div className="col-lg-4">
               <div className="number-card wow fadeInUp" data-wow-delay="0.2s">
-                <h3 className="perc"> 95% </h3>
+                <h3 className="perc">2+</h3>
                 <p>
-                  {' '}
-                  Happy Customer and <br /> Repeating{' '}
+                  Years of <br /> Experience
                 </p>
               </div>
             </div>
             <div className="col-lg-4">
               <div className="number-card wow fadeInUp" data-wow-delay="0.4s">
-                <h3 className="perc"> 126 </h3>
+                <h3 className="perc">50+</h3>
                 <p>
-                  {' '}
-                  Projects Completed in <br /> 15 Years{' '}
+                  Projects Completed <br /> Across Cities
                 </p>
               </div>
             </div>
             <div className="col-lg-4">
               <div className="number-card wow fadeInUp" data-wow-delay="0.6s">
-                <h3 className="perc"> 25 </h3>
+                <h3 className="perc">4</h3>
                 <p>
-                  {' '}
-                  Architects and <br /> High Qualified Crafters{' '}
+                  Expert Designers & <br /> Project Managers
                 </p>
               </div>
             </div>

@@ -1,8 +1,7 @@
 import React from 'react';
 import Loader from '../../components/common/Loader';
 import Footer from '../../components/innerpage/Footer';
-import Menu from '../../components/innerpage/Menu';
-import Navbar2 from '../../components/innerpage/Navbar2';
+import Navbar from '../../components/home1/Navbar';
 import StartButton from '../../components/home1/StartButton';
 import Header from '../../components/innerpage/single_project2/Header';
 import MainInfo from '../../components/innerpage/single_project2/MainInfo';
@@ -19,6 +18,11 @@ function SingleProject2() {
         <link
           rel="stylesheet"
           type="text/css"
+          href="/home1/assets/css/home_1_style.css"
+        />
+        <link
+          rel="stylesheet"
+          type="text/css"
           href="/innerpages/assets/css/innerpages.css"
         />
         <script src="/common/assets/js/common_js.js"></script>
@@ -26,9 +30,8 @@ function SingleProject2() {
       </Helmet>
       <body className="inner-pages-style1 s-project-pg-style2">
         <Loader />
-        <Menu />
         <div className="smooth-scroll-content" id="scrollsmoother-container">
-          <Navbar2 />
+          <Navbar />
           <Header />
           <main>
             <MainInfo />

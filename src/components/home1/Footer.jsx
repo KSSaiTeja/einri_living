@@ -15,20 +15,17 @@ function Footer() {
                   <span className="fsz-16 fw-400 color-666">- Charlotte Moss</span>
                 </div>
                 <div className="foot-social mt-50">
-                  <a href="https://twitter.com/einriliving" target="_blank" rel="noopener noreferrer">
-                    <i className="fab fa-x-twitter"></i>
+                  <a href="http://www.youtube.com/@EinriLiving-Interiors" target="_blank" rel="noopener noreferrer">
+                    <i className="fab fa-youtube"></i>
                   </a>
-                  <a href="https://facebook.com/einriliving" target="_blank" rel="noopener noreferrer">
-                    <i className="fab fa-facebook-f"></i>
-                  </a>
-                  <a href="https://instagram.com/einriliving" target="_blank" rel="noopener noreferrer">
+                  <a href="https://www.instagram.com/einri_living?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer">
                     <i className="fab fa-instagram"></i>
                   </a>
-                  <a href="https://linkedin.com/company/einriliving" target="_blank" rel="noopener noreferrer">
-                    <i className="fab fa-linkedin-in"></i>
+                  <a href="https://www.facebook.com/einriliving" target="_blank" rel="noopener noreferrer">
+                    <i className="fab fa-facebook-f"></i>
                   </a>
-                  <a href="https://youtube.com/@einriliving" target="_blank" rel="noopener noreferrer">
-                    <i className="fab fa-youtube"></i>
+                  <a href="https://www.linkedin.com/company/einri-living/" target="_blank" rel="noopener noreferrer">
+                    <i className="fab fa-linkedin-in"></i>
                   </a>
                 </div>
               </div>

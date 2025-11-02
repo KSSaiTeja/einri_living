@@ -10,7 +10,7 @@ function Experience() {
               <h5 className="fsz-18 text-uppercase">
                 years of <br /> artistry
               </h5>
-              <h2 className="num"> 8 </h2>
+              <h2 className="num"> 2 </h2>
             </div>
           </div>
           <div className="col-lg-3">

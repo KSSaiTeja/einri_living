@@ -58,14 +58,17 @@ function Menu() {
 
           {/* Social Links */}
           <div className="social_links">
-            <a href="https://instagram.com/einriliving" className="social_link" target="_blank" rel="noopener noreferrer">
+            <a href="http://www.youtube.com/@EinriLiving-Interiors" className="social_link" target="_blank" rel="noopener noreferrer">
+              YouTube
+            </a>
+            <a href="https://www.instagram.com/einri_living?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" className="social_link" target="_blank" rel="noopener noreferrer">
               Instagram
             </a>
-            <a href="https://behance.net/einriliving" className="social_link" target="_blank" rel="noopener noreferrer">
-              Behance
+            <a href="https://www.facebook.com/einriliving" className="social_link" target="_blank" rel="noopener noreferrer">
+              Facebook
             </a>
-            <a href="https://twitter.com/einriliving" className="social_link" target="_blank" rel="noopener noreferrer">
-              Twitter
+            <a href="https://www.linkedin.com/company/einri-living/" className="social_link" target="_blank" rel="noopener noreferrer">
+              LinkedIn
             </a>
           </div>
 

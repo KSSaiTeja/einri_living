@@ -34,7 +34,7 @@ function Loader() {
         {/* Logo with opacity + subtle blur/bounce animation */}
         <div className="loader-logo" style={{ opacity: logoOpacity }}>
           <img 
-            src="/home1/assets/img/logo.png" 
+            src="/home1/assets/img/preloader.png" 
             alt="Einri Living" 
             className="logo-image"
           />

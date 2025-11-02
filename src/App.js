@@ -44,6 +44,7 @@ function App() {
         <Route path="/project/:id" element={<SingleProject />} />
         <Route path="/project2/:id" element={<SingleProject2 />} />
         <Route path="/post/:id" element={<SinglePost />} />
+        <Route path="/blog/single-post/:id" element={<SinglePost />} />
       </Routes>
     </Router>
   );

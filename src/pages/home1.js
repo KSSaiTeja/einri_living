@@ -5,7 +5,7 @@ import Header from "../components/home1/Header";
 import Experience from "../components/home1/Experience";
 import Services from "../components/home1/Services";
 import Process from "../components/home1/Process";
-import Awards from "../components/home1/Awards";
+import FAQ from "../components/home1/FAQ";
 import Projects from "../components/home1/Projects";
 import Testimonials from "../components/home1/Testimonials";
 import Team from "../components/home1/Team";
@@ -72,7 +72,7 @@ function EinriLiving() {
             <Process />
             <Projects />
             <Testimonials />
-            <Awards />
+            <FAQ />
             <Team />
             <Blog />
             <Chat />

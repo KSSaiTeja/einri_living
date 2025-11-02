@@ -1,8 +1,7 @@
 import React from 'react';
 import Loader from '../../components/common/Loader';
 import Footer from '../../components/innerpage/Footer';
-import Menu from '../../components/innerpage/Menu';
-import Navbar2 from '../../components/innerpage/Navbar2';
+import Navbar from '../../components/home1/Navbar';
 import Header from '../../components/innerpage/blog/Header';
 import Slider from '../../components/innerpage/blog/Slider';
 import LatestPosts from '../../components/innerpage/blog/LatestPosts';
@@ -17,6 +16,11 @@ function BlogPage() {
         <link
           rel="stylesheet"
           type="text/css"
+          href="/home1/assets/css/home_1_style.css"
+        />
+        <link
+          rel="stylesheet"
+          type="text/css"
           href="/innerpages/assets/css/innerpages.css"
         />
         <script src="/common/assets/js/common_js.js"></script>
@@ -25,9 +29,8 @@ function BlogPage() {
       </Helmet>
       <body className="inner-pages-style1 blog-pg-style1">
         <Loader />
-        <Menu />
         <div className="smooth-scroll-content" id="scrollsmoother-container">
-          <Navbar2 />
+          <Navbar useLogoDark={true} />
           <Header />
           <main>
             <Slider />

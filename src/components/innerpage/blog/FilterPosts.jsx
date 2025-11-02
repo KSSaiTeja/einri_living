@@ -1,10 +1,19 @@
 'use client';
 import mixitup from 'mixitup';
 import data from '../../../data/innerpages/blog/filter';
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef, useState, useMemo } from 'react';
+import { Link } from 'react-router-dom';
+
 function FilterPosts() {
   const [activeFilter, setActiveFilter] = useState('All');
+  const [searchTerm, setSearchTerm] = useState('');
   const mixitupContainerRef = useRef(null);
+
+  // Get unique categories from data
+  const categories = useMemo(() => {
+    const cats = data.map(item => item.category);
+    return ['All', ...new Set(cats)];
+  }, []);
 
   useEffect(() => {
     const initializeMixitup = () => {
@@ -28,6 +37,7 @@ function FilterPosts() {
 
     initializeMixitup();
   }, []);
+  
   const handleFilterClick = (filter) => {
     setActiveFilter(filter);
 
@@ -43,6 +53,14 @@ function FilterPosts() {
     }
   };
 
+  // Filter data based on search term
+  const filteredData = useMemo(() => {
+    return data.filter(item => 
+      item.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      item.subTitle.toLowerCase().includes(searchTerm.toLowerCase())
+    );
+  }, [searchTerm]);
+
   return (
     <section className="tc-filter-posts-style1">
       <div className="container">
@@ -51,67 +69,33 @@ function FilterPosts() {
             <div className="col-lg-9">
               <div className="filter">
                 <div className="links">
-                  <a
-                    onClick={() => handleFilterClick('All')}
-                    href="#0"
-                    className={`filter-btn ${
-                      activeFilter === 'All' ? 'active' : ''
-                    }`}
-                    data-filter="*"
-                  >
-                    All
-                  </a>
-                  <a
-                    onClick={() => handleFilterClick('news')}
-                    href="#0"
-                    className={`filter-btn ${
-                      activeFilter === 'news' ? 'active' : ''
-                    }`}
-                    data-filter=".news"
-                  >
-                    news
-                  </a>
-                  <a
-                    onClick={() => handleFilterClick('.Architecture')}
-                    href="#0"
-                    className={`filter-btn ${
-                      activeFilter === 'Architecture' ? 'active' : ''
-                    }`}
-                    data-filter=".Architecture"
-                  >
-                    Architecture
-                  </a>
-
-                  <a
-                    href="#0"
-                    onClick={() => handleFilterClick('Interior')}
-                    className={`filter-btn ${
-                      activeFilter === 'Interior' ? 'active' : ''
-                    }`}
-                    data-filter=".Interior"
-                  >
-                    Interior
-                  </a>
-                  <a
-                    href="#0"
-                    onClick={() => handleFilterClick('guide')}
-                    className={`filter-btn ${
-                      activeFilter === 'guide' ? 'active' : ''
-                    }`}
-                    data-filter=".guide"
-                  >
-                    guide
-                  </a>
-                  <a
-                    href="#0"
-                    onClick={() => handleFilterClick('inspiration')}
-                    className={`filter-btn ${
-                      activeFilter === 'inspiration' ? 'active' : ''
-                    }`}
-                    data-filter=".inspiration"
-                  >
-                    inspiration
-                  </a>
+                  {categories.map((cat, i) => (
+                    cat === 'All' ? (
+                      <a
+                        key={i}
+                        onClick={() => handleFilterClick('All')}
+                        href="#0"
+                        className={`filter-btn ${
+                          activeFilter === 'All' ? 'active' : ''
+                        }`}
+                        data-filter="*"
+                      >
+                        {cat}
+                      </a>
+                    ) : (
+                      <a
+                        key={i}
+                        onClick={() => handleFilterClick(cat)}
+                        href="#0"
+                        className={`filter-btn ${
+                          activeFilter === cat ? 'active' : ''
+                        }`}
+                        data-filter={`.${cat.replace(/\s+/g, '')}`}
+                      >
+                        {cat}
+                      </a>
+                    )
+                  ))}
                 </div>
               </div>
             </div>
@@ -121,8 +105,10 @@ function FilterPosts() {
                   type="text"
                   className="form-control"
                   placeholder="Search in blog"
+                  value={searchTerm}
+                  onChange={(e) => setSearchTerm(e.target.value)}
                 />
-                <button>
+                <button type="button">
                   <i className="fal fa-search"></i>
                 </button>
               </div>
@@ -131,44 +117,36 @@ function FilterPosts() {
         </div>
         <div className="posts-content">
           <div className="row mixitup" ref={mixitupContainerRef}>
-            {data.map((item, i) => (
-              <div key={i} className={`col-lg-4 mix-item ${item.subTitle}`}>
+            {filteredData.map((item, i) => (
+              <div key={i} className={`col-lg-4 mix-item ${item.category.replace(/\s+/g, '')}`}>
                 <div
                   className="post-card mt-70 wow fadeInUp slow"
                   data-wow-delay="0.2s"
                 >
-                  <a
-                    href="#"
+                  <Link
+                    to={`/blog/single-post/${item.id}`}
                     className="img th-280 radius-7 overflow-hidden d-block"
                   >
-                    <img src={item.img} alt="" className="img-cover" />
-                  </a>
+                    <img src={item.img} alt={item.title} className="img-cover" />
+                  </Link>
                   <div className="info pt-30">
                     <div className="tags color-666 text-uppercase fsz-12">
-                      <a href="#" className="color-orange1">
+                      <span className="color-orange1">
                         {item.subTitle}
-                      </a>
+                      </span>
                       <span className="circle icon-3 bg-666 rounded-circle mx-3"></span>
-                      <a href="#"> {item.history} </a>
+                      <span> {item.history} </span>
                     </div>
                     <h3 className="title mt-15">
-                      <a href="#" className="hover-orange1 fsz-24">
+                      <Link to={`/blog/single-post/${item.id}`} className="hover-orange1 fsz-24">
                         {item.title}
-                      </a>
+                      </Link>
                     </h3>
                   </div>
                 </div>
               </div>
             ))}
           </div>
-        </div>
-        <div className="text-center wow fadeInUp slow" data-wow-delay="0.2s">
-          <a
-            href="#"
-            className="butn border rounded-pill color-orange1 border-orange1 hover-bg-orange1 mt-100 px-5"
-          >
-            <span> Load More (6) </span>
-          </a>
         </div>
       </div>
     </section>

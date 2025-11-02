@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function Footer() {
   return (
@@ -11,23 +12,20 @@ function Footer() {
                 <div className="text fsz-24 color-333 lh-3 fw-600">
                   We believe that architecture has the power to shape lives and
                   uplift communities. Einri Living&lsquo;s philosophy is passion for
-                  innovation, sustainablity and t imeless aesthetics
+                  innovation, sustainability and timeless aesthetics
                 </div>
                 <div className="foot-social mt-50">
-                  <a href="#">
-                    <i className="fab fa-x-twitter"></i>
+                  <a href="http://www.youtube.com/@EinriLiving-Interiors" target="_blank" rel="noopener noreferrer">
+                    <i className="fab fa-youtube"></i>
                   </a>
-                  <a href="#">
-                    <i className="fab fa-facebook-f"></i>
-                  </a>
-                  <a href="#">
+                  <a href="https://www.instagram.com/einri_living?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer">
                     <i className="fab fa-instagram"></i>
                   </a>
-                  <a href="#">
-                    <i className="fab fa-linkedin-in"></i>
+                  <a href="https://www.facebook.com/einriliving" target="_blank" rel="noopener noreferrer">
+                    <i className="fab fa-facebook-f"></i>
                   </a>
-                  <a href="#">
-                    <i className="fab fa-youtube"></i>
+                  <a href="https://www.linkedin.com/company/einri-living/" target="_blank" rel="noopener noreferrer">
+                    <i className="fab fa-linkedin-in"></i>
                   </a>
                 </div>
               </div>
@@ -37,13 +35,13 @@ function Footer() {
                 <h5 className="mb-20 mt-5 mt-lg-0 fw-600"> Hyderabad, India </h5>
                 <ul className="footer-links">
                   <li>
-                    <a href="#">Plot No. 12, Road No. 1, Banjara Hills, Hyderabad - 500034</a>
+                    <span>Plot No. 12, Road No. 1, Banjara Hills, <br /> Hyderabad - 500034</span>
                   </li>
                   <li>
-                    <a href="#"> hello@einriliving.com </a>
+                    <a href="mailto:hello@einriliving.com"> hello@einriliving.com </a>
                   </li>
                   <li>
-                    <a href="#"> +91 40 1234 5678 </a>
+                    <a href="tel:+914012345678"> +91 40 1234 5678 </a>
                   </li>
                 </ul>
               </div>
@@ -51,13 +49,13 @@ function Footer() {
                 <h5 className="mb-20 mt-5 fw-600"> Our Services </h5>
                 <ul className="footer-links">
                   <li>
-                    <a href="#"> 3D Visualizations </a>
+                    <Link to="/services"> 3D Visualizations </Link>
                   </li>
                   <li>
-                    <a href="#"> Residential Design </a>
+                    <Link to="/services"> Residential Design </Link>
                   </li>
                   <li>
-                    <a href="#"> Commercial Spaces </a>
+                    <Link to="/services"> Commercial Spaces </Link>
                   </li>
                 </ul>
               </div>
@@ -67,13 +65,13 @@ function Footer() {
                 <h5 className="mb-20 mt-5 mt-lg-0 fw-600"> Studio Hours </h5>
                 <ul className="footer-links">
                   <li>
-                    <a href="#">Monday - Friday: 9:00 AM - 6:00 PM</a>
+                    <span>Monday - Friday: 9:00 AM - 6:00 PM</span>
                   </li>
                   <li>
-                    <a href="#"> Saturday: 10:00 AM - 4:00 PM </a>
+                    <span> Saturday: 10:00 AM - 4:00 PM </span>
                   </li>
                   <li>
-                    <a href="#"> Sunday: By Appointment </a>
+                    <span> Sunday: By Appointment </span>
                   </li>
                 </ul>
               </div>
@@ -81,10 +79,10 @@ function Footer() {
                 <h5 className="mb-20 mt-5 fw-600"> Helps </h5>
                 <ul className="footer-links">
                   <li>
-                    <a href="#"> Term & Conditions </a>
+                    <Link to="/terms"> Term & Conditions </Link>
                   </li>
                   <li>
-                    <a href="#"> Partner Policy </a>
+                    <Link to="/privacy"> Partner Policy </Link>
                   </li>
                 </ul>
               </div>
@@ -98,11 +96,11 @@ function Footer() {
             </div>
             <div className="col-lg-6">
               <div className="foot-links mt-4 mt-lg-0">
-                <a href="#"> Home </a>
-                <a href="#"> Studio </a>
-                <a href="#"> Cases </a>
-                <a href="#"> News </a>
-                <a href="#"> Contact </a>
+                <Link to="/"> Home </Link>
+                <Link to="/about"> Studio </Link>
+                <Link to="/portfolio"> Cases </Link>
+                <Link to="/blog"> News </Link>
+                <Link to="/contact"> Contact </Link>
               </div>
             </div>
           </div>

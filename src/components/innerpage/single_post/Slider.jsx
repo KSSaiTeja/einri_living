@@ -1,12 +1,14 @@
 import React from 'react';
 
-function Slider() {
+function Slider({ article }) {
+  if (!article) return null;
+  
   return (
     <section className="tc-main-img-style1 header">
       <div className="main-img">
         <img
-          src="/innerpages/assets/img/blog/b1.jpg"
-          alt=""
+          src={article.img}
+          alt={article.title}
           className="img-cover"
           data-speed="1.25"
         />
@@ -15,14 +17,14 @@ function Slider() {
         <div className="container">
           <div className="info">
             <div className="date fsz-12 text-uppercase mb-30">
-              <a href="#"> inspiration </a>
+              <span> {article.category} </span>
               <span className="circle icon-3 bg-white rounded-circle mx-3"></span>
-              <a href="#"> march 24, 2024 </a>
+              <span> {article.history.replace('<br />', ' ')} </span>
             </div>
             <h2 className="title">
-              <a href="#" className="hover-orange1">
-                Top 10 Wooden Architecture Building 2023
-              </a>
+              <span className="hover-orange1">
+                {article.title}
+              </span>
             </h2>
           </div>
         </div>

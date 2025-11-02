@@ -4,16 +4,14 @@ function Testimonials() {
   return (
     <section className="tc-testimonials-style1">
       <div className="container">
-        <div className="row">
-          <div className="col-lg-4">
-            <h6 className="fsz-18 text-uppercase lh-4">
-              what clients say <br /> about us
-            </h6>
-            <div className="lg-icon color-orange1">
-              <i className="la la-quote-right"></i>
-            </div>
+        <div className="title mb-50 text-center">
+          <h3 className="fsz-45 fw-600 mb-30 wow">What Clients Say About Us</h3>
+          <div className="lg-icon color-orange1">
+            <i className="la la-quote-right"></i>
           </div>
-          <div className="col-lg-8">
+        </div>
+        <div className="row">
+          <div className="col-lg-12">
             <div className="tc-clients-style1">
               <div className="clients-slider1">
                 <div className="swiper-wrapper">
@@ -100,7 +98,7 @@ function Testimonials() {
           </div>
         </div>
       </div>
-      <div className="marq-slider">
+      {/* <div className="marq-slider">
         <div className="swiper-wrapper">
           <div className="swiper-slide">
             <span> Timeless </span>
@@ -112,8 +110,8 @@ function Testimonials() {
             <span> Ever-evolving </span>
           </div>
         </div>
-      </div>
-      <img src="/home1/assets/img/c_line3.png" alt="" className="c-line" />
+      </div> */}
+      {/* <img src="/home1/assets/img/c_line3.png" alt="" className="c-line" /> */}
     </section>
   );
 }
