@@ -1,5 +1,6 @@
 import './App.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import ScrollToTop from './components/common/ScrollToTop';
 import EinriLiving from './pages/home1';
 import About from './pages/innerpages/about';
 import Services from './pages/innerpages/services';
@@ -25,6 +26,7 @@ import SinglePost from './pages/innerpages/single_post';
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <Routes>
         {/* Main Home Page */}
         <Route path="/" element={<EinriLiving />} />

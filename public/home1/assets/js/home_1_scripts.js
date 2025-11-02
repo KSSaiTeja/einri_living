@@ -227,6 +227,9 @@ $(function () {
         //ease: 'power4.out',
         //smoothTouch: 0.1,
     });
+    
+    // Expose smoother to window for React components
+    window.smoother = smoother;
 
     // smoother.effects("img", { speed: "auto" });
 

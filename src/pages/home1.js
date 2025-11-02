@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Loader from "../components/common/Loader";
 import Navbar from "../components/home1/Navbar";
 import Header from "../components/home1/Header";
@@ -12,6 +12,7 @@ import Team from "../components/home1/Team";
 import Blog from "../components/home1/Blog";
 import Chat from "../components/home1/Chat";
 import Footer from "../components/home1/Footer";
+import YearEndOfferModal from "../components/home1/YearEndOfferModal";
 import { Helmet } from "react-helmet";
 
 /**
@@ -28,6 +29,22 @@ import { Helmet } from "react-helmet";
  */
 
 function EinriLiving() {
+  const [showOffer, setShowOffer] = useState(false);
+
+  // Show offer modal after 3 seconds on every page load/refresh
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowOffer(true);
+    }, 3000);
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  const handleOfferCTAClick = () => {
+    setShowOffer(false);
+    // Will implement later based on user requirements
+  };
+
   return (
     <>
       <Helmet>
@@ -79,6 +96,13 @@ function EinriLiving() {
           </main>
           <Footer />
         </div>
+
+        {/* Year-End Offer Modal */}
+        <YearEndOfferModal 
+          isOpen={showOffer} 
+          onClose={() => setShowOffer(false)}
+          onCTAClick={handleOfferCTAClick}
+        />
       </body>
     </>
   );

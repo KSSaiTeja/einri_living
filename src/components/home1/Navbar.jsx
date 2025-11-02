@@ -1,10 +1,21 @@
 import React, { useState } from "react";
+import ConsultationFormModal from "./ConsultationFormModal";
 
 function Navbar({ useLogoDark = false }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
+  };
+
+  const openModal = () => {
+    setIsModalOpen(true);
+    setIsMenuOpen(false); // Close menu if open
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
   };
 
   return (
@@ -40,9 +51,9 @@ function Navbar({ useLogoDark = false }) {
             <span className="navbar-toggler-icon"></span>
           </button>
           <div className="nav-side">
-              <a href="/contact" className="navbar-cta-btn">
+              <button onClick={openModal} className="navbar-cta-btn" type="button">
                 Book Consultation Now
-              </a>
+              </button>
               <button
                 className={`icon side_menu_btn ${isMenuOpen ? "active" : ""}`}
                 onClick={toggleMenu}
@@ -209,6 +220,9 @@ function Navbar({ useLogoDark = false }) {
           </div>
         </div>
       </nav>
+      
+      {/* Consultation Form Modal */}
+      <ConsultationFormModal isOpen={isModalOpen} onClose={closeModal} />
     </>
   );
 }
