@@ -104,7 +104,7 @@ function Services() {
               className="butn rounded-pill mt-50 hover-bg-black bg-orange1 text-white"
             >
               <span>
-                Start Your Art Journey
+                Start Your Journey
                 <i className="small ms-1 ti-arrow-top-right"></i>
               </span>
             </a>

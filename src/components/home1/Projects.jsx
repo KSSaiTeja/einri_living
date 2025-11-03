@@ -72,7 +72,9 @@ function Projects() {
             </div>
             <div className="col-lg-3 mt-4 mt-lg-0 text-lg-end" id="cta-button">
               <a
-                href="/portfolio"
+                href="/home1/assets/Downlaod.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="butn rounded-pill hover-bg-black bg-orange1 text-white"
               >
                 <span>
@@ -206,7 +208,9 @@ function Projects() {
         </div>
         <div className="mobile-cta-wrapper d-lg-none text-center mt-40">
           <a
-            href="/portfolio"
+            href="/home1/assets/Downlaod.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
             className="butn rounded-pill hover-bg-black bg-orange1 text-white"
           >
             <span>

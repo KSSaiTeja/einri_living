@@ -345,8 +345,8 @@
 .consultation-submit-btn {
   width: 100%;
   padding: 18px 32px;
-  font-size: 18px;
-  font-weight: 700;
+  font-size: 20px;
+  font-weight: 600;
   color: #fff;
   background: linear-gradient(135deg, #2d4a3a 0%, #4a7c59 100%);
   border: none;
@@ -381,6 +381,7 @@
 .consultation-submit-btn:hover {
   transform: translateY(-2px);
   box-shadow: 0 8px 20px rgba(74, 124, 89, 0.4);
+  font-weight: 700;
 }
 
 .consultation-submit-btn:active {
@@ -504,7 +505,7 @@
 
   .consultation-submit-btn {
     padding: 16px 24px;
-    font-size: 16px;
+    font-size: 18px;
   }
 
   .consultation-modal-close {

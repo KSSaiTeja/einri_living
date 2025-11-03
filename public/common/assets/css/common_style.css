@@ -1992,6 +1992,8 @@ input:focus {
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
   position: relative;
+  font-size: 16px;
+  font-weight: 600;
 }
 .butn.md-butn {
   padding: 10px 25px;
@@ -2003,6 +2005,7 @@ input:focus {
           box-shadow: 7px 10px 15px #0004;
   -webkit-transform: translateY(-2px);
           transform: translateY(-2px);
+  font-weight: 700;
 }
 
 /* ========= [ * variable ]  =========*/
