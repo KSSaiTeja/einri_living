@@ -10,7 +10,7 @@ function MainInfo() {
               Architecture is a visual art and the building speak for themselves
             </h4>
             <a
-              href="#"
+              href="/#transformations"
               className="butn hover-bg-orange1 text-capitalize bg-white rounded-pill mt-90"
             >
               <span>

@@ -82,20 +82,25 @@ function ContactForm() {
                   </div>
                 </div>
               </div>
-              <a
-                href="#"
+              <button
+                type="button"
                 className="butn hover-bg-orange1 text-capitalize bg-white rounded-pill mt-40"
+                onClick={() => {
+                  if (typeof window !== 'undefined' && typeof window.openEinriConsultationModal === 'function') {
+                    window.openEinriConsultationModal();
+                  }
+                }}
               >
                 <span>
                   Send Your Message
                   <i className="fal fa-arrow-up-right ms-2"></i>
                 </span>
-              </a>
+              </button>
               <p className="fsz-12 color-666 mt-20">
                 By summiting, i’m agree to the
-                <a href="#" className="color-000 text-decoration-underline">
+                <span className="color-000 text-decoration-underline">
                   Terms & Conditions
-                </a>
+                </span>
               </p>
             </form>
           </div>

@@ -22,9 +22,9 @@ function Awards() {
                     <img src={item.img} alt="" />
                   </div>
                   <h5 className="fsz-24 sub-font title">{item.title}</h5>
-                  <a href="#" className="color-666 text-capitalize">
+                  <span className="color-666 text-capitalize">
                     {item.subTitle}
-                  </a>
+                  </span>
                 </div>
               </div>
             ))}

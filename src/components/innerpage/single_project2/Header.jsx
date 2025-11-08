@@ -6,8 +6,8 @@ function Header() {
       <div className="container">
         <div className="info">
           <div className="tags mb-50">
-            <a href="#"> Architecture </a>
-            <a href="#"> Landscape </a>
+            <a href="/#our-services"> Architecture </a>
+            <a href="/#our-services"> Landscape </a>
           </div>
           <div className="text mt-30">
             This area will is short description of project, you can <br />

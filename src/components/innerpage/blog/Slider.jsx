@@ -19,12 +19,12 @@ function Slider() {
                       <div className="col-lg-7">
                         <div className="info">
                           <div className="date fsz-12 text-uppercase mb-30">
-                            <a href="#"> inspiration </a>
+                            <a href="/#blog"> inspiration </a>
                             <span className="circle icon-3 bg-white rounded-circle mx-3"></span>
-                            <a href="#"> march 24, 2024 </a>
+                            <span> march 24, 2024 </span>
                           </div>
                           <h2 className="fsz-45 fw-500">
-                            <a href="#" className="hover-orange1">
+                            <a href="/#blog" className="hover-orange1">
                               Top 10 Wooden Architecture Building 2023
                             </a>
                           </h2>
@@ -48,12 +48,12 @@ function Slider() {
                       <div className="col-lg-7">
                         <div className="info">
                           <div className="date fsz-12 text-uppercase mb-30">
-                            <a href="#"> inspiration </a>
+                            <a href="/#blog"> inspiration </a>
                             <span className="circle icon-3 bg-white rounded-circle mx-3"></span>
-                            <a href="#"> march 24, 2024 </a>
+                            <span> march 24, 2024 </span>
                           </div>
                           <h2 className="fsz-45 fw-500">
-                            <a href="#" className="hover-orange1">
+                            <a href="/#blog" className="hover-orange1">
                               Minimalist landscape in frontyard for young couple
                             </a>
                           </h2>

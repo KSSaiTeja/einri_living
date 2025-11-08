@@ -1,6 +1,16 @@
 import React from 'react';
 
 function Services() {
+  const servicesHref = '/#our-services';
+  const consultationHref = '/#consultation';
+
+  const handleConsultationClick = (e) => {
+    e.preventDefault();
+    if (typeof window !== 'undefined' && typeof window.openEinriConsultationModal === 'function') {
+      window.openEinriConsultationModal();
+    }
+  };
+
   return (
     <section className="tc-services-style1">
       <div className="content section-padding section-padding-x">
@@ -12,7 +22,7 @@ function Services() {
             <div className="row">
               <div className="col-lg-3">
                 <a
-                  href="#"
+                  href={servicesHref}
                   className="service-card wow fadeInUp"
                   data-wow-delay="0.2s"
                 >
@@ -38,7 +48,7 @@ function Services() {
               </div>
               <div className="col-lg-3">
                 <a
-                  href="#"
+                  href={servicesHref}
                   className="service-card mt-150 wow fadeInUp"
                   data-wow-delay="0.4s"
                 >
@@ -67,7 +77,7 @@ function Services() {
               </div>
               <div className="col-lg-3">
                 <a
-                  href="#"
+                  href={servicesHref}
                   className="service-card wow fadeInUp"
                   data-wow-delay="0.6s"
                 >
@@ -93,7 +103,7 @@ function Services() {
               </div>
               <div className="col-lg-3">
                 <a
-                  href="#"
+                  href={servicesHref}
                   className="service-card mt-150 wow fadeInUp"
                   data-wow-delay="0.8s"
                 >
@@ -122,8 +132,9 @@ function Services() {
           </div>
           <div className="text-center">
             <a
-              href="#"
+              href={consultationHref}
               className="butn rounded-pill mt-80 hover-bg-black bg-orange1 text-white"
+              onClick={handleConsultationClick}
             >
               <span>
                 Get A Free Quote Now

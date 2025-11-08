@@ -1,6 +1,9 @@
 import React from 'react';
 import data from '../../../data/innerpages/portfolio/case';
 function Cases() {
+  const transformationsHref = '/#transformations';
+  const servicesHref = '/#our-services';
+
   return (
     <section className="tc-featured-cases-style1">
       <div className="content">
@@ -80,11 +83,11 @@ function Cases() {
                       </a>
                       <div className="info">
                         <div className="tags mb-30">
-                          <a href="#"> {item.sub1} </a>
-                          <a href="#"> {item.sub2} </a>
+                          <a href={servicesHref}> {item.sub1} </a>
+                          <a href={servicesHref}> {item.sub2} </a>
                         </div>
                         <h3 className="title fsz-35 mb-20">
-                          <a href="#" className="hover-orange1">
+                          <a href={transformationsHref} className="hover-orange1">
                             {item.title}
                           </a>
                         </h3>
@@ -110,11 +113,11 @@ function Cases() {
                       </a>
                       <div className="info">
                         <div className="tags mb-30">
-                          <a href="#"> {item.sub1} </a>
-                          <a href="#"> {item.sub2} </a>
+                          <a href={servicesHref}> {item.sub1} </a>
+                          <a href={servicesHref}> {item.sub2} </a>
                         </div>
                         <h3 className="title fsz-35 mb-20">
-                          <a href="#" className="hover-orange1">
+                          <a href={transformationsHref} className="hover-orange1">
                             {item.title}
                           </a>
                         </h3>

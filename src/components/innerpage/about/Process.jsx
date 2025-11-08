@@ -1,6 +1,13 @@
 import React from 'react';
 
 function Process() {
+  const handleConsultationClick = (e) => {
+    e.preventDefault();
+    if (typeof window !== 'undefined' && typeof window.openEinriConsultationModal === 'function') {
+      window.openEinriConsultationModal();
+    }
+  };
+
   return (
     <section className="tc-process-style2">
       <div className="container">
@@ -125,8 +132,9 @@ function Process() {
                   </div>
                 </div>
                 <a
-                  href="#"
+                  href="/#consultation"
                   className="butn bg-white rounded-pill mt-50 hover-bg-black"
+                  onClick={handleConsultationClick}
                 >
                   <span>
                     Get A Free Quotes

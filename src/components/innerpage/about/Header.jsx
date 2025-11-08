@@ -1,6 +1,13 @@
 import React from 'react';
 
 function Header() {
+  const handleConsultationClick = (e) => {
+    e.preventDefault();
+    if (typeof window !== 'undefined' && typeof window.openEinriConsultationModal === 'function') {
+      window.openEinriConsultationModal();
+    }
+  };
+
   return (
     <header className="tc-header-preview">
       <div className="slider-card">
@@ -17,7 +24,7 @@ function Header() {
               <div className="col-lg-5 offset-lg-6">
                 <div className="rotate-box" data-speed="1" data-lag="0.4">
                   <a
-                    href="#"
+                    href="/#our-services"
                     className="rotate-circle fsz-35 rotate-text d-inline-block text-uppercase"
                   >
                     <svg className="textcircle" viewBox="0 0 500 500">
@@ -59,27 +66,42 @@ function Header() {
       <div className="float-social-links">
         <ul>
           <li>
-            <a href="#">
-              <i className="fab fa-x-twitter"></i>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <i className="fab fa-facebook-f"></i>
-            </a>
-          </li>
-          <li>
-            <a href="#">
+            <a
+              href="https://www.instagram.com/einri_living?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+            >
               <i className="fab fa-instagram"></i>
             </a>
           </li>
           <li>
-            <a href="#">
-              <i className="fab fa-tiktok"></i>
+            <a
+              href="https://www.facebook.com/einriliving"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Facebook"
+            >
+              <i className="fab fa-facebook-f"></i>
             </a>
           </li>
           <li>
-            <a href="#">
+            <a
+              href="https://www.linkedin.com/company/einri-living/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+            >
+              <i className="fab fa-linkedin-in"></i>
+            </a>
+          </li>
+          <li>
+            <a
+              href="http://www.youtube.com/@EinriLiving-Interiors"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="YouTube"
+            >
               <i className="fab fa-youtube"></i>
             </a>
           </li>
@@ -88,27 +110,27 @@ function Header() {
       <div className="float-icons">
         <ul>
           <li>
-            <a href="#">
+            <a href="/#transformations" aria-label="View transformations">
               <i className="fal fa-desktop"></i>
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="/#our-services" aria-label="Explore our services">
               <i className="fal fa-comments-alt"></i>
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="/#blog" aria-label="Read our blog">
               <i className="fal fa-file-alt"></i>
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="/#testimonials" aria-label="Read client testimonials">
               <i className="fal fa-comment-lines"></i>
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="/#consultation" onClick={handleConsultationClick} aria-label="Book a consultation">
               <i className="fal fa-shopping-cart"></i>
             </a>
           </li>

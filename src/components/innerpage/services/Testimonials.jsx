@@ -112,13 +112,13 @@ function Testimonials() {
       <div className="marq-slider">
         <div className="swiper-wrapper">
           <div className="swiper-slide">
-            <a href="#"> Creative </a>
+            <a href="/#testimonials"> Creative </a>
           </div>
           <div className="swiper-slide">
-            <a href="#"> Flexiable </a>
+            <a href="/#testimonials"> Flexiable </a>
           </div>
           <div className="swiper-slide">
-            <a href="#"> Dedicated </a>
+            <a href="/#testimonials"> Dedicated </a>
           </div>
         </div>
       </div>

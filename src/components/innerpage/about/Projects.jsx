@@ -1,6 +1,9 @@
 import React from 'react';
 
 function Projects() {
+  const transformationsHref = '/#transformations';
+  const servicesHref = '/#our-services';
+
   return (
     <section className="tc-projects-style2">
       <div className="container">
@@ -15,7 +18,7 @@ function Projects() {
           </div>
           <div className="col-lg-4 text-lg-end mt-4 mt-lg-0">
             <a
-              href="#"
+              href={transformationsHref}
               className="butn borderd border rounded-pill hover-bg-black"
             >
               <span>
@@ -86,7 +89,7 @@ function Projects() {
               <div className="swiper-wrapper">
                 <div className="swiper-slide">
                   <div className="project-card">
-                    <a href="#" className="img">
+                    <a href={transformationsHref} className="img">
                       <img
                         src="/innerpages/assets/img/projects/proj1.jpg"
                         alt=""
@@ -106,18 +109,18 @@ function Projects() {
                     </a>
                     <div className="info">
                       <div className="tags">
-                        <a href="#"> Interior Design </a>
-                        <a href="#"> Furniture </a>
+                        <a href={servicesHref}> Interior Design </a>
+                        <a href={servicesHref}> Furniture </a>
                       </div>
                       <h3 className="title">
-                        <a href="#"> ABERY Apartment Master Bedroom </a>
+                        <a href={transformationsHref}> ABERY Apartment Master Bedroom </a>
                       </h3>
                     </div>
                   </div>
                 </div>
                 <div className="swiper-slide">
                   <div className="project-card">
-                    <a href="#" className="img">
+                    <a href={transformationsHref} className="img">
                       <img
                         src="/innerpages/assets/img/projects/proj2.jpg"
                         alt=""
@@ -137,17 +140,17 @@ function Projects() {
                     </a>
                     <div className="info">
                       <div className="tags">
-                        <a href="#"> Furniture </a>
+                        <a href={servicesHref}> Furniture </a>
                       </div>
                       <h3 className="title">
-                        <a href="#"> Neoclassical Sofa </a>
+                        <a href={transformationsHref}> Neoclassical Sofa </a>
                       </h3>
                     </div>
                   </div>
                 </div>
                 <div className="swiper-slide">
                   <div className="project-card">
-                    <a href="#" className="img">
+                    <a href={transformationsHref} className="img">
                       <img
                         src="/innerpages/assets/img/projects/proj3.jpg"
                         alt=""
@@ -167,18 +170,18 @@ function Projects() {
                     </a>
                     <div className="info">
                       <div className="tags">
-                        <a href="#"> Interior Design </a>
-                        <a href="#"> Furniture </a>
+                        <a href={servicesHref}> Interior Design </a>
+                        <a href={servicesHref}> Furniture </a>
                       </div>
                       <h3 className="title">
-                        <a href="#"> Salone Skin & Spa </a>
+                        <a href={transformationsHref}> Salone Skin & Spa </a>
                       </h3>
                     </div>
                   </div>
                 </div>
                 <div className="swiper-slide">
                   <div className="project-card">
-                    <a href="#" className="img">
+                    <a href={transformationsHref} className="img">
                       <img
                         src="/innerpages/assets/img/projects/proj4.jpg"
                         alt=""
@@ -198,11 +201,11 @@ function Projects() {
                     </a>
                     <div className="info">
                       <div className="tags">
-                        <a href="#"> Interior Design </a>
-                        <a href="#"> Furniture </a>
+                        <a href={servicesHref}> Interior Design </a>
+                        <a href={servicesHref}> Furniture </a>
                       </div>
                       <h3 className="title">
-                        <a href="#"> Hyderabad Luxury Villa </a>
+                        <a href={transformationsHref}> Hyderabad Luxury Villa </a>
                       </h3>
                     </div>
                   </div>
@@ -227,7 +230,7 @@ function Projects() {
               <div className="swiper-wrapper">
                 <div className="swiper-slide">
                   <div className="project-card">
-                    <a href="#" className="img">
+                    <a href={transformationsHref} className="img">
                       <img
                         src="/innerpages/assets/img/projects/proj3.jpg"
                         alt=""
@@ -247,18 +250,18 @@ function Projects() {
                     </a>
                     <div className="info">
                       <div className="tags">
-                        <a href="#"> Interior Design </a>
-                        <a href="#"> Furniture </a>
+                        <a href={servicesHref}> Interior Design </a>
+                        <a href={servicesHref}> Furniture </a>
                       </div>
                       <h3 className="title">
-                        <a href="#"> Salone Skin & Spa </a>
+                        <a href={transformationsHref}> Salone Skin & Spa </a>
                       </h3>
                     </div>
                   </div>
                 </div>
                 <div className="swiper-slide">
                   <div className="project-card">
-                    <a href="#" className="img">
+                    <a href={transformationsHref} className="img">
                       <img
                         src="/innerpages/assets/img/projects/proj4.jpg"
                         alt=""
@@ -278,18 +281,18 @@ function Projects() {
                     </a>
                     <div className="info">
                       <div className="tags">
-                        <a href="#"> Interior Design </a>
-                        <a href="#"> Furniture </a>
+                        <a href={servicesHref}> Interior Design </a>
+                        <a href={servicesHref}> Furniture </a>
                       </div>
                       <h3 className="title">
-                        <a href="#"> Hyderabad Luxury Villa </a>
+                        <a href={transformationsHref}> Hyderabad Luxury Villa </a>
                       </h3>
                     </div>
                   </div>
                 </div>
                 <div className="swiper-slide">
                   <div className="project-card">
-                    <a href="#" className="img">
+                    <a href={transformationsHref} className="img">
                       <img
                         src="/innerpages/assets/img/projects/proj1.jpg"
                         alt=""
@@ -309,18 +312,18 @@ function Projects() {
                     </a>
                     <div className="info">
                       <div className="tags">
-                        <a href="#"> Interior Design </a>
-                        <a href="#"> Furniture </a>
+                        <a href={servicesHref}> Interior Design </a>
+                        <a href={servicesHref}> Furniture </a>
                       </div>
                       <h3 className="title">
-                        <a href="#"> ABERY Apartment Master Bedroom </a>
+                        <a href={transformationsHref}> ABERY Apartment Master Bedroom </a>
                       </h3>
                     </div>
                   </div>
                 </div>
                 <div className="swiper-slide">
                   <div className="project-card">
-                    <a href="#" className="img">
+                    <a href={transformationsHref} className="img">
                       <img
                         src="/innerpages/assets/img/projects/proj2.jpg"
                         alt=""
@@ -340,10 +343,10 @@ function Projects() {
                     </a>
                     <div className="info">
                       <div className="tags">
-                        <a href="#"> Furniture </a>
+                        <a href={servicesHref}> Furniture </a>
                       </div>
                       <h3 className="title">
-                        <a href="#"> Neoclassical Sofa </a>
+                        <a href={transformationsHref}> Neoclassical Sofa </a>
                       </h3>
                     </div>
                   </div>

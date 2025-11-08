@@ -5,6 +5,8 @@ import mixitup from 'mixitup';
 function LatestCases() {
   const [activeFilter, setActiveFilter] = useState('All');
   const mixitupContainerRef = useRef(null);
+  const servicesHref = '/#our-services';
+  const transformationsHref = '/#transformations';
 
   useEffect(() => {
     const initializeMixitup = () => {
@@ -56,18 +58,18 @@ function LatestCases() {
               data-wow-delay="0.2s"
             >
               <div className="links">
-                <a
+                <button
+                  type="button"
                   onClick={() => handleFilterClick('All')}
                   className={`filter-btn ${
                     activeFilter === 'All' ? 'active' : ''
                   }`}
-                  href="#0"
                   data-filter="*"
                 >
                   All
-                </a>
-                <a
-                  href="#0"
+                </button>
+                <button
+                  type="button"
                   onClick={() => handleFilterClick('Architecture')}
                   className={`filter-btn ${
                     activeFilter === 'Architecture' ? 'active' : ''
@@ -75,9 +77,9 @@ function LatestCases() {
                   data-filter=".Architecture"
                 >
                   Architecture
-                </a>
-                <a
-                  href="#0"
+                </button>
+                <button
+                  type="button"
                   onClick={() => handleFilterClick('Interior')}
                   className={`filter-btn ${
                     activeFilter === 'Interior' ? 'active' : ''
@@ -85,9 +87,9 @@ function LatestCases() {
                   data-filter=".Interior"
                 >
                   Interior
-                </a>
-                <a
-                  href="#0"
+                </button>
+                <button
+                  type="button"
                   onClick={() => handleFilterClick('Landscape')}
                   className={`filter-btn ${
                     activeFilter === 'Landscape' ? 'active' : ''
@@ -95,9 +97,9 @@ function LatestCases() {
                   data-filter=".Landscape"
                 >
                   Landscape
-                </a>
-                <a
-                  href="#0"
+                </button>
+                <button
+                  type="button"
                   onClick={() => handleFilterClick('Furniture')}
                   className={`filter-btn ${
                     activeFilter === 'Furniture' ? 'active' : ''
@@ -105,7 +107,7 @@ function LatestCases() {
                   data-filter=".Furniture"
                 >
                   Furniture
-                </a>
+                </button>
               </div>
             </div>
             <div
@@ -121,13 +123,13 @@ function LatestCases() {
                       </a>
                       <div className="info">
                         <div className="tags mb-30">
-                          <a href="#"> {item.subTitle.split('<br />')[0]} </a>
+                          <a href={servicesHref}> {item.subTitle.split('<br />')[0]} </a>
                           {item.subTitle.split('<br />')[1] && (
-                            <a href="#"> {item.subTitle.split('<br />')[1]} </a>
+                            <a href={servicesHref}> {item.subTitle.split('<br />')[1]} </a>
                           )}
                         </div>
                         <h3 className="title fsz-35 mb-20">
-                          <a href="#" className="hover-orange1">
+                          <a href={transformationsHref} className="hover-orange1">
                             {item.title}
                           </a>
                         </h3>
@@ -143,39 +145,39 @@ function LatestCases() {
               <nav aria-label="Page navigation example">
                 <ul className="pagination">
                   <li className="page-item">
-                    <a className="page-link" href="#">
+                    <button type="button" className="page-link" aria-label="Previous page">
                       <i className="fal fa-chevron-left"></i>
-                    </a>
+                    </button>
                   </li>
                   <li className="page-item">
-                    <a className="page-link active" href="#">
+                    <button type="button" className="page-link active">
                       1
-                    </a>
+                    </button>
                   </li>
                   <li className="page-item">
-                    <a className="page-link" href="#">
+                    <button type="button" className="page-link">
                       2
-                    </a>
+                    </button>
                   </li>
                   <li className="page-item">
-                    <a className="page-link" href="#">
+                    <button type="button" className="page-link">
                       3
-                    </a>
+                    </button>
                   </li>
                   <li className="page-item">
-                    <a className="page-link" href="#">
+                    <button type="button" className="page-link" aria-label="More pages">
                       ...
-                    </a>
+                    </button>
                   </li>
                   <li className="page-item">
-                    <a className="page-link" href="#">
+                    <button type="button" className="page-link">
                       15
-                    </a>
+                    </button>
                   </li>
                   <li className="page-item">
-                    <a className="page-link" href="#">
+                    <button type="button" className="page-link" aria-label="Next page">
                       <i className="fal fa-chevron-right"></i>
-                    </a>
+                    </button>
                   </li>
                 </ul>
               </nav>

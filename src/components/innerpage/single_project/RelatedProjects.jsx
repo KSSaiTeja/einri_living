@@ -13,7 +13,7 @@ function RelatedProjects() {
           </div>
           <div className="col-lg-3 text-lg-end mt-4 mt-lg-0">
             <a
-              href="#"
+              href="/#transformations"
               className="butn border rounded-pill color-orange1 border-orange1 hover-bg-orange1"
             >
               <span>
@@ -47,11 +47,11 @@ function RelatedProjects() {
                     </a>
                     <div className="info">
                       <div className="tags mb-30">
-                        <a href="#"> Architecture </a>
-                        <a href="#"> Furniture </a>
+                        <a href="/#our-services"> Architecture </a>
+                        <a href="/#our-services"> Furniture </a>
                       </div>
                       <h3 className="title fsz-35 mb-20">
-                        <a href="#" className="hover-orange1">
+                        <a href="/#transformations" className="hover-orange1">
                           Townhouse in San Joe
                         </a>
                       </h3>
@@ -78,11 +78,11 @@ function RelatedProjects() {
                     </a>
                     <div className="info">
                       <div className="tags mb-30">
-                        <a href="#"> Interior </a>
-                        <a href="#"> Furniture </a>
+                        <a href="/#our-services"> Interior </a>
+                        <a href="/#our-services"> Furniture </a>
                       </div>
                       <h3 className="title fsz-35 mb-20">
-                        <a href="#" className="hover-orange1">
+                        <a href="/#transformations" className="hover-orange1">
                           Homestay Rennovation and <br /> Interior Design
                         </a>
                       </h3>
@@ -109,11 +109,11 @@ function RelatedProjects() {
                     </a>
                     <div className="info">
                       <div className="tags mb-30">
-                        <a href="#"> Architecture </a>
-                        <a href="#"> Furniture </a>
+                        <a href="/#our-services"> Architecture </a>
+                        <a href="/#our-services"> Furniture </a>
                       </div>
                       <h3 className="title fsz-35 mb-20">
-                        <a href="#" className="hover-orange1">
+                        <a href="/#transformations" className="hover-orange1">
                           B63 Private Villa
                         </a>
                       </h3>

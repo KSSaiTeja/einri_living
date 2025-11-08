@@ -6,8 +6,8 @@ function Project() {
       <div className="main-info">
         <div className="container">
           <div className="tags mb-50">
-            <a href="#"> Architecture </a>
-            <a href="#"> Landscape </a>
+            <a href="/#our-services"> Architecture </a>
+            <a href="/#our-services"> Landscape </a>
           </div>
           <h1 className="title"> Gordon’s Villa </h1>
           <div className="text color-666 mt-30">

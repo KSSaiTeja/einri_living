@@ -38,7 +38,7 @@ export const submitToGoogleSheets = async (formData) => {
     };
 
     // Make the API call to Google Apps Script
-    const response = await fetch(GOOGLE_SCRIPT_URL, {
+    await fetch(GOOGLE_SCRIPT_URL, {
       method: 'POST',
       mode: 'no-cors', // Important: Google Apps Script doesn't support CORS properly
       headers: {

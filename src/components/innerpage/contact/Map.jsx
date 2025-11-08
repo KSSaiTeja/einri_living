@@ -11,7 +11,8 @@ function Map() {
           style={{ border: 0 }}
           allowFullscreen=""
           loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
+          referrerPolicy="no-referrer-when-downgrade"
+          title="Einri Living studio map"
         ></iframe>
       </div>
     </section>

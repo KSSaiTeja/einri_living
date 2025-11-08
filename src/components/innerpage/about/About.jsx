@@ -8,7 +8,7 @@ function About() {
           <div className="col-lg-3">
             <div className="rotate-box" data-speed="1" data-lag="0.4">
               <a
-                href="#"
+                href="/#our-services"
                 className="rotate-circle fsz-30 rotate-text d-inline-block text-uppercase"
               >
                 <svg className="textcircle" viewBox="0 0 500 500">
