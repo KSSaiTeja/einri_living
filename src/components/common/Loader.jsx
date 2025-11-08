@@ -3,6 +3,7 @@ import React, { useEffect, useMemo, useState } from 'react';
 function Loader() {
   const [logoOpacity, setLogoOpacity] = useState(0.3);
   const [textVisible, setTextVisible] = useState(false);
+  const [isVisible, setIsVisible] = useState(true);
 
   useEffect(() => {
     // Animate logo opacity from 30% to 100%
@@ -21,7 +22,28 @@ function Loader() {
     };
   }, []);
 
+  useEffect(() => {
+    let removeTimer;
+    const hideTimer = setTimeout(() => {
+      const loaderElement = document.querySelector('.loader-wrap');
+      if (loaderElement) {
+        loaderElement.classList.add('is-hidden');
+      }
+
+      removeTimer = setTimeout(() => {
+        setIsVisible(false);
+      }, 400);
+    }, 2200);
+
+    return () => {
+      clearTimeout(hideTimer);
+      if (removeTimer) clearTimeout(removeTimer);
+    };
+  }, []);
+
   const phrase = useMemo(() => 'art in the heart of your abode', []);
+
+  if (!isVisible) return null;
 
   return (
     <div className="loader-wrap">

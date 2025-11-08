@@ -2,24 +2,19 @@ import React from 'react';
 
 const teamData = [
   {
-    name: "Priya Sharma",
-    role: "Senior Interior Designer",
+    name: "Prodipta G",
+    role: "The Mastermind",
     image: "/home1/assets/img/team/team1.jpg"
   },
   {
-    name: "Arjun Reddy",
-    role: "3D Visualization Specialist",
+    name: "Swati",
+    role: "The Design Alchemist",
     image: "/home1/assets/img/team/team2.jpg"
   },
   {
-    name: "Sneha Menon",
-    role: "Furniture & Material Curator",
+    name: "Joy",
+    role: "The Creative Advisor",
     image: "/home1/assets/img/team/team3.jpg"
-  },
-  {
-    name: "Rahul Joshi",
-    role: "Project Manager",
-    image: "/home1/assets/img/team/team4.jpg"
   }
 ];
 
@@ -66,7 +61,7 @@ function Team() {
             </div>
             <div className="col-lg-4">
               <div className="number-card wow fadeInUp" data-wow-delay="0.6s">
-                <h3 className="perc">4</h3>
+                <h3 className="perc">3</h3>
                 <p>
                   Expert Designers & <br /> Project Managers
                 </p>

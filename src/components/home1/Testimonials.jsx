@@ -2,7 +2,7 @@ import React from 'react';
 
 function Testimonials() {
   return (
-    <section className="tc-testimonials-style1">
+    <section id="testimonials" className="tc-testimonials-style1">
       <div className="container">
         <div className="title mb-50 text-center">
           <h3 className="fsz-45 fw-600 mb-30 wow">What Clients Say About Us</h3>

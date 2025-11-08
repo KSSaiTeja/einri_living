@@ -1,6 +1,26 @@
 import React from "react";
 import data from "../../data/home1/header-slider";
+
 function Header() {
+  const handleAnchorClick = (e, targetId) => {
+    e.preventDefault();
+    const targetElement = document.querySelector(targetId);
+    if (targetElement) {
+      // Use GSAP ScrollSmoother if available
+      if (window.smoother && window.smoother.scrollTo) {
+        try {
+          const offset = targetElement.offsetTop - 100; // Account for navbar height
+          window.smoother.scrollTo(offset, true);
+        } catch(e) {
+          // Fallback to native scroll
+          targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      } else {
+        // Fallback to native smooth scroll
+        targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }
+  };
   return (
     <header className="tc-header-style1">
       <div className="header-slider">
@@ -25,8 +45,9 @@ function Header() {
                           {item.desc}
                         </div>
                         <a
-                          href="#"
+                          href="#our-services"
                           className="butn border rounded-pill mt-60 hover-bg-white"
+                          onClick={(e) => handleAnchorClick(e, '#our-services')}
                         >
                           <span>
                             Our Services

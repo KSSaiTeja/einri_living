@@ -1,8 +1,8 @@
 import React from 'react';
 
-function Services() {
+function Services({ onOpenConsultationForm }) {
   return (
-    <section className="tc-services-style1">
+    <section id="our-services" className="tc-services-style1">
       <div className="content section-padding section-padding-x">
         <div className="container">
           <div className="title mb-40 text-center">
@@ -21,7 +21,7 @@ function Services() {
                   <h5 className="fsz-24 mb-20">3D Visualizations That Bring Ideas to Life</h5>
                   <div className="img">
                     <img
-                      src="/home1/assets/img/services/ser1.jpg"
+                      src="/home1/assets/img/services/ser1.png"
                       alt=""
                       className="img-cover"
                     />
@@ -42,7 +42,7 @@ function Services() {
                   <h5 className="fsz-24 mb-20">Residential Turnkey Design & Execution</h5>
                   <div className="img">
                     <img
-                      src="/home1/assets/img/services/ser2.jpg"
+                      src="/home1/assets/img/services/ser2.png"
                       alt=""
                       className="img-cover"
                     />
@@ -63,7 +63,7 @@ function Services() {
                   <h5 className="fsz-24 mb-20">Furniture & Furnishing Solutions</h5>
                   <div className="img">
                     <img
-                      src="/home1/assets/img/services/ser3.jpg"
+                      src="/home1/assets/img/services/ser3.png"
                       alt=""
                       className="img-cover"
                     />
@@ -86,7 +86,7 @@ function Services() {
                   </h5>
                   <div className="img">
                     <img
-                      src="/home1/assets/img/services/ser4.jpg"
+                      src="/home1/assets/img/services/ser4.png"
                       alt=""
                       className="img-cover"
                     />
@@ -99,20 +99,21 @@ function Services() {
             </div>
           </div>
           <div className="text-center">
-            <a
-              href="/contact"
+            <button
+              onClick={onOpenConsultationForm}
               className="butn rounded-pill mt-50 hover-bg-black bg-orange1 text-white"
+              type="button"
             >
               <span>
                 Start Your Journey
                 <i className="small ms-1 ti-arrow-top-right"></i>
               </span>
-            </a>
+            </button>
           </div>
         </div>
       </div>
       <div className="ser-img">
-        <img src="/home1/assets/img/services/ser.jpg" alt="" />
+        <img src="/home1/assets/img/services/ser.png" alt="" />
       </div>
     </section>
   );

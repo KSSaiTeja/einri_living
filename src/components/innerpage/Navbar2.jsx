@@ -8,6 +8,14 @@ function Navbar2() {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const handleConsultationClick = (e) => {
+    e.preventDefault();
+    setIsMenuOpen(false);
+    if (typeof window !== 'undefined' && typeof window.openEinriConsultationModal === 'function') {
+      window.openEinriConsultationModal();
+    }
+  };
+
   return (
     <nav className="navbar navbar-expand-lg navbar-light inner-navbar-style1">
       <div className="container-fluid">
@@ -48,9 +56,9 @@ function Navbar2() {
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/contact">
+              <a href="#consultation" className="nav-link" onClick={handleConsultationClick}>
                 Contact
-              </Link>
+              </a>
             </li>
           </ul>
           <div className="nav-side">

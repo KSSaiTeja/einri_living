@@ -155,13 +155,7 @@ function ConsultationFormModal({ isOpen, onClose }) {
       newErrors.budgetRange = 'Please select budget range';
     }
 
-    if (!formData.moveInTimeline) {
-      newErrors.moveInTimeline = 'Please select move-in timeline';
-    }
-
-    if (!formData.vision.trim()) {
-      newErrors.vision = 'Please tell us about your vision';
-    }
+    // Move-in Timeline and Vision are now optional - no validation needed
 
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0;
@@ -194,9 +188,11 @@ function ConsultationFormModal({ isOpen, onClose }) {
   };
 
   // Calculate progress (Zeigarnik Effect)
+  // Only count required fields: fullName, email, phone, city, spaceType, projectStage, totalArea, budgetRange (8 fields)
   const calculateProgress = () => {
-    const filledFields = Object.values(formData).filter(value => value !== '').length;
-    return (filledFields / 10) * 100;
+    const requiredFields = ['fullName', 'email', 'phone', 'city', 'spaceType', 'projectStage', 'totalArea', 'budgetRange'];
+    const filledRequiredFields = requiredFields.filter(field => formData[field] && formData[field].trim() !== '').length;
+    return (filledRequiredFields / 8) * 100;
   };
 
   if (!isOpen) return null;
@@ -434,6 +430,7 @@ function ConsultationFormModal({ isOpen, onClose }) {
                     <option value="20-35 Lakhs">₹20-35 Lakhs</option>
                     <option value="35-50 Lakhs">₹35-50 Lakhs</option>
                     <option value="50+ Lakhs">₹50+ Lakhs</option>
+                    <option value="Open to Discussion">Open to Discussion</option>
                   </select>
                   {errors.budgetRange && <span className="error-message">{errors.budgetRange}</span>}
                 </div>
@@ -442,14 +439,14 @@ function ConsultationFormModal({ isOpen, onClose }) {
               {/* Move-in Timeline */}
               <div className="form-group">
                 <label htmlFor="moveInTimeline" className="form-label">
-                  Move-in Timeline <span className="required">*</span>
+                  Move-in Timeline
                 </label>
                 <select
                   id="moveInTimeline"
                   name="moveInTimeline"
                   value={formData.moveInTimeline}
                   onChange={handleInputChange}
-                  className={`form-select ${errors.moveInTimeline ? 'error' : ''}`}
+                  className="form-select"
                 >
                   <option value="">When do you plan to move or start?</option>
                   <option value="Within 1 month">Within 1 month</option>
@@ -458,7 +455,6 @@ function ConsultationFormModal({ isOpen, onClose }) {
                   <option value="6-12 months">6-12 months</option>
                   <option value="12+ months">12+ months</option>
                 </select>
-                {errors.moveInTimeline && <span className="error-message">{errors.moveInTimeline}</span>}
               </div>
             </div>
 
@@ -468,7 +464,7 @@ function ConsultationFormModal({ isOpen, onClose }) {
               
               <div className="form-group">
                 <label htmlFor="vision" className="form-label">
-                  Tell us about your vision <span className="required">*</span>
+                  Tell us about your vision
                 </label>
                 <textarea
                   id="vision"
@@ -477,9 +473,8 @@ function ConsultationFormModal({ isOpen, onClose }) {
                   onChange={handleInputChange}
                   placeholder="What kind of vibe or aesthetic do you dream of?"
                   rows="4"
-                  className={`form-textarea ${errors.vision ? 'error' : ''}`}
+                  className="form-textarea"
                 ></textarea>
-                {errors.vision && <span className="error-message">{errors.vision}</span>}
               </div>
             </div>
 

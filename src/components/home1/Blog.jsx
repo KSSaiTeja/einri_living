@@ -7,7 +7,7 @@ function Blog() {
   const displayData = data.slice(0, 6);
   
   return (
-    <section className="tc-blog-style1">
+    <section id="blog" className="tc-blog-style1">
       <div className="container">
         <div className="title mb-80 text-center">
           <h3 className="fsz-45 fw-600 mb-30 wow">Stay Updated with Trending Home Interior Designs!</h3>

@@ -33,7 +33,7 @@ Once verified:
 ### 4. **Google My Business Setup**
 1. Create/Claim Google My Business Profile
 2. Use address: "Plot No. 12, Road No. 1, Banjara Hills, Hyderabad - 500034"
-3. Add phone: +91-40-1234-5678
+3. Add phone: +91-70931-96731
 4. Add website: https://einriliving.com
 5. Set business hours: Mon-Sat 10AM-7PM
 6. Add photos of your projects

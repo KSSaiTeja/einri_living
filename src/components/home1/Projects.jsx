@@ -3,8 +3,9 @@ import residentialData from '../../data/home1/projects/residential';
 import commercialData from '../../data/home1/projects/commercial';
 import hospitalityData from '../../data/home1/projects/hospitality';
 function Projects() {
+  const portfolioPdfUrl = "/home1/assets/Einri%20Living%20Portfolio%20Sept%2025_20250428_141108_0000.pdf.pdf.pdf";
   return (
-    <section className="tc-projects-style1">
+    <section id="transformations" className="tc-projects-style1">
       <div className="container">
         <div className="title mb-30 text-center">
           <h3 className="fsz-45 fw-600 mb-20 wow">Get a glimpse of <span className="block-mobile">Einri Living Homes</span></h3>
@@ -72,7 +73,7 @@ function Projects() {
             </div>
             <div className="col-lg-3 mt-4 mt-lg-0 text-lg-end" id="cta-button">
               <a
-                href="/home1/assets/Downlaod.pdf"
+                href={portfolioPdfUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="butn rounded-pill hover-bg-black bg-orange1 text-white"
@@ -111,9 +112,7 @@ function Projects() {
                               <span> {item.sub1} </span>
                               <span> {item.sub2} </span>
                             </div>
-                            <h3 className="title">
-                              <a href={`/project/${i + 1}`}> {item.title} </a>
-                            </h3>
+                            <h3 className="title"> {item.title} </h3>
                             <div className="text">{item.desc}</div>
                           </div>
                         </div>
@@ -150,9 +149,7 @@ function Projects() {
                               <span> {item.sub1} </span>
                               <span> {item.sub2} </span>
                             </div>
-                            <h3 className="title">
-                              <a href={`/project/${i + 1}`}> {item.title} </a>
-                            </h3>
+                            <h3 className="title"> {item.title} </h3>
                             <div className="text">{item.desc}</div>
                           </div>
                         </div>
@@ -189,9 +186,7 @@ function Projects() {
                               <span> {item.sub1} </span>
                               <span> {item.sub2} </span>
                             </div>
-                            <h3 className="title">
-                              <a href={`/project/${i + 1}`}> {item.title} </a>
-                            </h3>
+                            <h3 className="title"> {item.title} </h3>
                             <div className="text">{item.desc}</div>
                           </div>
                         </div>
@@ -208,7 +203,7 @@ function Projects() {
         </div>
         <div className="mobile-cta-wrapper d-lg-none text-center mt-40">
           <a
-            href="/home1/assets/Downlaod.pdf"
+            href={portfolioPdfUrl}
             target="_blank"
             rel="noopener noreferrer"
             className="butn rounded-pill hover-bg-black bg-orange1 text-white"

@@ -13,13 +13,13 @@ function ContactInfo() {
                     <h6 className="fsz-24 mb-15 fw-bold"> Hyderabad, India </h6>
                     <ul className="color-666 lh-6">
                       <li>
-                        <a href="#"> Plot No. 12, Road No. 1, Banjara Hills, Hyderabad - 500034 </a>
+                        <p> Plot No. 12, Road No. 1, Banjara Hills, Hyderabad - 500034 </p>
                       </li>
                       <li>
-                        <a href="#"> hello@einriliving.com </a>
+                        <a href="mailto:einricare@gmail.com"> einricare@gmail.com </a>
                       </li>
                       <li>
-                        <a href="#"> +91 40 1234 5678 </a>
+                        <a href="tel:+917093196731"> +91 70931 96731 </a>
                       </li>
                     </ul>
                   </div>
@@ -29,13 +29,13 @@ function ContactInfo() {
                     <h6 className="fsz-24 mb-15 fw-bold"> Studio Hours </h6>
                     <ul className="color-666 lh-6">
                       <li>
-                        <a href="#">Monday - Friday: 9:00 AM - 6:00 PM</a>
+                        <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
                       </li>
                       <li>
-                        <a href="#"> Saturday: 10:00 AM - 4:00 PM </a>
+                        <p> Saturday: 10:00 AM - 4:00 PM </p>
                       </li>
                       <li>
-                        <a href="#"> Sunday: By Appointment </a>
+                        <p> Sunday: By Appointment </p>
                       </li>
                     </ul>
                   </div>
@@ -45,19 +45,36 @@ function ContactInfo() {
           </div>
           <div className="col-lg-6">
             <div className="social-icons mt-50 text-lg-end">
-              <a href="#">
-                <i className="fab fa-x-twitter"></i>
-              </a>
-              <a href="#">
-                <i className="fab fa-facebook-f"></i>
-              </a>
-              <a href="#">
+              <a
+                href="https://www.instagram.com/einri_living?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Einri Living on Instagram"
+              >
                 <i className="fab fa-instagram"></i>
               </a>
-              <a href="#">
+              <a
+                href="https://www.facebook.com/einriliving"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Einri Living on Facebook"
+              >
+                <i className="fab fa-facebook-f"></i>
+              </a>
+              <a
+                href="https://www.linkedin.com/company/einri-living/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Einri Living on LinkedIn"
+              >
                 <i className="fab fa-linkedin-in"></i>
               </a>
-              <a href="#">
+              <a
+                href="http://www.youtube.com/@EinriLiving-Interiors"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Einri Living on YouTube"
+              >
                 <i className="fab fa-youtube"></i>
               </a>
             </div>

@@ -15,7 +15,7 @@ function ContactPage() {
     <>
       <SEOHead
         title="Contact Einri Living - Best Interior Designers in Hyderabad | Free Consultation"
-        description="Contact Einri Living for a free interior design consultation in Hyderabad. Visit us at Banjara Hills or call +91-40-1234-5678. Email hello@einriliving.com. Open Mon-Sat 10AM-7PM. Serving Telangana, AP, Bangalore & Goa."
+        description="Contact Einri Living for a free interior design consultation in Hyderabad. Visit us at Banjara Hills or call +91-70931-96731. Email einricare@gmail.com. Open Mon-Sat 10AM-7PM. Serving Telangana, AP, Bangalore & Goa."
         keywords="contact Einri Living, interior designer contact Hyderabad, free home design consultation, Banjara Hills interior designers, schedule interior design consultation, contact best interior designers Hyderabad"
         canonicalUrl="https://einriliving.com/contact"
       />

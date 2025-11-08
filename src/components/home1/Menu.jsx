@@ -1,6 +1,13 @@
 import React from "react";
 
 function Menu() {
+  const handleConsultationClick = (e) => {
+    e.preventDefault();
+    if (typeof window !== "undefined" && typeof window.openEinriConsultationModal === "function") {
+      window.openEinriConsultationModal();
+    }
+  };
+
   return (
     <>
       {/* Overlay */}
@@ -49,7 +56,7 @@ function Menu() {
                 </a>
               </li>
               <li>
-                <a href="/contact" className="nav_link">
+                <a href="#consultation" className="nav_link" onClick={handleConsultationClick}>
                   Contact
                 </a>
               </li>
@@ -88,8 +95,10 @@ function Menu() {
               <p>App 000</p>
             </div>
             <div className="contact_details">
-              <p>hello@einriliving.com</p>
-              <p>+1 (555) 123-4567</p>
+              <p>einricare@gmail.com</p>
+              <p>
+                <a href="tel:+917093196731">+91 70931 96731</a>
+              </p>
             </div>
           </div>
         </div>
@@ -119,8 +128,10 @@ function Menu() {
                   <p>App 000</p>
                 </div>
                 <div className="contact_details">
-                  <p>hello@einriliving.com</p>
-                  <p>+1 (555) 123-4567</p>
+                  <p>einricare@gmail.com</p>
+                  <p>
+                    <a href="tel:+917093196731">+91 70931 96731</a>
+                  </p>
                 </div>
               </div>
             </div>
@@ -204,7 +215,7 @@ function Menu() {
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="nav_link">
+                  <a href="#consultation" className="nav_link" onClick={handleConsultationClick}>
                     Contact
                   </a>
                 </li>

@@ -1,7 +1,10 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useCallback } from "react";
+import { useNavigate, useLocation } from "react-router-dom";
 import ConsultationFormModal from "./ConsultationFormModal";
 
 function Navbar({ useLogoDark = false }) {
+  const navigate = useNavigate();
+  const location = useLocation();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -9,14 +12,72 @@ function Navbar({ useLogoDark = false }) {
     setIsMenuOpen(!isMenuOpen);
   };
 
-  const openModal = () => {
+  const openModal = useCallback(() => {
     setIsModalOpen(true);
     setIsMenuOpen(false); // Close menu if open
-  };
+  }, []);
 
   const closeModal = () => {
     setIsModalOpen(false);
   };
+
+  const handleAnchorClick = (e, targetId) => {
+    e.preventDefault();
+    setIsMenuOpen(false); // Close menu
+    
+    // If we're not on the home page, navigate to home first
+    if (location.pathname !== '/') {
+      navigate('/');
+      // Wait for navigation and page load, then scroll
+      setTimeout(() => {
+        const targetElement = document.querySelector(targetId);
+        if (targetElement) {
+          scrollToSection(targetElement);
+        }
+      }, 500);
+    } else {
+      // We're already on home page, scroll directly
+      const targetElement = document.querySelector(targetId);
+      if (targetElement) {
+        scrollToSection(targetElement);
+      }
+    }
+  };
+
+  const scrollToSection = (targetElement) => {
+    // Use GSAP ScrollSmoother if available
+    if (window.smoother && window.smoother.scrollTo) {
+      try {
+        const offset = targetElement.offsetTop - 100; // Account for navbar height
+        window.smoother.scrollTo(offset, true);
+      } catch(e) {
+        // Fallback to native scroll
+        targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    } else {
+      // Fallback to native smooth scroll
+      targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  };
+
+  useEffect(() => {
+    window.openEinriConsultationModal = () => {
+      openModal();
+    };
+
+    return () => {
+      if (window.openEinriConsultationModal) {
+        delete window.openEinriConsultationModal;
+      }
+    };
+  }, [openModal]);
+
+  useEffect(() => {
+    if (location.state && location.state.openConsultation) {
+      openModal();
+      navigate(location.pathname, { replace: true, state: {} });
+    }
+  }, [location, navigate, openModal]);
 
   return (
     <>
@@ -75,32 +136,39 @@ function Navbar({ useLogoDark = false }) {
             <nav className="premium_main_navigation">
               <ul>
                 <li>
-                  <a href="/" className="premium_nav_link">
+                  <a href="/" className="premium_nav_link" onClick={() => setIsMenuOpen(false)}>
                     Home
                   </a>
                 </li>
                 <li>
-                  <a href="/about" className="premium_nav_link">
+                  <a href="#transformations" className="premium_nav_link" onClick={(e) => handleAnchorClick(e, '#transformations')}>
                     Studio
                   </a>
                 </li>
                 <li>
-                  <a href="/services" className="premium_nav_link">
+                  <a href="#our-services" className="premium_nav_link" onClick={(e) => handleAnchorClick(e, '#our-services')}>
                     Services
                   </a>
                 </li>
                 <li>
-                  <a href="#testimonials" className="premium_nav_link">
+                  <a href="#testimonials" className="premium_nav_link" onClick={(e) => handleAnchorClick(e, '#testimonials')}>
                     Testimonials
                   </a>
                 </li>
                 <li>
-                  <a href="/blog" className="premium_nav_link">
+                  <a href="#blog" className="premium_nav_link" onClick={(e) => handleAnchorClick(e, '#blog')}>
                     Blog
                   </a>
                 </li>
                 <li>
-                  <a href="/contact" className="premium_nav_link">
+                  <a
+                    href="#consultation"
+                    className="premium_nav_link"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      openModal();
+                    }}
+                  >
                     Contact
                   </a>
                 </li>
@@ -130,8 +198,10 @@ function Navbar({ useLogoDark = false }) {
                 <p>Banjara Hills, Hyderabad - 500034</p>
               </div>
               <div className="premium_contact_details">
-                <p>hello@einriliving.com</p>
-                <p>+91 40 1234 5678</p>
+                <p>einricare@gmail.com</p>
+                <p>
+                  <a href="tel:+917093196731">+91 70931 96731</a>
+                </p>
               </div>
             </div>
           </div>
@@ -156,8 +226,10 @@ function Navbar({ useLogoDark = false }) {
                     <p>Banjara Hills, Hyderabad - 500034</p>
                   </div>
                   <div className="premium_contact_details">
-                    <p>hello@einriliving.com</p>
-                    <p>+91 40 1234 5678</p>
+                    <p>einricare@gmail.com</p>
+                    <p>
+                      <a href="tel:+917093196731">+91 70931 96731</a>
+                    </p>
                   </div>
                 </div>
               </div>
@@ -174,27 +246,34 @@ function Navbar({ useLogoDark = false }) {
                     </a>
                   </li>
                   <li>
-                    <a href="/about" className="premium_nav_link">
+                    <a href="#transformations" className="premium_nav_link" onClick={(e) => handleAnchorClick(e, '#transformations')}>
                       Studio
                     </a>
                   </li>
                   <li>
-                    <a href="/services" className="premium_nav_link">
+                    <a href="#our-services" className="premium_nav_link" onClick={(e) => handleAnchorClick(e, '#our-services')}>
                       Services
                     </a>
                   </li>
                   <li>
-                    <a href="#testimonials" className="premium_nav_link">
+                    <a href="#testimonials" className="premium_nav_link" onClick={(e) => handleAnchorClick(e, '#testimonials')}>
                       Testimonials
                     </a>
                   </li>
                   <li>
-                    <a href="/blog" className="premium_nav_link">
+                    <a href="#blog" className="premium_nav_link" onClick={(e) => handleAnchorClick(e, '#blog')}>
                       Blog
                     </a>
                   </li>
                   <li>
-                    <a href="/contact" className="premium_nav_link">
+                    <a
+                      href="#consultation"
+                      className="premium_nav_link"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        openModal();
+                      }}
+                    >
                       Contact
                     </a>
                   </li>

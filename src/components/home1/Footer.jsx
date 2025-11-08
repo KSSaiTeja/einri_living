@@ -1,8 +1,60 @@
 import React from 'react';
+import { useNavigate, useLocation } from 'react-router-dom';
 
 function Footer() {
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  const scrollToTarget = (targetId) => {
+    if (targetId === '#top') {
+      if (window.smoother && window.smoother.scrollTo) {
+        try {
+          window.smoother.scrollTo(0, true);
+        } catch (e) {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+      } else {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+      return;
+    }
+
+    const targetElement = document.querySelector(targetId);
+    if (targetElement) {
+      if (window.smoother && window.smoother.scrollTo) {
+        try {
+          const offset = targetElement.offsetTop - 100;
+          window.smoother.scrollTo(offset, true);
+        } catch (e) {
+          targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      } else {
+        targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }
+  };
+
+  const handleFooterLinkClick = (e, targetId) => {
+    e.preventDefault();
+    if (location.pathname !== '/') {
+      navigate('/');
+      setTimeout(() => scrollToTarget(targetId), 500);
+    } else {
+      scrollToTarget(targetId);
+    }
+  };
+
+  const handleConsultationClick = (e) => {
+    e.preventDefault();
+    if (typeof window !== 'undefined' && typeof window.openEinriConsultationModal === 'function') {
+      window.openEinriConsultationModal();
+    } else {
+      handleFooterLinkClick(e, '#site-footer');
+    }
+  };
+
   return (
-    <footer className="tc-footer-style1">
+    <footer id="site-footer" className="tc-footer-style1">
       <div className="container">
         <div className="top-content section-padding">
           <div className="row gx-0">
@@ -38,10 +90,10 @@ function Footer() {
                     <span>Plot No. 12, Road No. 1, Banjara Hills, <br /> Hyderabad - 500034</span>
                   </li>
                   <li>
-                    <a href="mailto:hello@einriliving.com"> hello@einriliving.com </a>
+                    <a href="mailto:einricare@gmail.com"> einricare@gmail.com </a>
                   </li>
                   <li>
-                    <a href="tel:+914012345678"> +91 40 1234 5678 </a>
+                  <a href="tel:+917093196731"> +91 70931 96731 </a>
                   </li>
                 </ul>
               </div>
@@ -96,11 +148,11 @@ function Footer() {
             </div>
             <div className="col-lg-6">
               <div className="foot-links mt-4 mt-lg-0">
-                <a href="/"> Home </a>
-                <a href="/studio"> Studio </a>
-                <a href="/portfolio"> Cases </a>
-                <a href="/blog"> News </a>
-                <a href="/contact"> Contact </a>
+                <a href="#top" onClick={(e) => handleFooterLinkClick(e, '#top')}> Home </a>
+                <a href="#transformations" onClick={(e) => handleFooterLinkClick(e, '#transformations')}> Studio </a>
+                <a href="#transformations" onClick={(e) => handleFooterLinkClick(e, '#transformations')}> Cases </a>
+                <a href="#blog" onClick={(e) => handleFooterLinkClick(e, '#blog')}> News </a>
+                <a href="#consultation" onClick={handleConsultationClick}> Contact </a>
               </div>
             </div>
           </div>

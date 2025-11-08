@@ -25,15 +25,15 @@ function SEOHead({
   addressRegion = 'Telangana',
   postalCode = '500034',
   streetAddress = 'Plot No. 12, Road No. 1, Banjara Hills',
-  telephone = '+91-40-1234-5678',
-  email = 'hello@einriliving.com',
+  telephone = '+91-70931-96731',
+  email = 'einricare@gmail.com',
   
   // SEO specific
   noindex = false,
   nofollow = false
 }) {
   // Default structured data for LocalBusiness
-  const defaultStructuredData = structuredData || {
+  const resolvedStructuredData = structuredData || {
     '@context': 'https://schema.org',
     '@type': businessType,
     name: businessName,
@@ -157,9 +157,9 @@ function SEOHead({
       <meta name="audience" content="all" />
       
       {/* Structured Data */}
-      {structuredData && (
+      {resolvedStructuredData && (
         <script type="application/ld+json">
-          {JSON.stringify(structuredData)}
+          {JSON.stringify(resolvedStructuredData)}
         </script>
       )}
       

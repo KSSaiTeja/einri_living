@@ -1,6 +1,23 @@
 import React from 'react';
 
 function Experience() {
+  const handleAnchorClick = (e, targetId) => {
+    e.preventDefault();
+    const targetElement = document.querySelector(targetId);
+    if (targetElement) {
+      if (window.smoother && window.smoother.scrollTo) {
+        try {
+          const offset = targetElement.offsetTop - 100;
+          window.smoother.scrollTo(offset, true);
+        } catch (error) {
+          targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      } else {
+        targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }
+  };
+
   return (
     <section className="tc-experience-style1 section-padding-x">
       <div className="container-fluid">
@@ -29,8 +46,9 @@ function Experience() {
               Einri Living studio is where art meets function to create timeless elegant interiors. Founded by people passionate about the transformative power of design, we bring your space to life through modern biophilic and class inspired spaces.Based in Hyderabad with Projects in Goa and Bangalore, we're growing day by day,Redefining the face of interiors with every move that we make.
               </div>
               <a
-                href="/studio"
+                href="#transformations"
                 className="butn rounded-pill mt-50 hover-bg-black bg-white"
+                onClick={(e) => handleAnchorClick(e, '#transformations')}
               >
                 <span>
                   Our Studio <i className="small ms-1 ti-arrow-top-right"></i>
@@ -42,10 +60,10 @@ function Experience() {
             <div className="rotate-txt justify-content-lg-end">
               <ul>
                 <li>
-                  <a href="mailto:hello@einriliving.com"> hello@einriliving.com </a>
+                  <a href="mailto:einricare@gmail.com"> einricare@gmail.com </a>
                 </li>
                 <li>
-                  <a href="tel:+919876543210"> +91 98765 43210 </a>
+                  <a href="tel:+917093196731"> +91 70931 96731 </a>
                 </li>
               </ul>
             </div>

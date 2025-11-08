@@ -8,9 +8,11 @@ function Contact() {
           <div className="col-lg-4">
             <div className="info wow fadeInUp slow" data-wow-delay="0.2s">
               <h3 className="fsz-45 fw-500">Let us helps build your dream!</h3>
-              <h6 className="fsz-21 fw-400 mt-50"> (054) 3256 78 87 </h6>
+              <h6 className="fsz-21 fw-400 mt-50">
+                <a href="tel:+917093196731">+91 70931 96731</a>
+              </h6>
               <p className="fsz-14 color-666 mt-15">
-                Plot No. 12, Road No. 1, Banjara Hills, Hyderabad - 500034 <br /> hello@einriliving.com
+                Plot No. 12, Road No. 1, Banjara Hills, Hyderabad - 500034 <br /> einricare@gmail.com
               </p>
             </div>
           </div>
@@ -81,7 +83,7 @@ function Contact() {
                 </div>
               </div>
               <a
-                href="#"
+                href="mailto:einricare@gmail.com"
                 className="butn hover-bg-orange1 text-capitalize bg-white rounded-pill mt-40"
               >
                 <span>
@@ -91,7 +93,7 @@ function Contact() {
               </a>
               <p className="fsz-12 color-666 mt-20">
                 By summiting, i’m agree to the
-                <a href="#" className="color-000 text-decoration-underline">
+                <a href="/terms" className="color-000 text-decoration-underline">
                   Terms & Conditions
                 </a>
               </p>
@@ -103,13 +105,13 @@ function Contact() {
         <div className="marq-slider">
           <div className="swiper-wrapper">
             <div className="swiper-slide">
-              <a href="#"> Next Cases </a>
+              <a href="/portfolio"> Next Cases </a>
             </div>
             <div className="swiper-slide">
-              <a href="#"> Next Cases </a>
+              <a href="/portfolio"> Next Cases </a>
             </div>
             <div className="swiper-slide">
-              <a href="#"> Next Cases </a>
+              <a href="/portfolio"> Next Cases </a>
             </div>
           </div>
           <div className="float-cursor float_box">

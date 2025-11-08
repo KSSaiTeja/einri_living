@@ -2,6 +2,13 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 function Footer() {
+  const handleConsultationClick = (e) => {
+    e.preventDefault();
+    if (typeof window !== 'undefined' && typeof window.openEinriConsultationModal === 'function') {
+      window.openEinriConsultationModal();
+    }
+  };
+
   return (
     <footer className="tc-footer-style1 border-top">
       <div className="container">
@@ -38,10 +45,10 @@ function Footer() {
                     <span>Plot No. 12, Road No. 1, Banjara Hills, <br /> Hyderabad - 500034</span>
                   </li>
                   <li>
-                    <a href="mailto:hello@einriliving.com"> hello@einriliving.com </a>
+                    <a href="mailto:einricare@gmail.com"> einricare@gmail.com </a>
                   </li>
                   <li>
-                    <a href="tel:+914012345678"> +91 40 1234 5678 </a>
+                    <a href="tel:+917093196731"> +91 70931 96731 </a>
                   </li>
                 </ul>
               </div>
@@ -100,7 +107,7 @@ function Footer() {
                 <Link to="/about"> Studio </Link>
                 <Link to="/portfolio"> Cases </Link>
                 <Link to="/blog"> News </Link>
-                <Link to="/contact"> Contact </Link>
+                <a href="#consultation" onClick={handleConsultationClick}> Contact </a>
               </div>
             </div>
           </div>

@@ -15,6 +15,7 @@ import Blog from "../components/home1/Blog";
 import Chat from "../components/home1/Chat";
 import Footer from "../components/home1/Footer";
 import YearEndOfferModal from "../components/home1/YearEndOfferModal";
+import ConsultationFormModal from "../components/home1/ConsultationFormModal";
 
 /**
  * Einri Living - Main Website
@@ -31,6 +32,7 @@ import YearEndOfferModal from "../components/home1/YearEndOfferModal";
 
 function EinriLiving() {
   const [showOffer, setShowOffer] = useState(false);
+  const [isConsultationModalOpen, setIsConsultationModalOpen] = useState(false);
 
   // Show offer modal after 3 seconds on every page load/refresh
   useEffect(() => {
@@ -43,7 +45,8 @@ function EinriLiving() {
 
   const handleOfferCTAClick = () => {
     setShowOffer(false);
-    // Will implement later based on user requirements
+    // Open consultation form modal
+    setIsConsultationModalOpen(true);
   };
 
   return (
@@ -59,8 +62,8 @@ function EinriLiving() {
           name: 'Einri Living - Interior Design Studio',
           image: 'https://einriliving.com/home1/assets/img/head_slide1.jpg',
           url: 'https://einriliving.com',
-          telephone: '+91-40-1234-5678',
-          email: 'hello@einriliving.com',
+          telephone: '+91-70931-96731',
+          email: 'einricare@gmail.com',
           address: {
             '@type': 'PostalAddress',
             streetAddress: 'Plot No. 12, Road No. 1, Banjara Hills',
@@ -132,7 +135,7 @@ function EinriLiving() {
           <Header />
           <main>
             <Experience />
-            <Services />
+            <Services onOpenConsultationForm={() => setIsConsultationModalOpen(true)} />
             <Process />
             <Projects />
             <Testimonials />
@@ -149,6 +152,12 @@ function EinriLiving() {
           isOpen={showOffer} 
           onClose={() => setShowOffer(false)}
           onCTAClick={handleOfferCTAClick}
+        />
+
+        {/* Consultation Form Modal */}
+        <ConsultationFormModal 
+          isOpen={isConsultationModalOpen}
+          onClose={() => setIsConsultationModalOpen(false)}
         />
       </body>
     </>

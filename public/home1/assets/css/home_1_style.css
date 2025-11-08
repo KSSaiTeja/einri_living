@@ -337,6 +337,18 @@ body.menu-open {
   min-height: 60px !important; /* Ensure consistent height for proper centering */
 }
 
+.inner-pages-style1 .tc-navbar-style1 .container-fluid.content {
+  padding-left: clamp(20px, 5vw, 72px) !important;
+  padding-right: clamp(20px, 5vw, 72px) !important;
+}
+
+@media screen and (max-width: 991px) {
+  .inner-pages-style1 .tc-navbar-style1 .container-fluid.content {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+}
+
 /* Hide Bootstrap navbar toggler */
 .tc-navbar-style1 .navbar-toggler {
   display: none !important; /* Hide Bootstrap hamburger button */
@@ -3120,9 +3132,12 @@ body.menu-open {
 
 .tc-team-style1 .team-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 40px;
   width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  justify-items: center;
 }
 
 .tc-team-style1 .team-member-card {
