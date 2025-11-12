@@ -15,6 +15,11 @@ const teamData = [
     name: "Joy",
     role: "The Creative Advisor",
     image: "/home1/assets/img/team/team3.jpg"
+  },
+  {
+    name: "Debadri G",
+    role: "The Expert Executor",
+    image: "/home1/assets/img/team/team4.jpg"
   }
 ];
 
@@ -61,7 +66,7 @@ function Team() {
             </div>
             <div className="col-lg-4">
               <div className="number-card wow fadeInUp" data-wow-delay="0.6s">
-                <h3 className="perc">3</h3>
+                <h3 className="perc">4</h3>
                 <p>
                   Expert Designers & <br /> Project Managers
                 </p>

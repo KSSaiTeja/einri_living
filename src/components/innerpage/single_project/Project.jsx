@@ -36,10 +36,10 @@ function Project() {
             className="text fsz-24 mb-20 fw-500 wow fadeInUp slow"
             data-wow-delay="0.2s"
           >
-            Nestled at the heart of Banjara Hills in Hyderabad, there stood a villa
-            that embodied a profound connection between the natural world & the
+            Nestled within Kukatpally&apos;s KPHB Phase 9 in Hyderabad, there stood a villa
+            that embodied a profound connection between the natural world &amp; the
             comforts of modern living. This extraordinary abode was more than
-            just a home, it was an immersive experience, a testament to the
+            just a home; it was an immersive experience, a testament to the
             spirit of its surroundings.
           </div>
           <div
@@ -80,7 +80,7 @@ function Project() {
                           location
                         </small>
                         <div className="links fsz-18 fw-500">
-                          Einri Living Studio, Hyderabad <br /> Telangana 500034, India
+                          Einri Living Studio, Hyderabad <br /> Telangana 500072, India
                         </div>
                       </div>
                     </div>

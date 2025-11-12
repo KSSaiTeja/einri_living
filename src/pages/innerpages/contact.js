@@ -15,8 +15,8 @@ function ContactPage() {
     <>
       <SEOHead
         title="Contact Einri Living - Best Interior Designers in Hyderabad | Free Consultation"
-        description="Contact Einri Living for a free interior design consultation in Hyderabad. Visit us at Banjara Hills or call +91-70931-96731. Email einricare@gmail.com. Open Mon-Sat 10AM-7PM. Serving Telangana, AP, Bangalore & Goa."
-        keywords="contact Einri Living, interior designer contact Hyderabad, free home design consultation, Banjara Hills interior designers, schedule interior design consultation, contact best interior designers Hyderabad"
+        description="Contact Einri Living for a free interior design consultation in Hyderabad. Visit us at Plot No.126, Gokul Plots, Road No.3, Kukatpally, KPHB Phase 9, Medchal Malkajgiri or call +91-70931-96731. Email einricare@gmail.com. Open Mon-Sat 10AM-7PM. Serving Telangana, AP, Bangalore & Goa."
+        keywords="contact Einri Living, interior designer contact Hyderabad, free home design consultation, Kukatpally interior designers, KPHB Phase 9 designers, schedule interior design consultation, contact best interior designers Hyderabad"
         canonicalUrl="https://einriliving.com/contact"
       />
       <Helmet>

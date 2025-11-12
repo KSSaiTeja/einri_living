@@ -194,8 +194,9 @@ function Navbar({ useLogoDark = false }) {
             {/* Contact Information */}
             <div className="premium_contact_info">
               <div className="premium_address">
-                <p>Plot No. 12, Road No. 1</p>
-                <p>Banjara Hills, Hyderabad - 500034</p>
+                <p>Plot No. 126, Gokul Plots</p>
+                <p>Road No. 3, Kukatpally, KPHB Phase 9</p>
+                <p>Hyderabad, Medchal Malkajgiri, Telangana 500072</p>
               </div>
               <div className="premium_contact_details">
                 <p>einricare@gmail.com</p>
@@ -214,7 +215,7 @@ function Navbar({ useLogoDark = false }) {
                 {/* Featured Image */}
                 <div className="premium_featured_image">
                   <img
-                    src="/home1/assets/img/head_slide1.jpg"
+                    src="/home1/assets/img/home1-navbar.png"
                     alt="Modern interior design"
                   />
                 </div>
@@ -222,8 +223,9 @@ function Navbar({ useLogoDark = false }) {
                 {/* Contact Information */}
                 <div className="premium_contact_info">
                   <div className="premium_address">
-                    <p>Plot No. 12, Road No. 1</p>
-                    <p>Banjara Hills, Hyderabad - 500034</p>
+                    <p>Plot No. 126, Gokul Plots</p>
+                    <p>Road No. 3, Kukatpally, KPHB Phase 9</p>
+                    <p>Hyderabad, Medchal Malkajgiri, Telangana 500072</p>
                   </div>
                   <div className="premium_contact_details">
                     <p>einricare@gmail.com</p>

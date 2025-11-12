@@ -118,9 +118,9 @@ function LatestCases() {
                 {data.map((item, i) => (
                   <div key={i} className={`col-lg-4 mix-item ${item.subTitle}`}>
                     <div className="case-card">
-                      <a href={item.img} className="img" data-fancybox="cases">
+                      <div className="img" role="presentation">
                         <img src={item.img} alt="" className="img-cover" />
-                      </a>
+                      </div>
                       <div className="info">
                         <div className="tags mb-30">
                           <a href={servicesHref}> {item.subTitle.split('<br />')[0]} </a>

@@ -34,17 +34,13 @@ function RelatedProjects() {
               <div className="swiper-wrapper">
                 <div className="swiper-slide">
                   <div className="case-card">
-                    <a
-                      href="/innerpages/assets/img/portfolio/case1.jpg"
-                      className="img"
-                      data-fancybox="cases"
-                    >
+                    <div className="img" role="presentation">
                       <img
                         src="/innerpages/assets/img/portfolio/case1.jpg"
                         alt=""
                         className="img-cover"
                       />
-                    </a>
+                    </div>
                     <div className="info">
                       <div className="tags mb-30">
                         <a href="/#our-services"> Architecture </a>
@@ -65,17 +61,13 @@ function RelatedProjects() {
                 </div>
                 <div className="swiper-slide">
                   <div className="case-card">
-                    <a
-                      href="/innerpages/assets/img/portfolio/case2.jpg"
-                      className="img"
-                      data-fancybox="cases"
-                    >
+                    <div className="img" role="presentation">
                       <img
                         src="/innerpages/assets/img/portfolio/case2.jpg"
                         alt=""
                         className="img-cover"
                       />
-                    </a>
+                    </div>
                     <div className="info">
                       <div className="tags mb-30">
                         <a href="/#our-services"> Interior </a>
@@ -96,17 +88,13 @@ function RelatedProjects() {
                 </div>
                 <div className="swiper-slide">
                   <div className="case-card">
-                    <a
-                      href="/innerpages/assets/img/portfolio/case3.jpg"
-                      className="img"
-                      data-fancybox="cases"
-                    >
+                    <div className="img" role="presentation">
                       <img
                         src="/innerpages/assets/img/portfolio/case3.jpg"
                         alt=""
                         className="img-cover"
                       />
-                    </a>
+                    </div>
                     <div className="info">
                       <div className="tags mb-30">
                         <a href="/#our-services"> Architecture </a>

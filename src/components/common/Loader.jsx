@@ -6,15 +6,13 @@ function Loader() {
   const [isVisible, setIsVisible] = useState(true);
 
   useEffect(() => {
-    // Animate logo opacity from 30% to 100%
     const logoTimer = setTimeout(() => {
       setLogoOpacity(1);
-    }, 500);
+    }, 320);
 
-    // Show text after logo animation starts
     const textTimer = setTimeout(() => {
       setTextVisible(true);
-    }, 1000);
+    }, 620);
 
     return () => {
       clearTimeout(logoTimer);
@@ -32,8 +30,8 @@ function Loader() {
 
       removeTimer = setTimeout(() => {
         setIsVisible(false);
-      }, 400);
-    }, 2200);
+      }, 520);
+    }, 3000);
 
     return () => {
       clearTimeout(hideTimer);
@@ -41,7 +39,7 @@ function Loader() {
     };
   }, []);
 
-  const phrase = useMemo(() => 'art in the heart of your abode', []);
+  const phrase = useMemo(() => 'designing soulful interiors', []);
 
   if (!isVisible) return null;
 

@@ -13,7 +13,10 @@ function ContactInfo() {
                     <h6 className="fsz-24 mb-15 fw-bold"> Hyderabad, India </h6>
                     <ul className="color-666 lh-6">
                       <li>
-                        <p> Plot No. 12, Road No. 1, Banjara Hills, Hyderabad - 500034 </p>
+                        <p>
+                          Plot No. 126, Gokul Plots, Road No. 3, Kukatpally, KPHB Phase 9,
+                          Hyderabad, Medchal Malkajgiri, Telangana 500072
+                        </p>
                       </li>
                       <li>
                         <a href="mailto:einricare@gmail.com"> einricare@gmail.com </a>

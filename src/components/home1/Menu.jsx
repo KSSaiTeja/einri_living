@@ -82,17 +82,17 @@ function Menu() {
           {/* Featured Image */}
           <div className="featured_image">
             <img
-              src="/home1/assets/img/head_slide1.jpg"
-              alt="Modern interior design"
+              src="/home1/assets/img/home1-navbar.png"
+              alt="Einri Living interior showcase"
             />
           </div>
 
           {/* Contact Information */}
           <div className="contact_info">
             <div className="address">
-              <p>Address Line One</p>
-              <p>Some additional Address</p>
-              <p>App 000</p>
+              <p>Plot No. 126, Gokul Plots</p>
+              <p>Road No. 3, Kukatpally, KPHB Phase 9</p>
+              <p>Hyderabad, Medchal Malkajgiri, Telangana 500072</p>
             </div>
             <div className="contact_details">
               <p>einricare@gmail.com</p>
@@ -115,17 +115,17 @@ function Menu() {
               {/* Featured Image */}
               <div className="featured_image">
                 <img
-                  src="/home1/assets/img/head_slide1.jpg"
-                  alt="Modern interior design"
+                  src="/home1/assets/img/home1-navbar.png"
+                  alt="Einri Living interior showcase"
                 />
               </div>
 
               {/* Contact Information */}
               <div className="contact_info">
                 <div className="address">
-                  <p>Address Line One</p>
-                  <p>Some additional Address</p>
-                  <p>App 000</p>
+                  <p>Plot No. 126, Gokul Plots</p>
+                  <p>Road No. 3, Kukatpally, KPHB Phase 9</p>
+                  <p>Hyderabad, Medchal Malkajgiri, Telangana 500072</p>
                 </div>
                 <div className="contact_details">
                   <p>einricare@gmail.com</p>

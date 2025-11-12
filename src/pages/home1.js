@@ -66,16 +66,16 @@ function EinriLiving() {
           email: 'einricare@gmail.com',
           address: {
             '@type': 'PostalAddress',
-            streetAddress: 'Plot No. 12, Road No. 1, Banjara Hills',
+            streetAddress: 'Plot No. 126, Gokul Plots, Road No. 3, Kukatpally, KPHB Phase 9',
             addressLocality: 'Hyderabad',
             addressRegion: 'Telangana',
-            postalCode: '500034',
+            postalCode: '500072',
             addressCountry: 'IN'
           },
           geo: {
             '@type': 'GeoCoordinates',
-            latitude: '17.4254',
-            longitude: '78.4495'
+            latitude: '17.5056',
+            longitude: '78.4067'
           },
           priceRange: '₹₹',
           openingHoursSpecification: [

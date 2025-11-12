@@ -23,9 +23,9 @@ function MainInfo() {
               className="fsz-24 fw-500 mt-4 mt-lg-0 wow fadeInUp slow"
               data-wow-delay="0.2s"
             >
-              Nestled at the heart of Banjara Hills in Hyderabad, there stood a villa
-              that embodied a profound connection between the natural world and
-              the comforts of modern living.
+              Nestled in Kukatpally&apos;s KPHB Phase 9 in Hyderabad, this villa embodies a
+              profound connection between the natural world and the comforts of modern
+              living.
             </h6>
             <h6
               className="fsz-24 fw-500 mt-40 wow fadeInUp slow"
@@ -36,8 +36,8 @@ function MainInfo() {
             </h6>
             <ul className="lh-6 mt-70 wow fadeInUp slow" data-wow-delay="0.6s">
               <li className="fsz-18">
-                <span className="color-666"> Location: </span> 2221 Sw Broadway
-                Road No. 1, Banjara Hills, Hyderabad - 500034
+                <span className="color-666"> Location: </span> Plot No. 126, Gokul Plots,
+                Road No. 3, Kukatpally, KPHB Phase 9, Hyderabad - 500072
               </li>
               <li className="fsz-18">
                 <span className="color-666"> Services: </span> Interior Design,

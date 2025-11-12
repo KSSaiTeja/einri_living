@@ -87,7 +87,11 @@ function Footer() {
                 <h5 className="mb-20 mt-5 mt-lg-0 fw-600"> Hyderabad, India </h5>
                 <ul className="footer-links">
                   <li>
-                    <span>Plot No. 12, Road No. 1, Banjara Hills, <br /> Hyderabad - 500034</span>
+                    <span>
+                      Plot No. 126, Gokul Plots, Road No. 3, <br />
+                      Kukatpally, KPHB Phase 9, Hyderabad <br />
+                      Medchal Malkajgiri, Telangana 500072
+                    </span>
                   </li>
                   <li>
                     <a href="mailto:einricare@gmail.com"> einricare@gmail.com </a>

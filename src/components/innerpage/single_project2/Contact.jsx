@@ -12,7 +12,7 @@ function Contact() {
                 <a href="tel:+917093196731">+91 70931 96731</a>
               </h6>
               <p className="fsz-14 color-666 mt-15">
-                Plot No. 12, Road No. 1, Banjara Hills, Hyderabad - 500034 <br /> einricare@gmail.com
+                Plot No. 126, Gokul Plots, Road No. 3, Kukatpally, KPHB Phase 9, Hyderabad, Medchal Malkajgiri, Telangana 500072 <br /> einricare@gmail.com
               </p>
             </div>
           </div>

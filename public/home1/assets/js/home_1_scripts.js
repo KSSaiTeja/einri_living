@@ -84,6 +84,9 @@ $(document).ready(function () {
         keyboard: true,
         loop: false,
         autoplay: false,
+        grabCursor: true,
+        simulateTouch: true,
+        touchStartPreventDefault: false,
         breakpoints: {
             0: {
                 slidesPerView: 1.1,
@@ -95,7 +98,7 @@ $(document).ready(function () {
                 slidesPerView: 1.3,
             },
             991: {
-                slidesPerView: 2,
+                slidesPerView: 1.6,
             },
             1200: {
                 slidesPerView: 2,

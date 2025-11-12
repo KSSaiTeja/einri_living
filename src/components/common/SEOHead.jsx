@@ -23,8 +23,8 @@ function SEOHead({
   businessType = 'InteriorDesignService',
   addressLocality = 'Hyderabad',
   addressRegion = 'Telangana',
-  postalCode = '500034',
-  streetAddress = 'Plot No. 12, Road No. 1, Banjara Hills',
+  postalCode = '500072',
+  streetAddress = 'Plot No. 126, Gokul Plots, Road No. 3, Kukatpally, KPHB Phase 9',
   telephone = '+91-70931-96731',
   email = 'einricare@gmail.com',
   
@@ -51,8 +51,8 @@ function SEOHead({
     },
     geo: {
       '@type': 'GeoCoordinates',
-      latitude: '17.4254',
-      longitude: '78.4495'
+      latitude: '17.5056',
+      longitude: '78.4067'
     },
     priceRange: '₹₹',
     openingHoursSpecification: [
@@ -139,8 +139,8 @@ function SEOHead({
       {/* Business specific */}
       <meta name="geo.region" content="IN-TG" />
       <meta name="geo.placename" content="Hyderabad" />
-      <meta name="geo.position" content="17.4254;78.4495" />
-      <meta name="ICBM" content="17.4254, 78.4495" />
+      <meta name="geo.position" content="17.5056;78.4067" />
+      <meta name="ICBM" content="17.5056, 78.4067" />
       
       {/* Mobile */}
       <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />

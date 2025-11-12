@@ -22,47 +22,35 @@ function Challenge() {
           <div className="swiper-wrapper">
             <div className="swiper-slide">
               <div className="case-card">
-                <a
-                  href="/innerpages/assets/img/s_project2/ch1.jpg"
-                  className="img"
-                  data-fancybox="cases"
-                >
+                <div className="img" role="presentation">
                   <img
                     src="/innerpages/assets/img/s_project2/ch1.jpg"
                     alt=""
                     className="img-cover"
                   />
-                </a>
+                </div>
               </div>
             </div>
             <div className="swiper-slide">
               <div className="case-card">
-                <a
-                  href="/innerpages/assets/img/s_project2/ch2.jpg"
-                  className="img"
-                  data-fancybox="cases"
-                >
+                <div className="img" role="presentation">
                   <img
                     src="/innerpages/assets/img/s_project2/ch2.jpg"
                     alt=""
                     className="img-cover"
                   />
-                </a>
+                </div>
               </div>
             </div>
             <div className="swiper-slide">
               <div className="case-card">
-                <a
-                  href="/innerpages/assets/img/s_project2/ch3.jpg"
-                  className="img"
-                  data-fancybox="cases"
-                >
+                <div className="img" role="presentation">
                   <img
                     src="/innerpages/assets/img/s_project2/ch3.jpg"
                     alt=""
                     className="img-cover"
                   />
-                </a>
+                </div>
               </div>
             </div>
           </div>

@@ -23,9 +23,10 @@ function Testimonials() {
                       <div className="author">
                         <div className="au-img">
                           <img
-                            src="/home1/assets/img/team/team1.jpg"
-                            alt=""
+                            src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=640&q=80"
+                            alt="Smiling couple reviewing their new interior design"
                             className="img-cover"
+                            loading="lazy"
                           />
                         </div>
                         <div className="au-inf">
@@ -47,9 +48,10 @@ function Testimonials() {
                       <div className="author">
                         <div className="au-img">
                           <img
-                            src="/home1/assets/img/team/team1.jpg"
-                            alt=""
+                            src="https://images.unsplash.com/photo-1522661067900-ab829854a57f?auto=format&fit=crop&w=640&q=80"
+                            alt="Happy homeowners standing together"
                             className="img-cover"
+                            loading="lazy"
                           />
                         </div>
                         <div className="au-inf">
@@ -71,9 +73,10 @@ function Testimonials() {
                       <div className="author">
                         <div className="au-img">
                           <img
-                            src="/home1/assets/img/team/team1.jpg"
-                            alt=""
+                            src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=640&q=80"
+                            alt="Einri client enjoying her bespoke interiors"
                             className="img-cover"
+                            loading="lazy"
                           />
                         </div>
                         <div className="au-inf">

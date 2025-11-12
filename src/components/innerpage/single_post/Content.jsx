@@ -129,31 +129,6 @@ function Content({ article }) {
                 </div>
               </div>
             </div>
-            <div className="editor wow fadeInUp slow" data-wow-delay="0.2s">
-              <div className="row">
-                <div className="col-lg-2">
-                  <div className="img">
-                    <img
-                      src="/innerpages/assets/img/team/team3.jpg"
-                      alt="Einri Living"
-                      className="img-cover"
-                    />
-                  </div>
-                </div>
-                <div className="col-lg-10">
-                  <div className="cont mt-4 mt-lg-0">
-                    <h6 className="fsz-18 fw-bold mb-2">Einri Living Team</h6>
-                    <small className="fsz-12 text-uppercase color-666">
-                      Content Team
-                    </small>
-                    <div className="text fsz-14 fw-500 mt-20">
-                      Bringing art, greenery, and emotion into functional design. 
-                      Every home we create feels warm, personal, and truly yours.
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
             <div className="related-posts">
               <div className="title mb-70">
                 <div

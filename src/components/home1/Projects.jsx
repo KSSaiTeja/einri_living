@@ -100,13 +100,9 @@ function Projects() {
                     {residentialData.map((item, i) => (
                       <div key={i} className="swiper-slide">
                         <div className="project-card">
-                          <a
-                            href={item.img}
-                            className="img"
-                            data-fancybox="proj"
-                          >
-                            <img src={item.img} alt="" className="img-cover" />
-                          </a>
+                          <div className="img" role="presentation">
+                            <img src={item.img} alt="" className="img-cover" draggable="false" />
+                          </div>
                           <div className="info">
                             <div className="tags">
                               <span> {item.sub1} </span>
@@ -137,13 +133,9 @@ function Projects() {
                     {commercialData.map((item, i) => (
                       <div key={i} className="swiper-slide">
                         <div className="project-card">
-                          <a
-                            href={item.img}
-                            className="img"
-                            data-fancybox="proj"
-                          >
-                            <img src={item.img} alt="" className="img-cover" />
-                          </a>
+                          <div className="img" role="presentation">
+                            <img src={item.img} alt="" className="img-cover" draggable="false" />
+                          </div>
                           <div className="info">
                             <div className="tags">
                               <span> {item.sub1} </span>
@@ -174,13 +166,9 @@ function Projects() {
                     {hospitalityData.map((item, i) => (
                       <div key={i} className="swiper-slide">
                         <div className="project-card">
-                          <a
-                            href={item.img}
-                            className="img"
-                            data-fancybox="proj"
-                          >
-                            <img src={item.img} alt="" className="img-cover" />
-                          </a>
+                          <div className="img" role="presentation">
+                            <img src={item.img} alt="" className="img-cover" draggable="false" />
+                          </div>
                           <div className="info">
                             <div className="tags">
                               <span> {item.sub1} </span>

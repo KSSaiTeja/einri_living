@@ -78,9 +78,9 @@ function Cases() {
                 {data.case1.map((item, i) => (
                   <div key={i} className="swiper-slide">
                     <div className="case-card">
-                      <a href={item.img} className="img" data-fancybox="cases">
+                      <div className="img" role="presentation">
                         <img src={item.img} alt="" className="img-cover" />
-                      </a>
+                      </div>
                       <div className="info">
                         <div className="tags mb-30">
                           <a href={servicesHref}> {item.sub1} </a>
@@ -108,9 +108,9 @@ function Cases() {
                 {data.case2.map((item, i) => (
                   <div key={i} className="swiper-slide">
                     <div className="case-card">
-                      <a href={item.img} className="img" data-fancybox="cases">
+                      <div className="img" role="presentation">
                         <img src={item.img} alt="" className="img-cover" />
-                      </a>
+                      </div>
                       <div className="info">
                         <div className="tags mb-30">
                           <a href={servicesHref}> {item.sub1} </a>
