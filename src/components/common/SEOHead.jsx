@@ -188,15 +188,15 @@ function SEOHead({
       {/* Canonical URL */}
       <link rel="canonical" href={canonicalUrl} />
       
-      {/* Favicons - Using favicon.ico for all platforms */}
-      <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-      <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
-      <link rel="apple-touch-icon" href="/favicon.ico" />
-      <link rel="icon" type="image/x-icon" sizes="16x16" href="/favicon.ico" />
-      <link rel="icon" type="image/x-icon" sizes="32x32" href="/favicon.ico" />
-      <link rel="icon" type="image/x-icon" sizes="64x64" href="/favicon.ico" />
-      <link rel="icon" type="image/x-icon" sizes="192x192" href="/favicon.ico" />
-      <link rel="icon" type="image/x-icon" sizes="512x512" href="/favicon.ico" />
+      {/* Favicons - Using favicon.ico for all platforms with cache busting */}
+      <link rel="icon" type="image/x-icon" href="/favicon.ico?v=2" />
+      <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=2" />
+      <link rel="apple-touch-icon" href="/favicon.ico?v=2" />
+      <link rel="icon" type="image/x-icon" sizes="16x16" href="/favicon.ico?v=2" />
+      <link rel="icon" type="image/x-icon" sizes="32x32" href="/favicon.ico?v=2" />
+      <link rel="icon" type="image/x-icon" sizes="64x64" href="/favicon.ico?v=2" />
+      <link rel="icon" type="image/x-icon" sizes="192x192" href="/favicon.ico?v=2" />
+      <link rel="icon" type="image/x-icon" sizes="512x512" href="/favicon.ico?v=2" />
       
       {/* Open Graph / Facebook */}
       <meta property="og:type" content={ogType} />
@@ -210,7 +210,7 @@ function SEOHead({
       <meta property="og:site_name" content={businessName} />
       <meta property="og:locale" content="en_IN" />
       {/* Favicon for Open Graph */}
-      <link rel="icon" href={`${canonicalUrl}/favicon.ico`} />
+      <link rel="icon" href={`${canonicalUrl}/favicon.ico?v=2`} />
       
       {/* Twitter */}
       <meta name="twitter:card" content={twitterCard} />

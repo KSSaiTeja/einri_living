@@ -23,9 +23,9 @@ function Testimonials() {
                       <div className="author">
                         <div className="au-img">
                           <img
-                            src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=640&q=80"
+                            src="/home1/assets/img/testimonials/testimonial-profile1.png"
                             alt="Smiling couple reviewing their new interior design"
-                            className="img-cover"
+                            className="img-cover" 
                             loading="lazy"
                           />
                         </div>
@@ -48,7 +48,7 @@ function Testimonials() {
                       <div className="author">
                         <div className="au-img">
                           <img
-                            src="https://images.unsplash.com/photo-1522661067900-ab829854a57f?auto=format&fit=crop&w=640&q=80"
+                            src="/home1/assets/img/testimonials/testimonial-profile2.png"
                             alt="Happy homeowners standing together"
                             className="img-cover"
                             loading="lazy"
@@ -73,7 +73,7 @@ function Testimonials() {
                       <div className="author">
                         <div className="au-img">
                           <img
-                            src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=640&q=80"
+                            src="/home1/assets/img/testimonials/testimonial-profile3.png"
                             alt="Einri client enjoying her bespoke interiors"
                             className="img-cover"
                             loading="lazy"
