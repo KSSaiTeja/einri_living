@@ -3,7 +3,7 @@ import residentialData from '../../data/home1/projects/residential';
 import commercialData from '../../data/home1/projects/commercial';
 import hospitalityData from '../../data/home1/projects/hospitality';
 function Projects() {
-  const portfolioPdfUrl = "/home1/assets/Einri%20Living%20Portfolio%20Sept%2025_20250428_141108_0000.pdf.pdf.pdf";
+  const portfolioPdfUrl = "/home1/assets/Einri Living Portfolio Sept 25_20250428_141108_0000.pdf.pdf";
   return (
     <section id="transformations" className="tc-projects-style1">
       <div className="container">
@@ -45,28 +45,6 @@ function Projects() {
                     type="button"
                   >
                     Hospitality & Airbnb
-                  </button>
-                </li>
-                <li className="nav-item" role="presentation">
-                  <button
-                    className="nav-link"
-                    id="pills-proj4-tab"
-                    data-bs-toggle="pill"
-                    data-bs-target="#pills-proj2"
-                    type="button"
-                  >
-                    Biophilic
-                  </button>
-                </li>
-                <li className="nav-item" role="presentation">
-                  <button
-                    className="nav-link"
-                    id="pills-proj5-tab"
-                    data-bs-toggle="pill"
-                    data-bs-target="#pills-proj1"
-                    type="button"
-                  >
-                    Bespoke
                   </button>
                 </li>
               </ul>

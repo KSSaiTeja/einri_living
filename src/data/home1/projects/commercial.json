@@ -4,13 +4,34 @@
     "sub1": "Office Design",
     "sub2": "Corporate Interior",
     "desc": "At Orbit, we reimagined corporate design — blending professionalism with warmth and creativity. Our team designed key office zones and executive restrooms that balance modern minimalism with comfort and detail. Every texture, tone, and line was curated to create an environment that inspires focus yet feels refined — because even workspaces deserve soul.",
-    "img": "/home1/assets/img/projects/corp-office.png"
+    "img": "/home1/assets/img/projects/corporte/project1.png"
   },
   {
     "title": "Joy's Office + Home Space",
     "sub1": "Hybrid Workspace",
     "sub2": "Work-Life Balance",
     "desc": "Joy's space is a seamless fusion of professional efficiency and personal warmth. We designed zones that inspire productivity while ensuring the home areas feel cozy, expressive, and deeply personal. The client has been incredibly inspirational with his design choices — bringing clarity, creativity, and individuality to every detail. Together, we created a space that truly reflects balance, purpose, and personality.",
-    "img": "/home1/assets/img/projects/home-space.png"
+    "img": "/home1/assets/img/projects/corporte/project2.png"
+  },
+  {
+    "title": "Tech Projects - Modern Office Interiors",
+    "sub1": "Tech Office Design",
+    "sub2": "Corporate Interior",
+    "desc": "Einri Living's tech office interior design transforms modern workspaces into innovation hubs. We specialize in creating tech company offices that balance cutting-edge functionality with inspiring aesthetics. Our designs feature collaborative zones, private focus areas, and tech-integrated spaces that enhance productivity and employee well-being. Perfect for startups and established tech companies in Hyderabad, Bangalore, and across India.",
+    "img": "/home1/assets/img/projects/corporte/project3.png"
+  },
+  {
+    "title": "Darwin Box - Corporate Office Design",
+    "sub1": "Office Interior",
+    "sub2": "Corporate Design",
+    "desc": "Darwin Box's corporate office interior showcases Einri Living's expertise in modern workplace design. We created a professional yet welcoming environment that reflects the company's innovative culture. The design features efficient layouts, contemporary aesthetics, and spaces that promote collaboration and creativity. This project demonstrates our commitment to delivering exceptional commercial interior design solutions for businesses in Hyderabad.",
+    "img": "/home1/assets/img/projects/corporte/project4.png"
+  },
+  {
+    "title": "Autumn Salon - Luxury Salon Interior Design",
+    "sub1": "Salon Design",
+    "sub2": "Beauty Interior",
+    "desc": "Autumn Salon's interior design by Einri Living creates a luxurious and tranquil beauty experience. We designed this premium salon space with sophisticated aesthetics, optimal lighting, and functional layouts that enhance both client comfort and stylist efficiency. The design blends elegance with practicality, creating an atmosphere that makes every visit feel indulgent. Perfect example of commercial interior design for beauty and wellness businesses.",
+    "img": "/home1/assets/img/projects/corporte/project5.png"
   }
 ]

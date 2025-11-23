@@ -4,6 +4,27 @@
     "sub1": "Airbnb Design",
     "sub2": "Coastal Aesthetic",
     "desc": "Inspired by the serene charm of Pondicherry, our Airbnb designs blend coastal warmth with modern minimalism. Every space is thoughtfully curated to feel like a getaway — breezy, soulful, and rooted in art and local essence.",
-    "img": "/home1/assets/img/projects/airbnb.png"
+    "img": "/home1/assets/img/projects/hospitality/project1.png"
+  },
+  {
+    "title": "Goa Airbnb - Coastal Vacation Rental Design",
+    "sub1": "Airbnb Interior",
+    "sub2": "Vacation Rental",
+    "desc": "Einri Living's Goa Airbnb interior design captures the essence of coastal living with modern comfort. We transformed this vacation rental into a tropical paradise that blends Goan charm with contemporary elegance. The design features open layouts, natural materials, and seamless indoor-outdoor flow that makes every stay feel like a beachside escape. Perfect for travelers seeking authentic Goan experiences with luxury amenities.",
+    "img": "/home1/assets/img/projects/hospitality/project2.png"
+  },
+  {
+    "title": "Altruist Business Hotel Hyderabad - Corporate Hotel Interior",
+    "sub1": "Business Hotel Design",
+    "sub2": "Hotel Interior",
+    "desc": "Altruist Business Hotel's interior design by Einri Living creates a sophisticated environment for corporate travelers in Hyderabad. We designed functional yet elegant spaces that balance business needs with comfort and style. The hotel features modern rooms, efficient workspaces, and welcoming common areas that make extended stays feel like home. This project showcases our expertise in hospitality interior design for business hotels.",
+    "img": "/home1/assets/img/projects/hospitality/project3.png"
+  },
+  {
+    "title": "Hotel Rio - Premium Hospitality Interior Design",
+    "sub1": "Hotel Design",
+    "sub2": "Luxury Interior",
+    "desc": "Hotel Rio's interior design by Einri Living showcases premium hospitality design that blends luxury with functionality. We created elegant guest rooms, sophisticated common areas, and memorable spaces that leave lasting impressions. The design reflects contemporary trends while maintaining timeless appeal, making it perfect for discerning travelers. This project highlights our expertise in creating world-class hotel interiors that elevate the guest experience.",
+    "img": "/home1/assets/img/projects/hospitality/project4.png"
   }
 ]

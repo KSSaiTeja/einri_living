@@ -1,44 +1,44 @@
 [
   {
     "title": "Mr. Anil's Abode, Kondapur",
-    "sub1": "3BHK Apartment",
+    "sub1": "3BHK Apartment ",
     "sub2": "Modern Living",
     "desc": "Mr. Anil's 3BHK apartment in Kondapur is designed to be more than just a home — it's a reflection of personality and comfort. Every corner is thoughtfully curated with art-inspired details, warm textures, and functional elegance. From the airy living spaces to the serene bedrooms, this abode perfectly balances modern design with a lived-in, welcoming feel.",
-    "img": "/home1/assets/img/projects/anil-abode.png"
+    "img": "/home1/assets/img/projects/residential/project1.png"
   },
   {
     "title": "Mr. Vijay Anand's Paradise, Nallagandla",
-    "sub1": "Residential Villa",
+    "sub1": "Residential Villa ",
     "sub2": "Luxury Living",
     "desc": "Mr. Vijay Anand's residence in Nallagandla is a harmonious blend of modern sophistication and personal warmth. Every space — from the welcoming living areas to the tranquil bedrooms — is thoughtfully designed with artful details, natural textures, and a seamless flow that makes the home feel both luxurious and inviting. This paradise is where comfort, style, and personality come together effortlessly.",
-    "img": "/home1/assets/img/projects/vijay-paradise.png"
+    "img": "/home1/assets/img/projects/residential/project2.png"
   },
   {
     "title": "Mr. Prasanth's 3BHK, Miyapur",
-    "sub1": "3BHK Apartment",
+    "sub1": "3BHK Apartment ",
     "sub2": "Minimalist Design",
     "desc": "Mr. Prasanth's 3BHK apartment in Miyapur is designed to embody warmth, functionality, and understated elegance. Every detail — from the cozy living room to the thoughtfully styled bedrooms — reflects a perfect blend of comfort and sophistication. The design celebrates minimalism with a personal touch, creating a home that feels calm, lived-in, and effortlessly beautiful.",
-    "img": "/home1/assets/img/projects/prashant-3bhk.png"
+    "img": "/home1/assets/img/projects/residential/project3.png"
   },
   {
     "title": "A Heartfelt Home for Nabomita", 
-    "sub1": "Villa Design",
+    "sub1": "Villa Design ",
     "sub2": "Emotional Design",
     "desc": "Designing Ms. Nabomita's villa was a journey of blending elegance with emotion. Every corner of her home mirrors her calm, creative spirit — soft tones, meaningful art, and spaces that feel alive with warmth. It's more than just a villa; it's her world — crafted with love, intention, and stories that make it truly hers.",
-    "img": "/home1/assets/img/projects/nabomita-home.png"
+    "img": "/home1/assets/img/projects/residential/project4.png"
   },
   {
     "title": "Bhanu's Ameenpur Residence",
-    "sub1": "Residential Home",
+    "sub1": "Residential Home ",
     "sub2": "Warm Minimalism",
     "desc": "Bhanu's home in Ameenpur is designed to feel effortlessly welcoming — blending clean lines, natural tones, and functional comfort. Every corner reflects a sense of calm and individuality, turning a simple residence into a space filled with character, light, and heart.",
-    "img": "/home1/assets/img/projects/bhanu-ameenpur.png"
+    "img": "/home1/assets/img/projects/residential/project5.png"
   },
   {
     "title": "ASBL Aspire Home",
     "sub1": "Residential Project",
     "sub2": "Modern Elegance",
     "desc": "For ASBL Aspire Home, we crafted a space that blends modern elegance with warmth and personality. Every corner reflects thoughtful detailing, functional layouts, and artistic touches — turning a house into a home that truly feels lived-in and loved.",
-    "img": "/home1/assets/img/projects/asbl-home.png"
+    "img": "/home1/assets/img/projects/residential/project6.png"
   }
 ]

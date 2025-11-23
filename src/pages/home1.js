@@ -52,15 +52,15 @@ function EinriLiving() {
   return (
     <>
       <SEOHead
-        title="Einri Living - Best Interior Designers in Hyderabad | Award-Winning Luxury Home Design Studio"
-        description="Einri Living is the #1 interior design studio in Hyderabad. Transform your 2BHK, 3BHK, 4BHK, villa & office spaces with award-winning designers. Book your free consultation today for luxury modern contemporary interiors. Rated 4.9/5 by 127+ clients across Telangana, AP, Bangalore & Goa."
-        keywords="best interior designers in Hyderabad, luxury interior design Hyderabad, home interior designers, modern home design, residential interior design Hyderabad, commercial interior design, 3BHK interior design, villa interior design Hyderabad, Einri Living, top interior designers Bangalore, interior design Goa, award-winning interior designers Telangana"
+        title="Interior Designers Near Me in Hyderabad | Best Interior Design Studio - Einri Living"
+        description="Looking for interior designers near me in Hyderabad? Einri Living is the #1 rated (4.9/5) interior design studio serving Kukatpally, Gachibowli, Hitech City, Banjara Hills, Kondapur, Miyapur & all of Hyderabad. Award-winning luxury home, office & villa interior design. Free consultation. Call +91-70931-96731. Best interiors near me - trusted by 127+ clients."
+        keywords="interior designers near me, best interior designers near me, top interior designers Hyderabad, interior design near me, home interior designers near me, best interiors near me, luxury interior design Hyderabad, residential interior design near me, commercial interior design Hyderabad, 3BHK interior design, villa interior design, office interior design, Einri Living, interior designers Kukatpally, interior designers Gachibowli, interior designers Hitech City, interior designers Banjara Hills, interior designers Kondapur, interior designers Miyapur, interior designers Nallagandla, interior designers Jubilee Hills, interior designers Madhapur, interior designers Ameenpur, best interior design company Hyderabad, top rated interior designers Telangana, interior design studio near me, home decorators near me, interior decorators near me Hyderabad"
         canonicalUrl="https://einriliving.com"
         structuredData={{
           '@context': 'https://schema.org',
           '@type': 'InteriorDesignService',
           name: 'Einri Living - Interior Design Studio',
-          image: 'https://einriliving.com/home1/assets/img/head_slide1.jpg',
+          image: 'https://einriliving.com/home1/assets/img/projects/residential/project1.png',
           url: 'https://einriliving.com',
           telephone: '+91-70931-96731',
           email: 'einricare@gmail.com',
