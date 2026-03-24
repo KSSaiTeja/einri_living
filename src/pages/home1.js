@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { Helmet } from "react-helmet";
 import Loader from "../components/common/Loader";
 import SEOHead from "../components/common/SEOHead";
@@ -14,7 +14,6 @@ import Team from "../components/home1/Team";
 import Blog from "../components/home1/Blog";
 import Chat from "../components/home1/Chat";
 import Footer from "../components/home1/Footer";
-import YearEndOfferModal from "../components/home1/YearEndOfferModal";
 import ConsultationFormModal from "../components/home1/ConsultationFormModal";
 
 /**
@@ -31,23 +30,7 @@ import ConsultationFormModal from "../components/home1/ConsultationFormModal";
  */
 
 function EinriLiving() {
-  const [showOffer, setShowOffer] = useState(false);
   const [isConsultationModalOpen, setIsConsultationModalOpen] = useState(false);
-
-  // Show offer modal after 3 seconds on every page load/refresh
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setShowOffer(true);
-    }, 3000);
-
-    return () => clearTimeout(timer);
-  }, []);
-
-  const handleOfferCTAClick = () => {
-    setShowOffer(false);
-    // Open consultation form modal
-    setIsConsultationModalOpen(true);
-  };
 
   return (
     <>
@@ -146,13 +129,6 @@ function EinriLiving() {
           </main>
           <Footer />
         </div>
-
-        {/* Year-End Offer Modal */}
-        <YearEndOfferModal 
-          isOpen={showOffer} 
-          onClose={() => setShowOffer(false)}
-          onCTAClick={handleOfferCTAClick}
-        />
 
         {/* Consultation Form Modal */}
         <ConsultationFormModal 
