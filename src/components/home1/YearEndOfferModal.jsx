@@ -105,7 +105,7 @@ function YearEndOfferModal({ isOpen, onClose, onCTAClick }) {
               <div className="year-end-benefit-item">
                 <Palette className="benefit-icon" size={24} />
                 <div className="benefit-content">
-                  <span className="benefit-highlight">1 Room 3D Design</span> — on the house!
+                  <span className="benefit-highlight">1 Room 3D Design</span>, on the house!
                 </div>
               </div>
             </div>

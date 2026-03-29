@@ -92,7 +92,7 @@ function Services({ onOpenConsultationForm }) {
                     />
                   </div>
                   <div className="text color-666 mt-50">
-                    We craft functional yet inspiring commercial environments — from offices to studios blending aesthetics with purpose.
+                    We craft functional yet inspiring commercial environments, from offices to studios, blending aesthetics with purpose.
                   </div>
                 </div>
               </div>

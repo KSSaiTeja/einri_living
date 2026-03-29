@@ -11,7 +11,7 @@ function Challenge() {
           className="text fsz-24 mb-100 wow fadeInUp slow"
           data-wow-delay="0.2s"
         >
-          Create an unconventional yet user-friendly website – innovative, with
+          Create an unconventional yet user-friendly website, innovative, with
           a clean and simple design that communicates brand values and showcases
           multi-media content. Site that spreads the message: &quot;Islamic
           stories your child will love&quot;

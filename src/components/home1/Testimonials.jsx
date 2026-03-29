@@ -18,7 +18,7 @@ function Testimonials() {
                   <div className="swiper-slide">
                     <div className="clients-card">
                       <div className="text fsz-45 fw-600 lh-2 js-splittext-lines">
-                        "Einri Interiors brings a fresh, visionary approach to design—combining timeless elegance with bold creativity. They're not just designing spaces; they're redefining how we experience interiors. I truly believe they're set to change the interiors game altogether."
+                        "Einri Interiors brings a fresh, visionary approach to design, combining timeless elegance with bold creativity. They're not just designing spaces; they're redefining how we experience interiors. I truly believe they're set to change the interiors game altogether."
                       </div>
                       <div className="author">
                         <div className="au-img">
@@ -68,7 +68,7 @@ function Testimonials() {
                   <div className="swiper-slide">
                     <div className="clients-card">
                       <div className="text fsz-45 fw-600 lh-2 js-splittext-lines">
-                        "Einri Interiors brings a fresh, visionary approach to design—combining timeless elegance with bold creativity. They're not just designing spaces; they're redefining how we experience interiors. I truly believe they're set to change the interiors game altogether."
+                        "Einri Interiors brings a fresh, visionary approach to design, combining timeless elegance with bold creativity. They're not just designing spaces; they're redefining how we experience interiors. I truly believe they're set to change the interiors game altogether."
                       </div>
                       <div className="author">
                         <div className="au-img">

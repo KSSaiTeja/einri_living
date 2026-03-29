@@ -7,11 +7,11 @@ const faqData = [
   },
   {
     question: "Do you take up complete turnkey interior projects?",
-    answer: "Yes! We handle everything — from concept design and 3D visualization to furniture, materials, lighting, and execution. You get a fully finished, move-in-ready space designed just for you."
+    answer: "Yes! We handle everything from concept design and 3D visualization to furniture, materials, lighting, and execution. You get a fully finished, move-in-ready space designed just for you."
   },
   {
     question: "Can I book a design consultation even if my home is still under construction?",
-    answer: "Absolutely. In fact, starting early helps us plan layouts, electrical points, and furniture placement efficiently — saving time and cost during execution."
+    answer: "Absolutely. In fact, starting early helps us plan layouts, electrical points, and furniture placement efficiently, saving time and cost during execution."
   },
   {
     question: "What's the minimum budget you take up projects for?",
@@ -19,11 +19,11 @@ const faqData = [
   },
   {
     question: "How long does a typical project take to complete?",
-    answer: "On average, **4–12 weeks**, depending on the project size and scope. We'll provide a detailed timeline once the design concept and site details are finalized."
+    answer: "On average, **4 to 12 weeks**, depending on the project size and scope. We'll provide a detailed timeline once the design concept and site details are finalized."
   },
   {
     question: "Do you offer only design or also execution?",
-    answer: "We offer both — **design-only packages** (for clients outside Hyderabad or who already have contractors) and **end-to-end turnkey solutions** (design + materials + on-site execution)."
+    answer: "We offer both **design-only packages** (for clients outside Hyderabad or who already have contractors) and **end-to-end turnkey solutions** (design + materials + on-site execution)."
   },
   {
     question: "Can you design homes outside Hyderabad?",
@@ -31,7 +31,7 @@ const faqData = [
   },
   {
     question: "What makes Einri Living different from other interior design firms?",
-    answer: "At Einri Living, we blend **art, greenery, and emotion** into functional design. Every home we create feels warm, personal, and truly yours — not just \"well-decorated.\" We believe in spaces that tell your story."
+    answer: "At Einri Living, we blend **art, greenery, and emotion** into functional design. Every home we create feels warm, personal, and truly yours, not just \"well-decorated.\" We believe in spaces that tell your story."
   }
 ];
 

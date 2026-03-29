@@ -337,7 +337,7 @@ function ConsultationFormModal({ isOpen, onClose }) {
                   name="city"
                   value={formData.city}
                   onChange={handleInputChange}
-                  placeholder="We design across India — this helps us plan better"
+                  placeholder="We design across India. This helps us plan better"
                   className={`form-input ${errors.city ? 'error' : ''}`}
                 />
                 {errors.city && <span className="error-message">{errors.city}</span>}
