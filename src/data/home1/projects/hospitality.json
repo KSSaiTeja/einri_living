@@ -1,9 +1,65 @@
 [
   {
-    "title": "Coastal Calm: Airbnb Designs in Pondicherry",
+    "title": "Coastal Calm: Airbnb Designs in Goa",
     "sub1": "Airbnb Design",
     "sub2": "Coastal Aesthetic",
-    "desc": "Inspired by the serene charm of Pondicherry, our Airbnb designs blend coastal warmth with modern minimalism. Every space is thoughtfully curated to feel like a getaway: breezy, soulful, and rooted in art and local essence.",
+    "desc": "Inspired by the laid-back charm of Goa, our Airbnb designs blend coastal warmth with modern minimalism. Every space is thoughtfully curated to feel like a holiday home: breezy, soulful, and rooted in art, sea air, and local Goan essence.",
     "img": "/home1/assets/img/projects/hospitality/project1.png"
+  },
+  {
+    "title": "The Fern Loft, Assagao",
+    "sub1": "Studio Airbnb",
+    "sub2": "Goan Coastal",
+    "desc": "Tucked into a quiet lane in Assagao, The Fern Loft is a compact studio built for travellers who want Goan ease with design-forward comfort. A sculptural wood pendant anchors the open kitchen-living layout, while olive velvet seating and a patterned rug bring in warmth. Every inch is optimised for slow mornings before beach days and long evenings after sunset.",
+    "img": "/home1/assets/img/projects/hospitality/Tide Tranquil.webp"
+  },
+  {
+    "title": "Sunlit Courtyard Studio, Siolim",
+    "sub1": "Boutique Stay",
+    "sub2": "Light-Filled Living",
+    "desc": "This sun-drenched studio in Siolim is built around natural light and the unhurried rhythm of North Goa. Sheer curtains soften the tropical morning glow, a curated breakfast bar invites lazy starts with coffee and fruit, and the living nook feels both intimate and airy. The kind of space guests fall in love with before they even reach the beach.",
+    "img": "/home1/assets/img/projects/hospitality/Tide Tranquil (1).webp"
+  },
+  {
+    "title": "Palm Grove Retreat, Morjim",
+    "sub1": "Tropical Bedroom",
+    "sub2": "Nature-Inspired",
+    "desc": "Palm Grove Retreat turns a guest bedroom into a private sanctuary just minutes from Morjim's shores. A woven cane headboard, lush botanical mural, and garden-facing windows create a cocoon of calm. Brass sconces, sea-turtle art, and earthy textiles complete a room that feels deeply Goan: tropical, soulful, and made for rest after a day by the sea.",
+    "img": "/home1/assets/img/projects/hospitality/Tide Tranquil (2).webp"
+  },
+  {
+    "title": "Azure Veranda, Candolim",
+    "sub1": "Holiday Rental",
+    "sub2": "Poolside Living",
+    "desc": "Azure Veranda in Candolim is designed for guests who live for golden hour. A private balcony with woven seating overlooks a shimmering pool deck, framed by geometric screens and warm Goan sunset skies. It is Airbnb hospitality at its most cinematic: relaxed, refined, and made for unwinding with a book and a chilled drink after the beach.",
+    "img": "/home1/assets/img/projects/hospitality/Vida Phase II.webp"
+  },
+  {
+    "title": "The Meridian Suite, Fontainhas",
+    "sub1": "Heritage Stay",
+    "sub2": "Contemporary Calm",
+    "desc": "Set in the colourful lanes of Fontainhas, The Meridian Suite blends old-world Goan character with hotel-grade comfort. Soft grey upholstery, layered ambient lighting, and herringbone flooring set a serene tone, while floor-to-ceiling windows open onto balconied streets and whitewashed courtyards. A perfect base for exploring Panjim on foot, then retreating into quiet luxury.",
+    "img": "/home1/assets/img/projects/hospitality/Vida Phase II.jpg"
+  },
+  {
+    "title": "Terracotta Haven, Anjuna",
+    "sub1": "Designer Bedroom",
+    "sub2": "Warm Minimalism",
+    "desc": "Terracotta Haven in Anjuna pairs bold abstract wallpaper with warm woven pendants and sunlit accents. Built-in storage keeps the room uncluttered after market runs and beach afternoons, while sunflowers and a sculptural clock add personality without noise. A bedroom that feels curated, calm, and unmistakably Goan.",
+    "img": "/home1/assets/img/projects/hospitality/Vida Phase II (1).webp"
+  },
+  {
+    "title": "Gallery House, Vagator",
+    "sub1": "Living Lounge",
+    "sub2": "Artful Interiors",
+    "desc": "Gallery House in Vagator is a living room built for conversation, sundowners, and slow Goan evenings. An L-shaped sofa, nesting marble tables, and a curated gallery wall give the space character, while glass doors lead to a private balcony with cliffside breezes. Greenery, geometric rugs, and warm lighting make it feel like a home guests extend their stay for.",
+    "img": "/home1/assets/img/projects/hospitality/Vida Phase II (2).webp"
+  },
+  {
+    "title": "Verdant Wake, Arambol",
+    "sub1": "Pool-View Suite",
+    "sub2": "Resort Feel",
+    "desc": "Verdant Wake in Arambol greets guests with pool-blue horizons and leaf-patterned serenity. A slatted wood headboard, colourful landscape art, and open sightlines into the living zone create a seamless holiday-home experience. It is Goa Airbnb design that feels like a boutique resort escape, every single night of the stay.",
+    "img": "/home1/assets/img/projects/hospitality/Vida Phase II (4).webp"
   }
 ]
