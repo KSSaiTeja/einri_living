@@ -21,45 +21,38 @@
     "img": "/home1/assets/img/Tide Tranquil.webp"
   },
   {
-    "title": "Palm Grove Retreat, Morjim",
-    "sub1": "Tropical Bedroom",
-    "sub2": "Nature-Inspired",
-    "desc": "Palm Grove Retreat turns a guest bedroom into a private sanctuary just minutes from Morjim's shores. A woven cane headboard, lush botanical mural, and garden-facing windows create a cocoon of calm. Brass sconces, sea-turtle art, and earthy textiles complete a room that feels deeply Goan: tropical, soulful, and made for rest after a day by the sea.",
-    "img": "/home1/assets/img/projects/hospitality/Tide Tranquil (2).webp"
-  },
-  {
-    "title": "Azure Veranda, Candolim",
-    "sub1": "Holiday Rental",
-    "sub2": "Poolside Living",
-    "desc": "Azure Veranda in Candolim is designed for guests who live for golden hour. A private balcony with woven seating overlooks a shimmering pool deck, framed by geometric screens and warm Goan sunset skies. It is Airbnb hospitality at its most cinematic: relaxed, refined, and made for unwinding with a book and a chilled drink after the beach.",
-    "img": "/home1/assets/img/projects/hospitality/Vida Phase II.webp"
-  },
-  {
-    "title": "The Meridian Suite, Fontainhas",
-    "sub1": "Heritage Stay",
-    "sub2": "Contemporary Calm",
-    "desc": "Set in the colourful lanes of Fontainhas, The Meridian Suite blends old-world Goan character with hotel-grade comfort. Soft grey upholstery, layered ambient lighting, and herringbone flooring set a serene tone, while floor-to-ceiling windows open onto balconied streets and whitewashed courtyards. A perfect base for exploring Panjim on foot, then retreating into quiet luxury.",
-    "img": "/home1/assets/img/projects/hospitality/Vida Phase II.jpg"
-  },
-  {
-    "title": "Terracotta Haven, Anjuna",
-    "sub1": "Designer Bedroom",
-    "sub2": "Warm Minimalism",
-    "desc": "Terracotta Haven in Anjuna pairs bold abstract wallpaper with warm woven pendants and sunlit accents. Built-in storage keeps the room uncluttered after market runs and beach afternoons, while sunflowers and a sculptural clock add personality without noise. A bedroom that feels curated, calm, and unmistakably Goan.",
-    "img": "/home1/assets/img/projects/hospitality/Vida Phase II (1).webp"
-  },
-  {
-    "title": "Gallery House, Vagator",
-    "sub1": "Living Lounge",
-    "sub2": "Artful Interiors",
-    "desc": "Gallery House in Vagator is a living room built for conversation, sundowners, and slow Goan evenings. An L-shaped sofa, nesting marble tables, and a curated gallery wall give the space character, while glass doors lead to a private balcony with cliffside breezes. Greenery, geometric rugs, and warm lighting make it feel like a home guests extend their stay for.",
+    "title": "The Solstice Suite, Calangute",
+    "sub1": "Lounge & Living",
+    "sub2": "North Goa",
+    "desc": "The Solstice Suite in Calangute opens into a living zone shaped around an L-shaped sofa, nesting marble tables, and a curated gallery wall. Glass doors draw in balcony breezes, while greenery, a geometric rug, and warm ambient light keep the room feeling composed yet welcoming. In North Goa, with the outdoor pool, lounge, gym, and parking close at hand, it is a design-led retreat made for slow evenings after the beach.",
     "img": "/home1/assets/img/projects/hospitality/Vida Phase II (2).webp"
   },
   {
-    "title": "Verdant Wake, Arambol",
-    "sub1": "Pool-View Suite",
-    "sub2": "Resort Feel",
-    "desc": "Verdant Wake in Arambol greets guests with pool-blue horizons and leaf-patterned serenity. A slatted wood headboard, colourful landscape art, and open sightlines into the living zone create a seamless holiday-home experience. It is Goa Airbnb design that feels like a boutique resort escape, every single night of the stay.",
-    "img": "/home1/assets/img/projects/hospitality/Vida Phase II (4).webp"
+    "title": "Pool Deck Outlook",
+    "sub1": "Balcony Seating",
+    "sub2": "Sunset Light",
+    "desc": "A private balcony with woven seating looks straight onto the pool deck below, geometric screens filtering warm Goan light as the day eases into evening. The kind of corner made for a book, a chilled drink, and unhurried golden-hour calm.",
+    "img": "/home1/assets/img/projects/hospitality/Vida Phase II.webp"
+  },
+  {
+    "title": "Monochrome Bathroom",
+    "sub1": "Walk-In Shower",
+    "sub2": "Graphic Tile",
+    "desc": "Black-framed glass partitions zone a walk-in rain shower from the vanity, set against crisp white subway tile and a bold black-and-white geometric floor. A trailing green plant softens the lines, while the floating wood vanity, vessel basin, and round mirror keep the space clean, contemporary, and quietly luxe.",
+    "img": "/home1/assets/img/projects/hospitality/bathroom monochrome.png"
+  },
+  {
+    "title": "Pattern & Warmth in the Guest Room",
+    "sub1": "Designer Bedroom",
+    "sub2": "Sunlit Details",
+    "desc": "Bold abstract wallpaper meets woven ceiling pendants and sunlit accents in a bedroom built for rest after long North Goa days. Built-in storage keeps the room uncluttered, while sunflowers and a sculptural clock add personality without breaking the calm.",
+    "img": "/home1/assets/img/projects/hospitality/Vida Phase II (1).webp"
+  },
+  {
+    "title": "Open-Plan Dining & Lounge",
+    "sub1": "Connected Living",
+    "sub2": "Layered Light",
+    "desc": "A white dining table set for four flows into a soft grey lounge, where diamond-framed mirrors and a vivid abstract canvas bring energy to calm walls. Herringbone flooring, a wrought-iron chandelier, and a tall palm by the media console layer classic warmth onto clean contemporary lines — one bright, connected volume made for unhurried North Goa mornings.",
+    "img": "/home1/assets/img/solstice suite calangute.png"
   }
 ]

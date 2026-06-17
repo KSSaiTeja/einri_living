@@ -2978,6 +2978,9 @@ body.menu-open {
   font-size: 45px;
   line-height: 1.4;
 }
+.tc-testimonials-style1 .tc-clients-style1 .clients-card .text {
+  width: 100%;
+}
 .tc-testimonials-style1 .tc-clients-style1 .clients-slider1 {
   position: relative;
   overflow: hidden;

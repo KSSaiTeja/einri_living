@@ -17,7 +17,7 @@ function Testimonials() {
                 <div className="swiper-wrapper">
                   <div className="swiper-slide">
                     <div className="clients-card">
-                      <div className="text fsz-45 fw-600 lh-2 js-splittext-lines">
+                      <div className="text fsz-45 fw-600 lh-2">
                         "Einri Interiors brings a fresh, visionary approach to design, combining timeless elegance with bold creativity. They're not just designing spaces; they're redefining how we experience interiors. I truly believe they're set to change the interiors game altogether."
                       </div>
                       <div className="author">
@@ -42,7 +42,7 @@ function Testimonials() {
                   </div>
                   <div className="swiper-slide">
                     <div className="clients-card">
-                      <div className="text fsz-45 fw-600 lh-2 js-splittext-lines">
+                      <div className="text fsz-45 fw-600 lh-2">
                         "What sets Einri apart is their unique ability to balance art, functionality, and nature seamlessly. Their innovative style feels both contemporary and timeless, making them one of the most exciting upcoming design firms to watch."
                       </div>
                       <div className="author">
@@ -67,7 +67,7 @@ function Testimonials() {
                   </div>
                   <div className="swiper-slide">
                     <div className="clients-card">
-                      <div className="text fsz-45 fw-600 lh-2 js-splittext-lines">
+                      <div className="text fsz-45 fw-600 lh-2">
                         "Einri Interiors brings a fresh, visionary approach to design, combining timeless elegance with bold creativity. They're not just designing spaces; they're redefining how we experience interiors. I truly believe they're set to change the interiors game altogether."
                       </div>
                       <div className="author">
